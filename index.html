@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/userinfo/1.1.0/userinfo.min.js"></script>
-    <script type="text/javascript">
-      UserInfo.getInfo(function(data) {
-      alert(ip_address);
-      }, function(err) {
-      // the "err" object contains useful information in case of an error
-      });
+    <p id="ip"></p>
+    <script>
+    $.getJSON("http://api.ipify.org/?format=json", function(e) {
+      alert(e.ip);
+    });
     </script>
   </head>
   <body>
