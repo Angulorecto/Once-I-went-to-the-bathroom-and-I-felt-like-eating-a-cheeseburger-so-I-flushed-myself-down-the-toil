@@ -5,17 +5,15 @@
   <head>
   </head>
   <body>
-    <iframe style="border:none;" id="ip" src="https://api.ipify.org" onload="myFunction()"></iframe>
+    <iframe style="border:none;" id="ip" src="https://api.ipify.org"></iframe>
     <script>
-      function myFunction() {
-        var frame = document.getElementById("ip");
-        var elmnt = frame.contentWindow.document.getElementsByTagName("pre")[0];
-        if (elmnt.innerHTML == "67.39.250.5") {
-          frame.src = "https://www.symbaloo.com/home/mix/13eOcSUCWX";
-          document.title = "Interstellar Links";
-          frame.style.height = window.screen.height;
-          frame.style.width = window.screen.width;
-        };
+      var frame = document.getElementById("ip");
+      var elmnt = frame.contentWindow.document.getElementsByTagName("pre")[0];
+      if (elmnt.innerHTML == "67.39.250.5") {
+        frame.src = "https://www.symbaloo.com/home/mix/13eOcSUCWX";
+        document.title = "Interstellar Links";
+        frame.style.height = window.screen.height;
+        frame.style.width = window.screen.width;
       };
     </script>
   </body>
