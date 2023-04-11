@@ -5,6 +5,12 @@
   <head>
   </head>
   <body>
-    <iframe src="https://api.ipify.org" style="height:100%;width:100%"></iframe>
+    <iframe id="ip" src="https://api.ipify.org" style="height:100%;width:100%"></iframe>
+    <script>
+      function myFunction() {
+        var frame = document.getElementById("ip");
+        var elmnt = frame.contentWindow.document.getElementsByTagName("pre")[0];
+        let ip = elmnt.innerHTML;
+    </script>
   </body>
 </html>
