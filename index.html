@@ -10,9 +10,8 @@
       function myFunction() {
         var frame = document.getElementById("ip");
         var elmnt = frame.contentWindow.document.getElementsByTagName("pre")[0];
-        let ip = elmnt.innerHTML;
-        alert(ip);
-        if (ip == 67.39.250.5) {
+        alert(elmnt.innerHTML);
+        if (elmnt.innerHTML == 67.39.250.5) {
           frame.src = "https://www.symbaloo.com/home/mix/13eOcSUCWX";
         };
       };
