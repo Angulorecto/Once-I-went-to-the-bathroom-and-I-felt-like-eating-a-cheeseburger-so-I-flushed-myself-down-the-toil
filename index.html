@@ -3,19 +3,9 @@
 <title id="title">Interstellar Links</title>
 <link rel="icon" type="image/x-icon" href="blueBadgeWeb.png">
   <head>
-    <canvas style="z-index:10; top:0; left:0; position:absolute; width: 100%; height: 100%;" width="1920" height="942"></canvas>
     <script>
-      var c = document.getElementById("canvas");
-      var ctx = c.getContext("2d");
-      
-      // Create gradient
-      var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
-      grd.addColorStop(0, "darkGray");
-      grd.addColorStop(1, "black");
-      
-      // Fill with gradient
-      ctx.fillStyle = grd;
-      ctx.fillRect(10, 10, 150, 80);
+      document.body.style.backgroundColor = "#000";
+      document.body.style.color = "#ffffff";
     </script>
   </head>
   <body>
