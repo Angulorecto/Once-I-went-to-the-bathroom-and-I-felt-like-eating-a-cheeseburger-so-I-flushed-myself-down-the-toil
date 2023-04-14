@@ -14,7 +14,12 @@ img {
     <H1 align="center" style="color: white; font-family: Impact, sans-serif; font-size: 50px;">Interstellar Links</H1>
     <H3 align="center" style="color: white; font-family: Impact, sans-serif;">By Ethan Boersma</H3>
     <div>
-      <img src="BlueInLinkBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
+      <img src="BlueInLinkBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" onclick="myFunction()" style="width:100px">
     </div>
+    <script>
+    function myFunction() {
+      alert("You clicked the image!");
+    }
+    </script>
   </body>
 </html>
