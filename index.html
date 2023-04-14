@@ -17,8 +17,8 @@ img {
       <img src="BlueInLinkBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" onclick="myFunction()" style="width:100px">
     </div>
     <script>
-    function myFunction() {
-      alert("You clicked the image!");
+    function redirect(url) {
+      window.open('"' + url + '"');
     }
     </script>
   </body>
