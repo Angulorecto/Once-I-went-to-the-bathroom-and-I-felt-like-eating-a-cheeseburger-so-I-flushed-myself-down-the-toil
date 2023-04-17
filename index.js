@@ -1,4 +1,13 @@
 function redirect(linkNumber) {
+   if (linkNumber == 0.1) {
+      window.location.replace("https://angulorecto.github.io/int-link/publicLinks.html");
+   }
+   if (linkNumber == 0.2) {
+      window.location.replace("https://angulorecto.github.io/int-link/premiumLinks.html");
+   }
+   if (linkNumber == 0.3) {
+      window.location.replace("https://angulorecto.github.io/int-link/memberLinks.html");
+   }
    if (linkNumber == 1) {
      window.open("https://silver-chinchilla-boot.cyclic.app/");
    }
