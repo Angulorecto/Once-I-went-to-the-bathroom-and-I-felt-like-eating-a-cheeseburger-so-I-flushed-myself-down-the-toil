@@ -10,7 +10,7 @@ function redirect(linkNumber) {
    }
    if (linkNumber == 1) {
      let key = prompt("Please insert your id key.");
-      if (key = "Icy8X8ZSM4") {
+      if (key == "Icy8X8ZSM4") {
          window.open("https://silver-chinchilla-boot.cyclic.app/");
       }
    }
