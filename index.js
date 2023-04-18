@@ -9,7 +9,10 @@ function redirect(linkNumber) {
       window.location.replace("https://angulorecto.github.io/int-link/memberLinks.html");
    }
    if (linkNumber == 1) {
-     window.open("https://silver-chinchilla-boot.cyclic.app/");
+     let key = prompt("Please insert your id key.");
+      if (key = "Icy8X8ZSM4") {
+         window.open("https://silver-chinchilla-boot.cyclic.app/");
+      }
    }
    if (linkNumber == 2) {
      window.open("https://child.cyclic.app/");
