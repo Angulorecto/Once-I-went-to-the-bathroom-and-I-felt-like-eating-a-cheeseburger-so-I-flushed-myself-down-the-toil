@@ -11,9 +11,9 @@ function redirect(linkNumber) {
    if (linkNumber == 1) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.replace("https://angulorecto.github.io/int-link/");
+         window.location.replace("https://angulorecto.github.io/int-link/index.html");
       } else if (key != "Icy8X8ZSM4") {
-         window.location.replace("https://angulorecto.github.io/int-link/");
+         window.location.replace("https://angulorecto.github.io/int-link/index.html");
       } else {
          window.location.replace("https://silver-chinchilla-boot.cyclic.app/");
       }
@@ -21,15 +21,22 @@ function redirect(linkNumber) {
    if (linkNumber == 2) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.replace("https://angulorecto.github.io/int-link/");
+         window.location.replace("https://angulorecto.github.io/int-link/index.html");
       } else if (key != "Icy8X8ZSM4") {
-         window.location.replace("https://angulorecto.github.io/int-link/");
+         window.location.replace("https://angulorecto.github.io/int-link/index.html");
       } else {
          window.location.replace("https://child.cyclic.app/");
       }
    }
    if (linkNumber == 3) {
-     window.location.replace("https://pear-cautious-kingfisher.cyclic.app/");
+      let key = prompt("Please insert your id key.");
+      if (key == "") {
+         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+      } else if (key != "Icy8X8ZSM4") {
+         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+      } else {
+         window.location.replace("https://pear-cautious-kingfisher.cyclic.app/");
+      }
    }
    if (linkNumber == 4) {
      window.location.replace("https://budget-consensus-unaware.onrender.com/");
