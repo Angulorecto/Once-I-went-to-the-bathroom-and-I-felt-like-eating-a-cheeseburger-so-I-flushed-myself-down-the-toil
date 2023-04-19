@@ -42,7 +42,7 @@ function redirect(linkNumber) {
      window.location.replace("https://budget-consensus-unaware.onrender.com/");
    }
   if (linkNumber == 5) {
-    window.location.replace("https://yummyfood-tk.vercel.app/");
+    window.location.replace("https://campaign-order-just.onrender.com/");
   }
   if (linkNumber == 6) {
     window.location.replace("https://head-egfc.onrender.com/");
