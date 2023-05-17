@@ -15,7 +15,7 @@ function redirect(linkNumber) {
       } else if (key != "Icy8X8ZSM4") {
          window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else {
-         window.location.href = "https://silver-chinchilla-boot.cyclic.app/";
+         window.location.href = "https://angulorecto.github.io/int-link/redirects/redirect1.html";
       }
    }
    if (linkNumber == 2) {
@@ -25,7 +25,7 @@ function redirect(linkNumber) {
       } else if (key != "Icy8X8ZSM4") {
          window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else {
-         window.location.href = "https://child.cyclic.app/";
+         window.location.href = "https://angulorecto.github.io/int-link/redirects/redirect2.html";
       }
    }
    if (linkNumber == 3) {
@@ -35,7 +35,7 @@ function redirect(linkNumber) {
       } else if (key != "Icy8X8ZSM4") {
          window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else {
-         window.location.href = "https://pear-cautious-kingfisher.cyclic.app/";
+         window.location.href = "https://angulorecto.github.io/int-link/redirects/redirect3.html";
       }
    }
    if (linkNumber == 4) {
