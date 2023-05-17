@@ -1,63 +1,63 @@
 function redirect(linkNumber) {
    if (linkNumber == 0.1) {
-      window.location.replace("https://angulorecto.github.io/int-link/publicLinks.html");
+      window.location.href = "https://angulorecto.github.io/int-link/publicLinks.html";
    }
    if (linkNumber == 0.2) {
-      window.location.replace("https://angulorecto.github.io/int-link/premiumLinks.html");
+      window.location.href = "https://angulorecto.github.io/int-link/premiumLinks.html";
    }
    if (linkNumber == 0.3) {
-      window.location.replace("https://angulorecto.github.io/int-link/memberLinks.html");
+      window.location.href = "https://angulorecto.github.io/int-link/memberLinks.html";
    }
    if (linkNumber == 1) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+         window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else if (key != "Icy8X8ZSM4") {
-         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+         window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else {
-         window.location.replace("https://silver-chinchilla-boot.cyclic.app/");
+         window.location.href = "https://silver-chinchilla-boot.cyclic.app/";
       }
    }
    if (linkNumber == 2) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+         window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else if (key != "Icy8X8ZSM4") {
-         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+         window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else {
-         window.location.replace("https://child.cyclic.app/");
+         window.location.href = "https://child.cyclic.app/";
       }
    }
    if (linkNumber == 3) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+         window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else if (key != "Icy8X8ZSM4") {
-         window.location.replace("https://angulorecto.github.io/int-link/index.html");
+         window.location.href = "https://angulorecto.github.io/int-link/index.html";
       } else {
-         window.location.replace("https://pear-cautious-kingfisher.cyclic.app/");
+         window.location.href = "https://pear-cautious-kingfisher.cyclic.app/";
       }
    }
    if (linkNumber == 4) {
-     window.location.replace("https://budget-consensus-unaware.onrender.com/");
+     window.location.href = "https://budget-consensus-unaware.onrender.com/";
    }
   if (linkNumber == 5) {
-    window.location.replace("https://campaign-order-just.onrender.com/");
+    window.location.href = "https://campaign-order-just.onrender.com/";
   }
   if (linkNumber == 6) {
-    window.location.replace("https://head-egfc.onrender.com/");
+    window.location.href = "https://head-egfc.onrender.com/";
   }
   if (linkNumber == 7) {
-    window.location.replace("https://overcharge.onrender.com/");
+    window.location.href = "https://overcharge.onrender.com/";
   }
   if (linkNumber == 8) {
-    window.location.replace("https://project-wte8.onrender.com/");
+    window.location.href = "https://project-wte8.onrender.com/";
   }
   if (linkNumber == 9) {
-    window.location.replace("https://ignite-q595.onrender.com/");
+    window.location.href = "https://ignite-q595.onrender.com/";
   }
   if (linkNumber == 10) {
-    window.location.replace("https://certain-snap-venture-research.onrender.com/");
+    window.location.href = "https://certain-snap-venture-research.onrender.com/";
   }
   if (linkNumber == 11) {
     window.location.replace("https://refer-perforate-extreme-loop.onrender.com/");
