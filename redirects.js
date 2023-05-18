@@ -1,12 +1,12 @@
 function redirect(linkNumber) {
    if (linkNumber == 0.1) {
-      window.location.href = "int-link/public";
+      window.location.href = "publicLinks.html";
    }
    if (linkNumber == 0.2) {
-      window.location.href = "int-link/premium";
+      window.location.href = "premiumLinks.html";
    }
    if (linkNumber == 0.3) {
-      window.location.href = "int-link/member";
+      window.location.href = "memberLinks.html";
    }
    if (linkNumber == 1) {
       let key = prompt("Please insert your id key.");
@@ -15,27 +15,27 @@ function redirect(linkNumber) {
       } else if (key != "Icy8X8ZSM4") {
          window.location.href = "index.html";
       } else {
-         window.location.href = "redirect1";
+         window.location.href = "redirects/redirect1.html";
       }
    }
    if (linkNumber == 2) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.href = "/int-link/";
+         window.location.href = "index.html";
       } else if (key != "Icy8X8ZSM4") {
-         window.location.href = "/int-link/";
+         window.location.href = "index.html";
       } else {
-         window.location.href = "int-link/redirect2";
+         window.location.href = "redirects/redirect2.html";
       }
    }
    if (linkNumber == 3) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.href = "https://angulorecto.github.io/int-link/index.html";
+         window.location.href = "index.html";
       } else if (key != "Icy8X8ZSM4") {
-         window.location.href = "https://angulorecto.github.io/int-link/index.html";
+         window.location.href = "index.html";
       } else {
-         window.location.href = "https://angulorecto.github.io/int-link/redirects/redirect3.html";
+         window.location.href = "redirects/redirect3.html";
       }
    }
    if (linkNumber == 4) {
