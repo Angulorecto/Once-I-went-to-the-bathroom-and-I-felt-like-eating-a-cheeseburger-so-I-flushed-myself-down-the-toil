@@ -28,6 +28,14 @@ app.get("/member", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "memberLinks.html"));
 });
 
+app.get("/redirect1", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "redirects/redirect1"));
+});
+
+app.get("/redirect2", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "redirects/redirect2"));
+});
+
 app.get("/404", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "404.html"));
 });
