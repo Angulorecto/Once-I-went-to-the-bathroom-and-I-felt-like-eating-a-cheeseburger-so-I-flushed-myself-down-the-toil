@@ -1,12 +1,12 @@
 function redirect(linkNumber) {
    if (linkNumber == 0.1) {
-      window.location.href = "public";
+      window.location.href = "int-link/public";
    }
    if (linkNumber == 0.2) {
-      window.location.href = "premium";
+      window.location.href = "int-link/premium";
    }
    if (linkNumber == 0.3) {
-      window.location.href = "member";
+      window.location.href = "int-link/member";
    }
    if (linkNumber == 1) {
       let key = prompt("Please insert your id key.");
