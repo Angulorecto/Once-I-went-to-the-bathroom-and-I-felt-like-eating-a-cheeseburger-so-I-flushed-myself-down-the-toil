@@ -48,13 +48,13 @@ function redirect(linkNumber) {
     window.location.href = "redirects/redirect6.html";
   }
   if (linkNumber == 7) {
-    window.location.href = "https://overcharge.onrender.com/";
+    window.location.href = "redirects/redirect7.html";
   }
   if (linkNumber == 8) {
-    window.location.href = "https://project-wte8.onrender.com/";
+    window.location.href = "redirects/redirect8.html";
   }
   if (linkNumber == 9) {
-    window.location.href = "https://ignite-q595.onrender.com/";
+    window.location.href = "redirects/redirect9.html";
   }
   if (linkNumber == 10) {
     window.location.href = "https://certain-snap-venture-research.onrender.com/";
