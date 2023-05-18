@@ -10,13 +10,6 @@ const server = http.createServer();
 const app = express(server);
 const bareServer = createBareServer("/bare/");
 
-app.use(express.json());
-app.use(
-  express.urlencoded({
-    extended: true,
-  })
-);
-
 app.use(express.static(path.join(__dirname, "static")));
 
 app.get("/", (req, res) => {
