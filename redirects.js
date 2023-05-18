@@ -39,13 +39,13 @@ function redirect(linkNumber) {
       }
    }
    if (linkNumber == 4) {
-     window.location.href = "https://budget-consensus-unaware.onrender.com/";
+     window.location.href = "redirects/redirect4.html";
    }
   if (linkNumber == 5) {
-    window.location.href = "https://campaign-order-just.onrender.com/";
+    window.location.href = "redirects/redirect5.html";
   }
   if (linkNumber == 6) {
-    window.location.href = "https://head-egfc.onrender.com/";
+    window.location.href = "redirects/redirect6.html";
   }
   if (linkNumber == 7) {
     window.location.href = "https://overcharge.onrender.com/";
