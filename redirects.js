@@ -1,21 +1,21 @@
 function redirect(linkNumber) {
    if (linkNumber == 0.1) {
-      window.location.href = "/int-link/public";
+      window.location.href = "public";
    }
    if (linkNumber == 0.2) {
-      window.location.href = "/int-link/premium";
+      window.location.href = "premium";
    }
    if (linkNumber == 0.3) {
-      window.location.href = "/int-link/member";
+      window.location.href = "member";
    }
    if (linkNumber == 1) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
-         window.location.href = "/int-link/";
+         window.location.href = "index.html";
       } else if (key != "Icy8X8ZSM4") {
-         window.location.href = "/int-link/";
+         window.location.href = "index.html";
       } else {
-         window.location.href = "/int-link/redirect1";
+         window.location.href = "redirect1";
       }
    }
    if (linkNumber == 2) {
