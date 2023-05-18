@@ -16,30 +16,30 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "index.html"));
 });
 
-app.get("/public", (req, res) => {
+app.get("/int-link/public", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "publicLinks.html"));
 });
 
-app.get("/premium", (req, res) => {
+app.get("/int-link/premium", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "premiumLinks.html"));
 });
 
-app.get("/member", (req, res) => {
+app.get("/int-link/member", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "memberLinks.html"));
 });
 
-app.get("/redirect1", (req, res) => {
+app.get("/int-link/redirect1", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "redirects/redirect1"));
 });
 
-app.get("/redirect2", (req, res) => {
+app.get("/int-link/redirect2", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "redirects/redirect2"));
 });
 
-app.get("/404", (req, res) => {
+app.get("/int-link/404", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "404.html"));
 });
 
-app.get("/*", (req, res) => {
+app.get("/int-link/*", (req, res) => {
   res.redirect("/404");
 });
