@@ -38,3 +38,102 @@
   color:black;
   font-family: 'righty';
 }
+.redDemon {
+  background: #;
+	background: radial-gradient(ellipse farthest-corner at top left, # 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.orangeDemon {
+  background: #E06900;
+	background: radial-gradient(ellipse farthest-corner at top left, #E06900 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.yellowDemon {
+  background: #E6E600;
+	background: radial-gradient(ellipse farthest-corner at top left, #E6E600 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.greenDemon {
+  background: #2BBA00;
+	background: radial-gradient(ellipse farthest-corner at top left, #2BBA00 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.blueDemon {
+  background: #060A45;
+	background: radial-gradient(ellipse farthest-corner at top left, #060A45 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.purpleDemon {
+  background: #;
+	background: radial-gradient(ellipse farthest-corner at top left, # 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.pinkDemon {
+  background: #C9008D;
+	background: radial-gradient(ellipse farthest-corner at top left, #C9008D 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.brownDemon {
+  background: #CC8800;
+	background: radial-gradient(ellipse farthest-corner at top left, #CC8800 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.blackDemon {
+  background: #000000;
+	background: radial-gradient(ellipse farthest-corner at top left, #000000 0%, #000000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'demon';
+}
+.redRight {
+  color:black;
+  font-family: 'kings';
+}
+.orangeRight {
+  color:black;
+  font-family: 'kings';
+}
+.yellowRight {
+  color:black;
+  font-family: 'kings';
+}
+.greenRight {
+  color:black;
+  font-family: 'kings';
+}
+.blueRight {
+  color:black;
+  font-family: 'kings';
+}
+.purpleRight {
+  color:black;
+  font-family: 'kings';
+}
+.pinkRight {
+  color:black;
+  font-family: 'kings';
+}
+.brownRight {
+  color:black;
+  font-family: 'kings';
+}
+.blackKing {
+  color:black;
+  font-family: 'kings';
+}
