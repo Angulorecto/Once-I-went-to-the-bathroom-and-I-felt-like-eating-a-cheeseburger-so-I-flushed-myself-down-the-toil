@@ -101,36 +101,36 @@
 	-webkit-text-fill-color: transparent;
   font-family: 'demon';
 }
-.redRight {
-  color:black;
+.redKing {
+  color:red;
   font-family: 'kings';
 }
-.orangeRight {
-  color:black;
+.orangeKing {
+  color:orange;
   font-family: 'kings';
 }
-.yellowRight {
-  color:black;
+.yellowKing {
+  color:yellow;
   font-family: 'kings';
 }
-.greenRight {
-  color:black;
+.greenKing {
+  color:green;
   font-family: 'kings';
 }
-.blueRight {
-  color:black;
+.blueKing {
+  color:blue;
   font-family: 'kings';
 }
-.purpleRight {
-  color:black;
+.purpleKing {
+  color:purple;
   font-family: 'kings';
 }
-.pinkRight {
-  color:black;
+.pinkKing {
+  color:pink;
   font-family: 'kings';
 }
-.brownRight {
-  color:black;
+.brownKing {
+  color:brown;
   font-family: 'kings';
 }
 .blackKing {
