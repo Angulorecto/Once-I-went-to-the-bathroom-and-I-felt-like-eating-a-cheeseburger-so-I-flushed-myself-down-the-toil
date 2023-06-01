@@ -8,6 +8,9 @@ function redirect(linkNumber) {
    if (linkNumber == 0.3) {
       window.location.href = "memberLinks.html";
    }
+   if (linkNumber == 0.4) {
+      window.location.href = "staffLinks.html";
+   }
    if (linkNumber == 1) {
       let key = prompt("Please insert your id key.");
       if (key == "") {
