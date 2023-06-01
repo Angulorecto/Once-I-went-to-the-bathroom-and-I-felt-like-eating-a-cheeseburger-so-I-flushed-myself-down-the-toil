@@ -96,11 +96,12 @@
         div.appendChild(x);
         
         var y = document.createElement('p');
-        y.setAttribute("innerHTML", link.pText);
+        y.innerText = link.pText;
         y.setAttribute("class", link.pClass);
         y.setAttribute("align", "center");
         
         div.appendChild(y);
+        
         document.getElementById("row1").appendChild(div);
       });
     </script>
