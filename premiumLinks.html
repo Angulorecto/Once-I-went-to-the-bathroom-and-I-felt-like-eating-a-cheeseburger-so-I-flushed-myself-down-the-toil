@@ -18,28 +18,47 @@
     <a class='whiteRight' style="text-decoration:none; font-size: 15px; color: white;" href="index.html"> < Back </a>
     <H1 align="center" style="color: white; font-family: Impact, sans-serif; font-size: 50px;">Premium links</H1>
     <div id="row1" align="center">
-      <div id="link1">
-        <img class="border" src="GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" onclick="redirect(1)" style="width:100px">
-        <p align="center" class='whiteRight'>Silver chinchilla</p>
-      </div>
-      <div id="link2">
-        <img class="border" src="GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" onclick="redirect(2)" style="width:100px">
-        <p align="center" class='whiteRight'>Child</p>
-      </div>
-      <div id="link3">
-        <img class="border" src="GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" onclick="redirect(3)" style="width:100px">
-        <p align="center" class='whiteRight'>Pear Cautious</p>
-      </div>
-      <div id="link4">
-        <img class="border" src="GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" onclick="redirect(4)" style="width:100px">
-        <p align="center" class='whiteRight'>Interstellar nkmi</p>
-      </div>
-      <div id="link5">
-        <img class="border" src="GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" onclick="redirect(5)" style="width:100px">
-        <p align="center" class='whiteRight'>Yummtfood tk</p>
-      </div>
+      
     </div>
     <script src="redirects.js"></script>
+    <script>
+      const links = [
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "4", pText: "Budget", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "5", pText: "Campaign Order", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "6", pText: "head-egfc", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "7", pText: "Overcharge", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "8", pText: "Project-wte8", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "9", pText: "Ignite-q595", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "10", pText: "Certain Snap", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "11", pText: "Perforat", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "12", pText: "Contradiction", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "13", pText: "Assault", pClass: "whiteRight" },
+        { imgSrc: "BlueInLinkBadge.png", linkNum: "14", pText: "Accent Threshold", pClass: "whiteRight" },
+      ];
+      links.forEach((link) => {
+        var div = document.createElement('div');
+        div.setAttribute("class", "link");
+        var x = document.createElement('img');
+        x.setAttribute("src", link.imgSrc);
+        x.setAttribute("width", "100");
+        x.setAttribute("alt", "IntLinkBadge");
+        x.setAttribute("class", "border");
+        x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+        x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
+        x.setAttribute("onclick", "redirect(" + link.linkNum + ")");
+        
+        div.appendChild(x);
+        
+        var y = document.createElement('p');
+        y.innerText = link.pText;
+        y.setAttribute("class", link.pClass);
+        y.setAttribute("align", "center");
+        
+        div.appendChild(y);
+        
+        document.getElementById("row1").appendChild(div);
+      });
+    </script>
     <style>
       #link1 {
         display: inline-block;
