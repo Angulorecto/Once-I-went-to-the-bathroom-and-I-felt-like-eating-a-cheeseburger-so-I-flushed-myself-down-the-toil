@@ -1,1 +1,72 @@
-
+<!DOCTYPE html>
+<html>
+  <title id="title">Staff Links</title>
+<head>
+  <link rel="stylesheet" href="righty-font/righty-stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="stylesheet" href="kings/kings-stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="stylesheet" href="demon/demon-stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="stylesheet" href="easyFonts.css" type="text/css" charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  img {
+    border-radius: 20%;
+  }
+</style>
+</head>
+<link rel="icon" type="image/x-icon" href="InLinkBadge.png">
+  <body style="background-color:black;">
+    <a class='whiteRight' style="text-decoration:none; font-size: 15px; color: white;" href="index.html"> < Back </a>
+    <H1 align="center" class='whiteRight' style="font-size: 50px;">Staff links</H1>
+    <div id="row1" align="center">
+      
+    </div>
+    <script src="redirects.js"></script>
+    <script>
+      const links = [
+        { imgSrc: "StaffLink.png", linkNum: "1", pText: "Silver", pClass: "whiteRight" },
+        { imgSrc: "StaffLink.png", linkNum: "2", pText: "Child", pClass: "whiteRight" },
+        { imgSrc: "StaffLink.png", linkNum: "3", pText: "pear cautious", pClass: "whiteRight" },
+      ];
+      links.forEach((link) => {
+        var div = document.createElement('div');
+        div.setAttribute("class", "link");
+        var x = document.createElement('img');
+        x.setAttribute("src", link.imgSrc);
+        x.setAttribute("width", "100");
+        x.setAttribute("alt", "IntLinkBadge");
+        x.setAttribute("class", "border");
+        x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+        x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
+        x.setAttribute("onclick", "redirect(" + link.linkNum + ")");
+        
+        div.appendChild(x);
+        
+        var y = document.createElement('p');
+        y.innerText = link.pText;
+        y.setAttribute("class", link.pClass);
+        y.setAttribute("align", "center");
+        
+        div.appendChild(y);
+        
+        document.getElementById("row1").appendChild(div);
+      });
+    </script>
+    <style>
+      .link {
+        display: inline-block;
+      }
+      .border {
+        border: 0.5px solid transparent;
+        transition: border-width 0.5s, border-color 0.5s;
+      }
+      .border:hover {
+        border-width: 5px;
+        border-color: gray;
+      }
+      .border:mouseout {
+        border-width: 0.5px;
+        border-color: solid transparent;
+      }
+    </style>
+  </body>
+</html>
