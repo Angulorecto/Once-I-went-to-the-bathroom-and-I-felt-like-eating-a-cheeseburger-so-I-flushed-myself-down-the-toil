@@ -4,15 +4,15 @@ const pages = [
    { linkNum: "0.3", link: "memberLinks.html" },
    { linkNum: "0.4", link: "staffLinks.html" },
 ];
-const public = [
+const publics = [
    { linkNum: "", link: "" },
    {},
 ];
-const premium = [
-   { linkNum: "", link: "" },
+const premiums = [
+   { linkNum: "11", link: "redirects/redirect11.html" },
    {},
 ];
-const member = [
+const members = [
    { linkNum: "1", link: "redirects/redirect1.html" },
    { linkNum: "3", link: "redirects/redirect3.html" },
 ];
