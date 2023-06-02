@@ -1,3 +1,26 @@
+const pages = [
+   { linkNum: "0.1", link: "publicLinks.html" },
+   { linkNum: "0.2", link: "premiumLinks.html" },
+   { linkNum: "0.3", link: "memberLinks.html" },
+   { linkNum: "0.4", link: "staffLinks.html" },
+];
+const public = [
+   { linkNum: "", link: "" },
+   {},
+];
+const premium = [
+   { linkNum: "", link: "" },
+   {},
+];
+const member = [
+   { linkNum: "1", link: "redirects/redirect1.html" },
+   { linkNum: "3", link: "redirects/redirect3.html" },
+];
+const staff = [
+   { linkNum: "4", link: "redirects/redirect4.html" },
+   { linkNum: "2", link: "redirects/redirect2.html" },
+   { linkNum: "17", link: "redirects/redirect17.html" },
+];
 function redirect(linkNumber) {
    if (linkNumber == 0.1) {
       window.location.href = "publicLinks.html";
