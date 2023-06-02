@@ -1,5 +1,5 @@
 const keys = [
-   { rank: "Staff", name: "Ethan", key: "Icy13" },
+   { rank: "Owner", name: "Ethan", key: "Icy13" },
    { rank: "Staff", name: "Matthew", key: "Math01" },
 ];
 const pages = [
@@ -50,6 +50,8 @@ function redirect(linkNumber) {
                     window.location.href = premium.link;
                  } else if (keyr.rank == "Owner") {
                     window.location.href = premium.link;
+                 } else {
+                    window.location.href = "index.html"
                  };
               } else {
                  window.location.href = "index.html";
