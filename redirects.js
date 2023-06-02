@@ -32,6 +32,14 @@ const premiums = [
 const members = [
    { linkNum: "1", link: "redirects/redirect1.html" },
    { linkNum: "3", link: "redirects/redirect3.html" },
+   { linkNum: "21", link: "redirects/redirect21.html" },
+   { linkNum: "22", link: "redirects/redirect22.html" },
+   { linkNum: "23", link: "redirects/redirect23.html" },
+   { linkNum: "24", link: "redirects/redirect24.html" },
+   { linkNum: "25", link: "redirects/redirect25.html" },
+   { linkNum: "26", link: "redirects/redirect26.html" },
+   { linkNum: "27", link: "redirects/redirect27.html" },
+   { linkNum: "28", link: "redirects/redirect28.html" },
 ];
 const staff = [
    { linkNum: "4", link: "redirects/redirect4.html" },
