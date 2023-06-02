@@ -45,14 +45,15 @@ function redirect(linkNumber) {
               if (keyr.key == input) {
                  if (keyr.rank == "Premium") {
                     window.location.href = premium.link;
-                 } else if (keyr.rank == "Member") {
+                 };
+                 if (keyr.rank == "Member") {
                     window.location.href = premium.link;
-                 } else if (keyr.rank == "Staff") {
+                 };
+                 if (keyr.rank == "Staff") {
                     window.location.href = premium.link;
-                 } else if (keyr.rank == "Owner") {
+                 };
+                 if (keyr.rank == "Owner") {
                     window.location.href = premium.link;
-                 } else {
-                    window.location.href = "index.html"
                  };
               } else {
                  window.location.href = "index.html";
