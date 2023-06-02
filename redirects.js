@@ -10,12 +10,24 @@ const pages = [
    { linkNum: "0.4", link: "staffLinks.html" },
 ];
 const publics = [
-   { linkNum: "", link: "" },
-   {},
+   {linkNum: "5", link: "redirects/redirect5.html" },
+   {linkNum: "6", link: "redirects/redirect6.html" },
+   {linkNum: "7", link: "redirects/redirect7.html" },
+   {linkNum: "8", link: "redirects/redirect8.html" },
+   {linkNum: "9", link: "redirects/redirect9.html" },
+   {linkNum: "10", link: "redirects/redirect10.html" },
+   {linkNum: "11", link: "redirects/redirect11.html" },
+   {linkNum: "12", link: "redirects/redirect12.html" },
+   {linkNum: "13", link: "redirects/redirect13.html" },
+   {linkNum: "14", link: "redirects/redirect14.html"},
 ];
 const premiums = [
-   { linkNum: "11", link: "redirects/redirect11.html" },
-   {},
+   { linkNum: "15", link: "redirects/redirect15.html" },
+   { linkNum: "16", link: "redirects/redirect16.html" },
+   { linkNum: "17", link: "redirects/redirect17.html" },
+   { linkNum: "18", link: "redirects/redirect18.html" },
+   { linkNum: "19", link: "redirects/redirect19.html" },
+   { linkNum: "20", link: "redirects/redirect20.html" },
 ];
 const members = [
    { linkNum: "1", link: "redirects/redirect1.html" },
