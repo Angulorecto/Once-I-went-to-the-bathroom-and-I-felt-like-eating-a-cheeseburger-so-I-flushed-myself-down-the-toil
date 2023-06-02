@@ -1,5 +1,5 @@
 const keys = [
-   { rank: "Base", name: "Static", key: "Static" },
+   { rank: "Staff", name: "Static", key: "Static" },
    { rank: "Owner", name: "Ethan", key: "Icy13" },
    { rank: "Staff", name: "Matthew", key: "Math01" },
 ];
