@@ -60,13 +60,36 @@ function redirect(linkNumber) {
         };
    });
    members.forEach((member) => {
-        if (member.linkNum == linkNumber) {
-           window.location.href = member.link;
+      if (member.linkNum == linkNumber) {
+           let input = prompt("Please insert your id key.");
+           keys.forEach((keyr) => {
+              if (keyr.key == input) {
+                 if (keyr.rank == "Member") {
+                    window.location.href = member.link;
+                 };
+                 if (keyr.rank == "Staff") {
+                    window.location.href = member.link;
+                 };
+                 if (keyr.rank == "Owner") {
+                    window.location.href = member.link;
+                 };
+              };
+           });
         };
    });
    staff.forEach((staffs) => {
-        if (staffs.linkNum == linkNumber) {
-           window.location.href = staffs.link;
+        if (premium.linkNum == linkNumber) {
+           let input = prompt("Please insert your id key.");
+           keys.forEach((keyr) => {
+              if (keyr.key == input) {
+                 if (keyr.rank == "Staff") {
+                    window.location.href = staffs.link;
+                 };
+                 if (keyr.rank == "Owner") {
+                    window.location.href = staffs.link;
+                 };
+              };
+           });
         };
    });
 }
