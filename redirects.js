@@ -55,8 +55,6 @@ function redirect(linkNumber) {
                  if (keyr.rank == "Owner") {
                     window.location.href = premium.link;
                  };
-              } else {
-                 window.location.href = "index.html";
               };
            });
         };
