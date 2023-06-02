@@ -1,7 +1,7 @@
 const keys = [
    { rank: "Staff", name: "Static", key: "Static" },
-   { rank: "Staff", name: "Matthew", key: "Math01" },
    { rank: "Owner", name: "Ethan", key: "Icy13" },
+   { rank: "Staff", name: "Matthew", key: "Math01" },
 ];
 const pages = [
    { linkNum: "0.1", link: "publicLinks.html" },
