@@ -25,7 +25,6 @@ const publics = [
 const premiums = [
    { linkNum: "15", link: "redirects/redirect15.html" },
    { linkNum: "16", link: "redirects/redirect16.html" },
-   { linkNum: "17", link: "redirects/redirect17.html" },
    { linkNum: "18", link: "redirects/redirect18.html" },
    { linkNum: "19", link: "redirects/redirect19.html" },
    { linkNum: "20", link: "redirects/redirect20.html" },
