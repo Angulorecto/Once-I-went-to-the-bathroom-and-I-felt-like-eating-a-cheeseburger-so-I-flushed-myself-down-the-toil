@@ -41,7 +41,7 @@ const members = [
    { linkNum: "27", link: "redirects/redirect27.html" },
    { linkNum: "28", link: "redirects/redirect28.html" },
 ];
-const staff = [
+const staffs = [
    { linkNum: "4", link: "redirects/redirect4.html" },
    { linkNum: "2", link: "redirects/redirect2.html" },
    { linkNum: "17", link: "redirects/redirect17.html" },
@@ -97,16 +97,16 @@ function redirect(linkNumber) {
            });
         };
    });
-   staff.forEach((staffs) => {
-        if (staffs.linkNum == linkNumber) {
+   staffs.forEach((staff) => {
+        if (staff.linkNum == linkNumber) {
            let input = prompt("Please insert your id key.");
            keys.forEach((keyr) => {
               if (keyr.key == input) {
                  if (keyr.rank == "Staff") {
-                    window.location.href = staffs.link;
+                    window.location.href = staff.link;
                  };
                  if (keyr.rank == "Owner") {
-                    window.location.href = staffs.link;
+                    window.location.href = staff.link;
                  };
               };
            });
