@@ -98,7 +98,7 @@ function redirect(linkNumber) {
         };
    });
    staff.forEach((staffs) => {
-        if (premium.linkNum == linkNumber) {
+        if (staffs.linkNum == linkNumber) {
            let input = prompt("Please insert your id key.");
            keys.forEach((keyr) => {
               if (keyr.key == input) {
