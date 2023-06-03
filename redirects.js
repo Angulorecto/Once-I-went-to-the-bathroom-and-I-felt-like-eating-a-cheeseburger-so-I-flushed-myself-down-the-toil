@@ -2,6 +2,7 @@ const keys = [
    { rank: "Staff", name: "Static", key: "Static" },
    { rank: "Owner", name: "Ethan", key: "Icy13" },
    { rank: "Staff", name: "Matthew", key: "Math01" },
+   { rank: "Member", name: "Test", key: "Member" },
 ];
 const pages = [
    { linkNum: "0.1", link: "publicLinks.html" },
