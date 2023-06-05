@@ -103,6 +103,11 @@ function redirect(linkNumber) {
                  };
               };
            });
+           inactivekeys.forEach((inkey) => {
+              if (inkey.key == input) {
+                 alert("Sorry this key has been deactivated.\nIf you think this was a mistake, please submit a report at:\nhttps://rebrand.ly/keysuspendrepeal");
+              };
+           });
         };
    });
    staffs.forEach((staff) => {
@@ -116,6 +121,11 @@ function redirect(linkNumber) {
                  if (keyr.rank == "Owner") {
                     window.location.href = staff.link;
                  };
+              };
+           });
+           inactivekeys.forEach((inkey) => {
+              if (inkey.key == input) {
+                 alert("Sorry this key has been deactivated.\nIf you think this was a mistake, please submit a report at:\nhttps://rebrand.ly/keysuspendrepeal");
               };
            });
         };
