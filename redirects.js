@@ -4,6 +4,9 @@ const keys = [
    { rank: "Staff", name: "Matthew", key: "Math01" },
    { rank: "Member", name: "Test", key: "Member" },
 ];
+const inactivekeys = [
+   { rank: "Premium", name: "Inactive", key: "Inactive" },
+];
 const pages = [
    { linkNum: "0.1", link: "publicLinks.html" },
    { linkNum: "0.2", link: "premiumLinks.html" },
