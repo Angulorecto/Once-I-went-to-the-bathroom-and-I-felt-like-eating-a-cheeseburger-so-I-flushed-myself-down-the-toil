@@ -80,6 +80,11 @@ function redirect(linkNumber) {
                  };
               };
            });
+           inactivekeys.forEach((inkey) => {
+              if (inkey.key == input) {
+                 alert("Sorry this key has been deactivated.\nIf you think this was a mistake, please submit a report at https://rebrand.ly/keysuspendrepeal");
+              };
+           });
         };
    });
    members.forEach((member) => {
