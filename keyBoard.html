@@ -32,7 +32,8 @@
       inactivekeys.forEach((inkey) => {
         var k = document.createElement('div');
         k.setAttribute("width", "160");
-        k.setAttribute("height", "20");
+        k.setAttribute("align","center");
+        document.getElementById("active").appendChild(k);
         var e = document.createElement('p');
         e.innerText = inkey.name
         e.setAttribute(, inkey.name);
