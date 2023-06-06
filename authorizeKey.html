@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <title id="title">Autorize Key</title>
+<link rel="icon" type="image/x-icon" href="InLinkBadge.png">
+  <body style="background-color:black;">
+    <script src="redirects.js"></script>
+    <script>
+      function AuthKey() {
+        let key = document.getElementById("key").value;
+      }
+    </script>
+    <form onsubmit="AuthKey()">
+      <label>Key</label><br>
+      <input id="key" type="text"><br>
+      <label>Username</label><br>
+      <input id="username" type="text"><br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
