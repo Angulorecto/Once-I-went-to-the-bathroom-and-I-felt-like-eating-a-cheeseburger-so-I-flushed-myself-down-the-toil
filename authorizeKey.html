@@ -5,8 +5,19 @@
   <body style="background-color:black;">
     <script src="redirects.js"></script>
     <script>
+      var once = "False";
       function AuthKey() {
         let key = document.getElementById("key").value;
+        keys.forEach((keyr) => {
+              if (keyr.key == key) {
+                document.cookie = "key=" + key + ";";
+                document.cookie = "username=" + document.getElementById("username").value + ";"
+              } else {
+                if (once == "False") {
+                  alert("Sorry. That key doesn't exist.");
+                  once = "True"
+                }
+              }
       }
     </script>
     <form onsubmit="AuthKey()">
