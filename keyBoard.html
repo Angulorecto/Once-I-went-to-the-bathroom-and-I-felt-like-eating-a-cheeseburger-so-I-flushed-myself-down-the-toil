@@ -26,14 +26,17 @@
         width: 300px;
         height: 490px;
       }
+      .key {
+        width: 160px;
+      }
     </style>
     <script src="redirects.js"></script>
     <script>
       keys.forEach((inkey) => {
         var k = document.createElement('div');
-        k.setAttribute("width", "160");
         k.setAttribute("align","center");
         k.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
+        k.setAttribute("class","key");
         document.getElementById("active").appendChild(k);
         var e = document.createElement('p');
         e.innerText = inkey.name
