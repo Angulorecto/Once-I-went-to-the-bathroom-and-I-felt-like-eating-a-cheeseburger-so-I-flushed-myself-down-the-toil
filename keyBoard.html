@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="easyFonts.css" type="text/css" charset="utf-8"/>
   </head>
   <link rel="icon" type="image/x-icon" href="InLinkBadge.png">
-  <body style="background-color:black;">
+  <body onload="verify()" style="background-color:black;">
     <div id="keys">
       <div id="active">
         <div style="background-color:green; border-radius:15px;">
@@ -32,6 +32,19 @@
     </style>
     <script src="redirects.js"></script>
     <script>
+      function verify() {
+        let input = prompt("What is your ID key?");
+        keys.forEach((keyr) => {
+          if (keyr.key == input) {
+            if (keyr.rank == "Owner") {
+              alert("Welcome Ethan");
+            };
+          } else {
+            window.location.href = "index.html";
+            alert("Sorry. Redirecting...");
+          };
+        });
+      };
       keys.forEach((inkey) => {
         var k = document.createElement('div');
         k.setAttribute("align","center");
