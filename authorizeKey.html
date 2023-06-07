@@ -11,14 +11,6 @@
   <body style="background-color:black;">
     <script src="redirects.js"></script>
     <script>
-      let height = screen.height;
-      function Align() {
-        var form = document.getElementById("form");
-        let a = (height/8);
-        let b = (height/2);
-        let c = (a + b) + "px";
-        form.style.top = c;
-      }
       var once = "False";
       function AuthKey() {
         var keyt = document.getElementById("key").value;
@@ -35,12 +27,18 @@
         });
       }
     </script>
-    <form id="form" align="center" onsubmit="AuthKey()" onload="Align()">
+    <form id="form" onsubmit="AuthKey()">
       <label style="font-size:25px;" class="whiteRight">Key</label><br>
       <input class="whiteRight" id="key" type="text" style="background-color:rgb(23,28,35); border-radius:15px;"><br>
       <label style="font-size:25px;" class=whiteRight>Username</label><br>
       <input class="whiteRight" id="username" type="text" style="border-radius:15px; background-color:rgb(23,28,35);"><br>
       <input style="font-size:25px;" class="whiteRight" type="submit" style="background-color:rgb(23,28,35); border-radius:15px;">
     </form>
+    <style>
+      #form {
+        left: 50%;
+        top: 50%;
+      }
+    </style>
   </body>
 </html>
