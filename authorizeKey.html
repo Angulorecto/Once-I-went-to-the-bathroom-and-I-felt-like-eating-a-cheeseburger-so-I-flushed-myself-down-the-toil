@@ -14,7 +14,10 @@
       let height = screen.height;
       function Align() {
         var form = document.getElementById("form");
-        form.top = ((height / 2) + (height / 6)) + "px";
+        let a = (height/8);
+        let b = (height/2);
+        let c = (a + b) + "px";
+        form.style.top = c;
       }
       var once = "False";
       function AuthKey() {
