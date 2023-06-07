@@ -12,7 +12,7 @@
       }
       var once = "False";
       function AuthKey() {
-        let key = document.getElementById("key").value;
+        var key = document.getElementById("key").value;
         keys.forEach((keyr) => {
               if (keyr.key == key) {
                 document.cookie = "key=" + key;
