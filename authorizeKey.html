@@ -8,13 +8,13 @@
       let height = screen.height;
       function Align() {
         var form = document.getElementById("form");
-        form.top = (height / 2) + (height / 6);
+        form.top = ((height / 2) + (height / 6)) + "px";
       }
       var once = "False";
       function AuthKey() {
         var keyt = document.getElementById("key").value;
-        keys.forEach((keyr) => {
-              if (keyr.key == keyt) {
+        keys.forEach((keyq) => {
+              if (keyq.key == keyt) {
                 document.cookie = "key=" + keyt;
                 document.cookie = "username=" + document.getElementById("username").value;
               } else {
