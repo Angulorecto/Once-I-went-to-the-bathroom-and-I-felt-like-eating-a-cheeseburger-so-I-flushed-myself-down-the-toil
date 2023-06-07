@@ -10,8 +10,8 @@
         let key = document.getElementById("key").value;
         keys.forEach((keyr) => {
               if (keyr.key == key) {
-                document.cookie = "key=" + key + ";";
-                document.cookie = "username=" + document.getElementById("username").value + ";"
+                document.cookie = "key=" + key;
+                document.cookie = "username=" + document.getElementById("username").value;
               } else {
                 if (once == "False") {
                   alert("Sorry. That key doesn't exist.");
@@ -21,10 +21,10 @@
         });
       }
     </script>
-    <form onsubmit="AuthKey()">
-      <label>Key</label><br>
+    <form align="center" onsubmit="AuthKey()">
+      <label class="whiteRight">Key</label><br>
       <input id="key" type="text"><br>
-      <label>Username</label><br>
+      <label class="whiteRight">Username</label><br>
       <input id="username" type="text"><br>
       <input type="submit">
     </form>
