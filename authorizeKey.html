@@ -12,10 +12,10 @@
       }
       var once = "False";
       function AuthKey() {
-        var key = document.getElementById("key").value;
+        var keyt = document.getElementById("key").value;
         keys.forEach((keyr) => {
-              if (keyr.key == key) {
-                document.cookie = "key=" + key;
+              if (keyr.key == keyt) {
+                document.cookie = "key=" + keyt;
                 document.cookie = "username=" + document.getElementById("username").value;
               } else {
                 if (once == "False") {
