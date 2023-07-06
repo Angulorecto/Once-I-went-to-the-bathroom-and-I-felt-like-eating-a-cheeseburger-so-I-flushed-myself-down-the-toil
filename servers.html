@@ -12,27 +12,29 @@
     <H1 class="whiteRight" align="center">Manage servers</H1><br>
     <div id="servers">
       <div id="activeServers">
-        
+        <button onclick="getActive()"></button>
       </div>
       <div id="inactiveServers">
         
       </div>
     </div>
     <script>
-      const options = {
-        method: 'GET',
-        headers: {
-          accept: 'application/json',
-          authorization: 'Bearer rnd_mnZ1CcN0lVMv6surrhUb0uupsNsc'
-        }
-      };
-
-      fetch('https://api.render.com/v1/services?type=web_service&suspended=not_suspended&limit=100', options)
-      .then(response => response.json())
-      .then((data) => {
-        alert(data);
-      })
-      .catch(err => console.error(err));
+      function getActive() {
+        const options = {
+          method: 'GET',
+          headers: {
+            accept: 'application/json',
+            authorization: 'Bearer rnd_mnZ1CcN0lVMv6surrhUb0uupsNsc'
+          }
+        };
+        
+        fetch('https://api.render.com/v1/services?type=web_service&suspended=not_suspended&limit=100', options)
+        .then(response => response.json())
+        .then((data) => {
+          alert(data);
+        })
+        .catch(err => console.error(err));
+      }
     </script>
   </body>
 </html>
