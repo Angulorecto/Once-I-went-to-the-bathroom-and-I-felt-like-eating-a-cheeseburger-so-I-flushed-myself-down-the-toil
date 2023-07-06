@@ -12,7 +12,10 @@
     <H1 class="whiteRight" align="center">Manage servers</H1><br>
     <div id="servers">
       <div id="activeServers">
-        <button></button>
+        <div class="cell" style="background-color:rgb(33,38,45); border-radius:15px;">
+          <H3 class="whiteRight">Example</H3><br>
+          <button class="greenRight">Resume</button>
+        </div>
       </div>
       <div id="inactiveServers">
         
@@ -62,6 +65,11 @@
         { serviceName: "authority", serviceId: "", serviceNum: "38"},
         { serviceName: "automatic", serviceId: "", serviceNum: "39"}
       ]
+
+      services.forEach((service) => {
+        
+      });
+      
       function suspendService(num) {
         services.forEach((service) => {
           if (service.serviceNum == num) {
