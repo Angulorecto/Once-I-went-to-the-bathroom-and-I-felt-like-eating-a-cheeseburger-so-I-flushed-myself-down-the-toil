@@ -9,6 +9,15 @@
     <link rel="icon" type="image/x-icon" href="InLinkBadge.png">
   </head>
   <body style="background-color:black;">
+    <H1 class="whiteRight" align="center">Manage servers</H1>
+    <div id="servers">
+      <div id="activeServers">
+        
+      </div>
+      <div id="inactiveServers">
+        
+      </div>
+    </div>
     <script>
       const options = {
         method: 'GET',
@@ -21,8 +30,7 @@
       fetch('https://api.render.com/v1/services?type=web_service&suspended=not_suspended&limit=100', options)
       .then(response => response.json())
       .then((data) => {
-        var mapData = JSON.parse(data);
-        alert(mapData);
+        alert(data);
       })
       .catch(err => console.error(err));
     </script>
