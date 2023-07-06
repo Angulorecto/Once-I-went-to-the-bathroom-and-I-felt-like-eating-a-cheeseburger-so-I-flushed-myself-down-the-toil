@@ -21,7 +21,8 @@
       fetch('https://api.render.com/v1/services?type=web_service&suspended=not_suspended&limit=100', options)
       .then(response => response.json())
       .then((data) => {
-        
+        var mapData = JSON.parse(data);
+        alert(mapData);
       })
       .catch(err => console.error(err));
     </script>
