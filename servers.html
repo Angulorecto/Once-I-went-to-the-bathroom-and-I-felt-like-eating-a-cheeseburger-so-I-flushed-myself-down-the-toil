@@ -12,27 +12,94 @@
     <H1 class="whiteRight" align="center">Manage servers</H1><br>
     <div id="servers">
       <div id="activeServers">
-        <button onclick="getActive()"></button>
+        <button></button>
       </div>
       <div id="inactiveServers">
         
       </div>
     </div>
+    <script src="redirects.js">
+    </script>
     <script>
-      function getActive() {
-        const options = {
-          method: 'GET',
-          headers: {
-            accept: 'application/json',
-            authorization: 'Bearer rnd_mnZ1CcN0lVMv6surrhUb0uupsNsc'
+      const services = [
+        { serviceName: "silver", serviceId: "", serviceNum: "1"},
+        { serviceName: "child", serviceId: "", serviceNum: "2"},
+        { serviceName: "pear", serviceId: "", serviceNum: "3"},
+        { serviceName: "budget", serviceId: "", serviceNum: "4"},
+        { serviceName: "campaign", serviceId: "", serviceNum: "5"},
+        { serviceName: "head", serviceId: "", serviceNum: "6"},
+        { serviceName: "overcharge", serviceId: "", serviceNum: "7"},
+        { serviceName: "project", serviceId: "", serviceNum: "8"},
+        { serviceName: "ignite", serviceId: "", serviceNum: "9"},
+        { serviceName: "certian", serviceId: "", serviceNum: "10"},
+        { serviceName: "refer", serviceId: "", serviceNum: "11"},
+        { serviceName: "contradiction", serviceId: "", serviceNum: "12"},
+        { serviceName: "assault", serviceId: "", serviceNum: "13"},
+        { serviceName: "accent", serviceId: "", serviceNum: "14"},
+        { serviceName: "committee", serviceId: "", serviceNum: "15"},
+        { serviceName: "contrast", serviceId: "", serviceNum: "16"},
+        { serviceName: "ethan", serviceId: "", serviceNum: "17"},
+        { serviceName: "floor", serviceId: "", serviceNum: "18"},
+        { serviceName: "promotion", serviceId: "", serviceNum: "19"},
+        { serviceName: "constitution", serviceId: "", serviceNum: "20"},
+        { serviceName: "push", serviceId: "", serviceNum: "21"},
+        { serviceName: "side", serviceId: "", serviceNum: "22"},
+        { serviceName: "exploration", serviceId: "", serviceNum: "23"},
+        { serviceName: "engineer", serviceId: "", serviceNum: "24"},
+        { serviceName: "undertake", serviceId: "", serviceNum: "25"},
+        { serviceName: "rare", serviceId: "", serviceNum: "26"},
+        { serviceName: "promise", serviceId: "", serviceNum: "27"},
+        { serviceName: "dough", serviceId: "", serviceNum: "28"},
+        { serviceName: "ancestor", serviceId: "", serviceNum: "29"},
+        { serviceName: "drift", serviceId: "", serviceNum: "30"},
+        { serviceName: "nightmare", serviceId: "", serviceNum: "31"},
+        { serviceName: "desk", serviceId: "", serviceNum: "32"},
+        { serviceName: "hero", serviceId: "", serviceNum: "33"},
+        { serviceName: "personality", serviceId: "", serviceNum: "34"},
+        { serviceName: "army", serviceId: "", serviceNum: "35"},
+        { serviceName: "orgy", serviceId: "", serviceNum: "36"},
+        { serviceName: "relation", serviceId: "", serviceNum: "37"},
+        { serviceName: "authority", serviceId: "", serviceNum: "38"},
+        { serviceName: "automatic", serviceId: "", serviceNum: "39"}
+      ]
+      function suspendService(num) {
+        services.forEach((service) => {
+          if (service.serviceNum == num) {
+            const options = {
+              method: 'POST',
+              headers: {
+                accept: 'application/json',
+                authorization: 'Bearer rnd_mnZ1CcN0lVMv6surrhUb0uupsNsc'
+              }
+            };
+            
+            fetch('https://api.render.com/v1/services/'+ service.serviceId +'/suspend', options)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(err => console.error(err));
           }
-        };
-        
-        fetch('https://api.render.com/v1/services?type=web_service&suspended=not_suspended&limit=100', options)
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(err => console.error(err));
-      }
+        });
+      };
+      function deleteService() {
+        services.forEach((service) => {
+          
+        });
+      };
+      function resumeService() {
+        services.forEach((service) => {
+          
+        });
+      };
+      function restartService() {
+        services.forEach((service) => {
+          
+        });
+      };
+      function redeployService() {
+        services.forEach((service) => {
+          
+        });
+      };
     </script>
   </body>
 </html>
