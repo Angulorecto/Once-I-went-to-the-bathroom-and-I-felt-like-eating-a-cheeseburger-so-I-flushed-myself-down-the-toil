@@ -18,7 +18,9 @@
 
       fetch('https://api.render.com/v1/services?type=web_service&suspended=not_suspended&limit=100', options)
       .then(response => response.json())
-      .then(response => console.log(response))
+      .then((data) => {
+        
+      })
       .catch(err => console.error(err));
     </script>
   </body>
