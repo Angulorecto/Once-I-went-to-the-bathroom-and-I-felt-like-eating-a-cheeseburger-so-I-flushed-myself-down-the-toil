@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <title id="title">Redirecting...</title>
-<link rel="icon" type="image/x-icon" href="InLinkBadge.png">
+  <title id="title">Interstellar</title>
+  <link rel="icon" type="image/x-icon" href="InLinkBadge.png">
+  <link rel="stylesheet" href="easyFonts.css" type="text/css" charset="utf-8"/>
   <body style="background-color:black;">
     <script>
-      window.location.href = "https://silver-chinchilla-boot.cyclic.app/";
+      var iframe = document.createElement('iframe');
+      iframe.style.border = 'none';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.margin = '0';
+      iframe.class = "frame";
+      iframe.src = "https://silver-chinchilla-boot.cyclic.app/";
+      document.body.appendChild(iframe);
     </script>
   </body>
 </html>
