@@ -20,7 +20,8 @@
     <div id="servers">
       <div id="activeServers" style="width:500px;">
         <div class="cell">
-          <H3 class="whiteRight" style="position:relative; top:10px; left:10px;">Example</H3><br>
+          <H3 class="whiteRight" style="position:relative; top:10px; left:10px; line-height: 0.8;">Example</H3>
+          <H4 id="status" class="whiteRight" style="position:relative; top:10px; right:10px;"></H4><br>
           <button style="position:relative; left:10px; background-color:green; border-radius:15px;" class="blackRight">Resume</button>
           <button style="position:relative; left:10px; background-color:yellow; border-radius:15px;" class="blackRight">Suspend</button>
           <button style="position:relative; left:10px; background-color:red; border-radius:15px;" class="blackRight">Delete</button>
@@ -36,9 +37,6 @@
     </script>
     <script>
       const services = [
-        { serviceName: "silver", serviceId: "", serviceNum: "1"},
-        { serviceName: "child", serviceId: "", serviceNum: "2"},
-        { serviceName: "pear", serviceId: "", serviceNum: "3"},
         { serviceName: "budget", serviceId: "", serviceNum: "4"},
         { serviceName: "campaign", serviceId: "", serviceNum: "5"},
         { serviceName: "head", serviceId: "", serviceNum: "6"},
@@ -172,6 +170,14 @@
           };
         });
       };
+      function getStatus() {
+        services.forEach((service) => {
+          
+        })
+      }
+      
+      let interval = setInterval(getStatus(), 200);
+      
     </script>
   </body>
 </html>
