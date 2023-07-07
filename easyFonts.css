@@ -1,3 +1,6 @@
+.frame {
+  z-index: 99;
+}
 .whiteRight {
   color:white;
   font-family: 'righty';
