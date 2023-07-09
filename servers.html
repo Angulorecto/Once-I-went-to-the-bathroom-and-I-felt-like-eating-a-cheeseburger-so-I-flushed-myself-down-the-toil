@@ -141,7 +141,7 @@
               }
             };
 
-            fetch('https://api.render.com/v1/services/serviceId/restart', options)
+            fetch('https://api.render.com/v1/services/' + service.serviceId + '/restart', options)
             .then(response => response.json())
             .then(response => console.log(response))
             .catch(err => console.error(err));
