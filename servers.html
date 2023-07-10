@@ -20,7 +20,7 @@
     <div id="servers">
       <div id="activeServers" style="width:500px;">
         <div class="cell" align="center">
-          <H3 class="whiteRight" style="position:relative; top:10px; left:10px; line-height: 0.8;">Example</H3>
+          <H3 class="whiteRight" align="center" style="position:relative; top:10px; left:10px; line-height: 0.8;">Example</H3>
           <H4 id="status4" class="whiteRight" style="position:relative; left:10px;">Idk</H4><br>
           <button style="position:relative; left:10px; background-color:green; border-radius:15px;" class="blackRight">Resume</button>
           <button style="position:relative; left:10px; background-color:yellow; border-radius:15px;" class="blackRight">Suspend</button>
@@ -81,6 +81,7 @@
         
         var serviceTitle = document.createElement("H3");
         serviceTitle.setAttribute("class" ,"whiteRight");
+        serviceTitle.setAttribute("align" ,"center");
         serviceTitle.setAttribute("style" ,"position:relative; top:10px; left:10px; line-height: 0.8;");
         serviceTitle.innerHTML = service.serviceName;
 
