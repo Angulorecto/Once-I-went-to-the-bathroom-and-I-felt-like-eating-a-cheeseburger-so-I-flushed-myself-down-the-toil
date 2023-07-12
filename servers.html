@@ -19,10 +19,18 @@
     </style>
     <div id="servers">
       <div id="activeServers" align="center">
+        <div id="example" class="cell" align="center">
+          <H3 class="whiteRight" align="center" style="position:relative; top:10px; left:10px; line-height: 0.8;">Example</H3>
+          <H4 id="status" class="whiteRight" style="position:relative; left:10px;">Idk</H4><br>
+          <button style="position:relative; left:10px; background-color:green; border-radius:15px;" class="blackRight">Resume</button>
+          <button style="position:relative; left:10px; background-color:yellow; border-radius:15px;" class="blackRight">Suspend</button>
+          <button style="position:relative; left:10px; background-color:red; border-radius:15px;" class="blackRight">Delete</button>
+          <button style="position:relative; left:10px; background-color:orange; border-radius:15px;" class="blackRight">Restart</button>
+          <button style="position:relative; left:10px; background-color:yellow; border-radius:15px;" class="blackRight">Redeploy</button>
+        </div>
       </div>
     </div>
     <script src="redirects.js">
-    <script src="cellsetup.js">
     <script src="serverbuttonfunctions.js">
     </script>
     <script>
@@ -66,7 +74,18 @@
       ]
 
       services.forEach((service) => {
-        setup();
+        var base = document.getElementById("example");
+        let clone = base.cloneNode(true);
+
+        clone.children[0].innerHTML = service.serviceName;
+        clone.children[1].id = "status" + service.serviceNum;
+        clone.children[2].onclick = "resumeService(" + service.serviceNum + ")";
+        clone.children[3].onclick = "suspendService(" + service.serviceNum + ")";
+        clone.children[4].onclick = "deleteService(" + service.serviceNum + ")";
+        clone.children[5].onclick = "restartService(" + service.serviceNum + ")";
+        clone.children[6].onclick = "redeployService(" + service.serviceNum + ")";
+
+        document.getElementById("activeServers").appendChild(clone);
       });
       
       let interval = setInterval(getStatus(), 200);
