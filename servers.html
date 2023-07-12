@@ -101,7 +101,7 @@
               }
             };
             
-            fetch('https://api.render.com/v1/services/'+ service.serviceId +'/suspend', options)
+            fetch('https://api.render.com/v1/services/'+ service.serviceId + '/suspend', options)
             .then(response => response.json())
             .then(response => console.log(response))
             .catch(err => console.error(err));
@@ -137,7 +137,7 @@
               }
             };
 
-            fetch('https://api.render.com/v1/services/'+ service.serviceId +'/resume', options)
+            fetch('https://api.render.com/v1/services/'+ service.serviceId + '/resume', options)
             .then(response => response.json())
             .then(response => console.log(response))
             .catch(err => console.error(err));
@@ -174,7 +174,7 @@
               }
             };
 
-            fetch('https://api.render.com/v1/services/'+ service.serviceId +'/deploys', options)
+            fetch('https://api.render.com/v1/services/'+ service.serviceId + '/deploys', options)
             .then(response => response.json())
             .then(response => console.log(response))
             .catch(err => console.error(err));
