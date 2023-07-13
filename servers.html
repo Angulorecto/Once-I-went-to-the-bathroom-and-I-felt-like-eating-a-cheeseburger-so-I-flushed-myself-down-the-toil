@@ -78,11 +78,11 @@
 
         clone.children[0].innerHTML = service.serviceName;
         clone.children[1].id = "status" + service.serviceNum;
-        clone.children[2].setAttribute("onclick","resumeService(" + service.serviceNum + ")");
-        clone.children[3].setAttribute("onclick","suspendService(" + service.serviceNum + ")");
-        clone.children[4].setAttribute("onclick","deleteService(" + service.serviceNum + ")");
-        clone.children[5].setAttribute("onclick","restartService(" + service.serviceNum + ")");
-        clone.children[6].setAttribute("onclick","redeployService(" + service.serviceNum + ")");
+        clone.children[3].setAttribute("onclick","resumeService(" + service.serviceNum + ")");
+        clone.children[4].setAttribute("onclick","suspendService(" + service.serviceNum + ")");
+        clone.children[5].setAttribute("onclick","deleteService(" + service.serviceNum + ")");
+        clone.children[6].setAttribute("onclick","restartService(" + service.serviceNum + ")");
+        clone.children[7].setAttribute("onclick","redeployService(" + service.serviceNum + ")");
 
         document.getElementById("activeServers").appendChild(clone);
       });
