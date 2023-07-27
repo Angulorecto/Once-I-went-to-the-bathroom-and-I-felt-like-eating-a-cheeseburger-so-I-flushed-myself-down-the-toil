@@ -49,10 +49,17 @@
         y.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
         y.setAttribute("class","key");
         document.getElementById("inactive").appendChild(y);
+        var a = document.createElement('br');
         var s = document.createElement('p');
         s.innerText = inkey.name;
         s.setAttribute("class","whiteRight");
+        var dis = document.createElement('button');
+        dis.setAttribute("value","Disable");
+        dis.setAttribute("style","background-color:rgb(255,0,0)");
+        dis.setAttribute("onclick","");
         y.appendChild(s);
+        y.appendChild(a);
+        y.appendChild(dis);
       });
     </script>
   </body>
