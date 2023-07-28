@@ -38,10 +38,17 @@
         k.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
         k.setAttribute("class","key");
         document.getElementById("active").appendChild(k);
+        var w = document.createElement('br');
         var e = document.createElement('p');
         e.innerText = inkey.name;
         e.setAttribute("class","whiteRight");
+        var disc = document.createElement('button');
+        disc.setAttribute("value","Disable");
+        disc.setAttribute("style","background-color:rgb(255,0,0)");
+        disc.setAttribute("onclick","");
         k.appendChild(e);
+        k.appendChild(w);
+        k.appendChild(disc);
       });
       inactivekeys.forEach((inkey) => {
         var y = document.createElement('div');
