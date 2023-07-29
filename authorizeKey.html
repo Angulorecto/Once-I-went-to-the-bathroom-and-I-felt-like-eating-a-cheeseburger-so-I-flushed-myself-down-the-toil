@@ -15,7 +15,7 @@
       function AuthKey() {
         var keyt = document.getElementById("key").value;
         keys.forEach((keyq) => {
-              if (keyq.key == keyt) {
+              if (keyq.key == "'" + keyt + "'") {
                 document.cookie = "key=" + keyt;
                 document.cookie = "username=" + document.getElementById("username").value;
               } else {
