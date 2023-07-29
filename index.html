@@ -55,10 +55,16 @@ img {
             if (key.key == value) {
               if (key.rank == "Staff") or (key.rank == "Owner") {
                 var div = document.createElement('div');
-                div.setAttribute("","")
+                div.setAttribute("style","border-color:red; border-width:10px;")
+                var title = document.createElement('h3');
+                title.setAttribute("class","redDemon");
+                title.setAttribute("style","font-size:30px;");
+                title.innerHTML = "Admin area";
                 var anchor = document.createElement('a');
                 anchor.setAttribute("style","text-decoration:none; font-size: 15px;");
-                anchor.setAttribute("class","redDemon");
+                anchor.setAttribute("class","whiteRight");
+                anchor.setAttribute("href","keyBoard.html");
+                anchor.innerHTML = "Key Panel";
               }
             }
           });
