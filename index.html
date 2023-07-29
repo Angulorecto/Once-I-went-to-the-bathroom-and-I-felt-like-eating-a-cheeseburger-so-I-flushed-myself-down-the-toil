@@ -39,6 +39,32 @@ img {
       <H5 class="whiteRight">Click <a href="authorizeKey.html" class="whiteRight">here</a> to authorize and add your key to your account.</H5>
     </div>
     <script src="redirects.js"></script>
+    <script>
+      function ReadCookie() {
+        var allcookies = document.cookie;
+        document.write ("All Cookies : " + allcookies );
+               
+        // Get all the cookies pairs in an array
+        cookiearray = allcookies.split(';');
+               
+        // Now take key value pair out of this array
+        for(var i=0; i<cookiearray.length; i++) {
+          name = cookiearray[i].split('=')[0];
+          value = cookiearray[i].split('=')[1];
+          keys.forEach((key) => {
+            if (key.key == value) {
+              if (key.rank == "Staff") or (key.rank == "Owner") {
+                var div = document.createElement('div');
+                div.setAttribute("","")
+                var anchor = document.createElement('a');
+                anchor.setAttribute("style","text-decoration:none; font-size: 15px;");
+                anchor.setAttribute("class","redDemon");
+              }
+            }
+          });
+        }
+      }
+    </script>
     <style>
       #link {
         display: inline-block;
