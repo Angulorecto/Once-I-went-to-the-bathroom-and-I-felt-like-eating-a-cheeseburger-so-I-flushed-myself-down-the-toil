@@ -12,20 +12,12 @@
     <a class='whiteRight' style="text-decoration:none; font-size: 15px; color: white;" href="home.html"> < Back </a>
     <script src="redirects.js"></script>
     <script>
-      var once = "False";
       function AuthKey() {
-        var keyt = document.getElementById("key").value;
-        keys.forEach((keyq) => {
-              if (keyq.key == "'" + keyt + "'") {
-                document.cookie = "key=" + keyt;
-                document.cookie = "username=" + document.getElementById("username").value;
-              } else {
-                if (once == "False") {
-                  alert("Sorry. That key doesn't exist.");
-                  once = "True";
-                }
-              }
-        });
+        let keyt = document.getElementById("key");
+        let username = document.getElementById("username");
+      
+        const localkey = localStorage.setItem("key", keyt);
+        const localkey = localStorage.setItem("username", username);
       }
     </script>
     <form id="form" align="center" onsubmit="AuthKey()">
