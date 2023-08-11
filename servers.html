@@ -34,6 +34,12 @@
     <script src="redirects.js">
     </script>
     <script>
+      app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "angulorecto.github.io"); // update to match the domain you will make the request from
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+      });
+      
       const services = [
         { serviceName: "budget", serviceId: "srv-cgtvqlt269vbmeo540eg", serviceNum: "4"},
         { serviceName: "campaign", serviceId: "srv-cgtvqqt269vbmeo54n9g", serviceNum: "5"},
