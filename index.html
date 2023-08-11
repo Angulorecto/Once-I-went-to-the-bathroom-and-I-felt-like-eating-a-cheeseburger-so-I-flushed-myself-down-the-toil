@@ -3,19 +3,32 @@
   <title id="title">Interstellar Links</title>
 <head>
   <script>
-      var url = "https://angulorecto.github.io/iwillchange/home.html";
-      var win = window.open();
-      window.href = "https://clever.com/in/fhps/student/portal";
-      var iframe = win.document.createElement('iframe');
-      win.document.body.style.margin = '0';
-      win.document.body.style.height = '100vh';
-      win.document.icon = "https://support.highlandschools.org/wp-content/uploads/2020/11/clever1.png"
-      iframe.style.border = 'none';
-      iframe.style.width = '100%';
-      iframe.style.height = '100%';
-      iframe.style.margin = '0';
-      iframe.src = url;
-      win.document.body.appendChild(iframe);
+      const popup = open("about:blank", "_blank")
+      if (!popup || popup.closed) {
+          alert("Allow popups if you don't want this to get blocked.")
+      } else {
+          const doc = popup.document
+          const iframe = doc.createElement("iframe")
+          const style = iframe.style
+          const link = doc.createElement("link")
+
+          const name = "Interstellar Links";
+          const icon = "https://angulorecto.github.io/iwillchange/pictures/favicon.ico";
+        
+          doc.title = name;
+          link.rel = "icon";
+          link.href = icon;
+        
+          iframe.src = "https://angulorecto.github.io/iwillchange/home.html"
+          style.position = "fixed"
+          style.top = style.bottom = style.left = style.right = 0
+          style.border = style.outline = "none"
+          style.width = style.height = "100%"
+
+          doc.head.appendChild(link);
+          doc.body.appendChild(iframe)
+          location.replace("chrome://newtab")
+    }
   </script>
 </head>
 </html>
