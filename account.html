@@ -15,6 +15,30 @@ img {
 </head>
 <link rel="icon" type="image/x-icon" href="pictures/InLinkBadge.png">
   <body style="background-color:black;">
-    <a class="whiteRight" style="text-decoration:none; font-size:15px;">< Back</a>
+    <a href="home.html" class="whiteRight" style="text-decoration:none; font-size:15px;">< Back</a>
+    <H1 align="center" class="whiteRight" style="font-size:50px;">Manage Account</H1>
+    <div style="background-color:rgb(33,38,45);">
+      <p>Key:</p>
+      <p id="key1"></p>
+      <button style="background-color:rgb(255,30,30);" onClick="delkey()">Drop</button>
+      <p>Username:</p>
+      <p id="username1"></p>
+      <input id="name" type="text" placeholder="New Username"></input>
+    </div>
+    <script>
+      const key = localStorage.getItem("key");
+      const username = localStorage.getItem("username");
+      let name = document.getElementById("name");
+      function delkey() {
+        localStorage.setItem("key", " ");
+      }
+      function rename() {
+        localStorage.setItem("username", name.value);
+      }
+      var keyarea = document.getElementById("key1");
+      var userarea = document.getElementById("username1");
+      userarea.innerHTML = username;
+      keyarea.innerHTML = key;
+    </script>
   </body>
 </html>
