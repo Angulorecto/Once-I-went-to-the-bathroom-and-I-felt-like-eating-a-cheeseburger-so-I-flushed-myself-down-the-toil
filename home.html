@@ -15,6 +15,7 @@ img {
 </head>
 <link rel="icon" type="image/x-icon" href="pictures/InLinkBadge.png">
   <body style="background-color:black;">
+    <a href="account.html" class="whiteRight" style="text-decoration:none; font-size: 15px;" id="account">Manage Account</a>
     <H1 align="center" class='whiteRight' style="font-size: 50px;">Interstellar Links</H1>
     <div id="row1" align="center">
       <div id="link">
@@ -35,39 +36,19 @@ img {
       </div>
     </div>
     <div align="center">
-      <H5 class="whiteRight">Have a key?</H5><br>
-      <H5 class="whiteRight">Click <a href="authorizeKey.html" class="whiteRight">here</a> to authorize and add your key to your account.</H5>
+      <H2 class="whiteRight">Have a key?</H2><br>
+      <H4 class="whiteRight">Click <a href="authorizeKey.html" class="whiteRight">here</a> to authorize and add your key to your account.</H4>
     </div>
     <script src="redirects.js"></script>
     <script>
-      function ReadCookie() {
-        var allcookies = document.cookie;
-        
-        // Get all the cookies pairs in an array
-        cookiearray = allcookies.split(';');
-               
-        // Now take key value pair out of this array
-        for(var i=0; i<cookiearray.length; i++) {
-          name = cookiearray[i].split('=')[0];
-          value = cookiearray[i].split('=')[1];
-          keys.forEach((key) => {
-            if (key.key == value) {
-              if (key.rank == "Staff") or (key.rank == "Owner") {
-                var div = document.createElement('div');
-                div.setAttribute("style","border-color:red; border-width:10px;")
-                var title = document.createElement('h3');
-                title.setAttribute("class","redDemon");
-                title.setAttribute("style","font-size:30px;");
-                title.innerHTML = "Admin area";
-                var anchor = document.createElement('a');
-                anchor.setAttribute("style","text-decoration:none; font-size: 15px;");
-                anchor.setAttribute("class","whiteRight");
-                anchor.setAttribute("href","keyBoard.html");
-                anchor.innerHTML = "Key Panel";
-              }
-            }
-          });
-        }
+      const localkey = localStorage.getItem("key");
+      const localuser = localStorage.getItem("username");
+      var account = document.getElementById("account");
+
+      if (localkey) && (localuser) {
+        account.innerHTML = "Manage Account";
+      } else {
+        account.innerHTML = " ";
       }
     </script>
     <style>
