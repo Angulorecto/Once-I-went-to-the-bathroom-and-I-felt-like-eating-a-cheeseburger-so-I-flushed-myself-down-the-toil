@@ -29,8 +29,8 @@ img {
       </form>
     </div>
     <script>
-      const key = localStorage.getItem("key");
-      const username = localStorage.getItem("username");
+      var key = localStorage.getItem("key") || " ";
+      var username = localStorage.getItem("username") || "Default";
       let name = document.getElementById("name");
       function delkey() {
         localStorage.setItem("key", " ");
