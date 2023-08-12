@@ -33,12 +33,10 @@ img {
       var username = localStorage.getItem("username") || "No name";
       let name = document.getElementById("name");
       function delkey() {
-        localStorage.setItem("key", "No key");
-        if (localStorage.getItem("key") == "No key") {
-          alert("Cleared key.");
-        };
+        localStorage.deleteItem("key");
       };
       function rename() {
+        localStorage.deleteItem("username");
         localStorage.setItem("username", name.value);
       };
       var keyarea = document.getElementById("key1");
