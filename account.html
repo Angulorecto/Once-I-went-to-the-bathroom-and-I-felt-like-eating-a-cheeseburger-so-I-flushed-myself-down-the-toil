@@ -18,12 +18,15 @@ img {
     <a href="home.html" class="whiteRight" style="text-decoration:none; font-size:15px;">< Back</a>
     <H1 align="center" class="whiteRight" style="font-size:50px;">Manage Account</H1>
     <div style="background-color:rgb(33,38,45);">
-      <p class="whiteRight">Key:</p>
+      <p class="whiteRight">Key:</p><br>
       <p class="whiteRight" id="key1"></p>
-      <button style="background-color:rgb(255,30,30);" onClick="delkey()">Drop</button>
-      <p class="whiteRight">Username:</p>
+      <button style="background-color:rgb(255,30,30); border-radius:15px;" onClick="delkey() class="blackRight">Drop</button>
+      <p class="whiteRight">Username:</p><br>
       <p class="whiteRight" id="username1"></p>
-      <input id="name" type="text" placeholder="New Username"></input>
+      <form onSubmit="rename()">
+        <input type="text" id="username" placeholder="New Username">
+        <input type="submit">
+      </form>
     </div>
     <script>
       const key = localStorage.getItem("key");
