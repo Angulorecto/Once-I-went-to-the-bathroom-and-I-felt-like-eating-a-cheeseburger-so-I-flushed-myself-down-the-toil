@@ -13,11 +13,11 @@
     <script src="redirects.js"></script>
     <script>
       function AuthKey() {
-        let keyt = document.getElementById("key");
-        let username = document.getElementById("username");
+        let keyt = document.getElementById("key").value;
+        let username = document.getElementById("username").value;
       
-        const localkey = localStorage.setItem("key", keyt);
-        const localkey = localStorage.setItem("username", username);
+        localStorage.setItem("key", keyt);
+        localStorage.setItem("username", username);
       }
     </script>
     <form id="form" align="center" onsubmit="AuthKey()">
