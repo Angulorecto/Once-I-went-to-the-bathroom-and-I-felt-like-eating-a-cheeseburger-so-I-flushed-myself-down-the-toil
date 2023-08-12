@@ -34,10 +34,14 @@ img {
       let name = document.getElementById("name");
       function delkey() {
         localStorage.removeItem("key");
+        alert("Key cleared.");
+        window.href = "account.html";
       };
       function rename() {
         localStorage.removeItem("username");
         localStorage.setItem("username", name.value);
+        alert("Renamed!");
+        window.href = "account.html";
       };
       var keyarea = document.getElementById("key1");
       var userarea = document.getElementById("username1");
