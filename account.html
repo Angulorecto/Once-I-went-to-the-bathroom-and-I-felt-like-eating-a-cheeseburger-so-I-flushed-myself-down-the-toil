@@ -29,11 +29,14 @@ img {
       </form>
     </div>
     <script>
-      var key = localStorage.getItem("key") || " ";
-      var username = localStorage.getItem("username") || "Default";
+      var key = localStorage.getItem("key") || "No key";
+      var username = localStorage.getItem("username") || "No name";
       let name = document.getElementById("name");
       function delkey() {
-        localStorage.setItem("key", " ");
+        localStorage.setItem("key", "No key");
+        if (localStorage.getItem("key") == "No key") {
+          alert("Cleared key.");
+        };
       };
       function rename() {
         localStorage.setItem("username", name.value);
