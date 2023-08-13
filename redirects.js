@@ -79,8 +79,6 @@ const keys = [
                      if (keyw.rank == "Owner") {
                         window.location.href = premium.link;
                      };
-                  } else {
-                     alert("The key you have registered on your account doesn't exist.\nPlease change the key to another or just drop it.");
                   };
                });
             } else {
@@ -99,8 +97,6 @@ const keys = [
                      if (keyr.rank == "Owner") {
                         window.location.href = premium.link;
                      };
-                  } else {
-                     alert("Sorry, that key doesn't exist");
                   };
                });
             };
@@ -126,8 +122,6 @@ const keys = [
                      if (keyw.rank == "Owner") {
                         window.location.href = premium.link;
                      };
-                  } else {
-                     alert("The key you have registered on your account doesn't exist.\nPlease change the key to another or just drop it.");
                   };
                });
             } else {
@@ -167,8 +161,6 @@ const keys = [
                      if (keyw.rank == "Owner") {
                         window.location.href = staff.link;
                      };
-                  } else {
-                     alert("The key you have registered on your account doesn't exist.\nPlease change the key to another or just drop it.");
                   };
                });
             } else {
