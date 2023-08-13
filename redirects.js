@@ -63,23 +63,48 @@ function redirect(linkNumber) {
    });
    premiums.forEach((premium) => {
         if (premium.linkNum == linkNumber) {
-           let input = prompt("Please insert your id key.");
-           keys.forEach((keyr) => {
-              if (keyr.key == input) {
-                 if (keyr.rank == "Premium") {
-                    window.location.href = premium.link;
-                 };
-                 if (keyr.rank == "Member") {
-                    window.location.href = premium.link;
-                 };
-                 if (keyr.rank == "Staff") {
-                    window.location.href = premium.link;
-                 };
-                 if (keyr.rank == "Owner") {
-                    window.location.href = premium.link;
+           if (localStorage.getItem("key")) {
+              var lockey = localStorage.getItem("key");
+              keys.forEach((keyw) => {
+                 if (keyw.key == lockey) {
+                    if (keyw.rank == "Premium") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyw.rank == "Member") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyw.rank == "Staff") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyw.rank == "Owner") {
+                       window.location.href = premium.link;
+                    };
+                 } else {
+                    alert("The key you have registered on your account doesn't exist.\nPlease change the key to another or just drop it.");
                  };
               };
-           });
+           } else {
+              let input = prompt("Please insert your id key.");
+              keys.forEach((keyr) => {
+                 if (keyr.key == input) {
+                    if (keyr.rank == "Premium") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyr.rank == "Member") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyr.rank == "Staff") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyr.rank == "Owner") {
+                       window.location.href = premium.link;
+                    };
+                 } else {
+                    alert("Sorry, that key doesn't exist");
+                 };
+              });
+           };
+        };
            inactivekeys.forEach((inkey) => {
               if (inkey.key == input) {
                  alert("Sorry this key has been deactivated.\nIf you think this was a mistake, please submit a report at:\nhttps://rebrand.ly/keysuspendrepeal");
@@ -89,20 +114,42 @@ function redirect(linkNumber) {
    });
    members.forEach((member) => {
       if (member.linkNum == linkNumber) {
-           let input = prompt("Please insert your id key.");
-           keys.forEach((keyr) => {
-              if (keyr.key == input) {
-                 if (keyr.rank == "Member") {
-                    window.location.href = member.link;
-                 };
-                 if (keyr.rank == "Staff") {
-                    window.location.href = member.link;
-                 };
-                 if (keyr.rank == "Owner") {
-                    window.location.href = member.link;
+           if (localStorage.getItem("key")) {
+              var lockey = localStorage.getItem("key");
+              keys.forEach((keyw) => {
+                 if (keyw.key == lockey) {
+                    if (keyw.rank == "Member") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyw.rank == "Staff") {
+                       window.location.href = premium.link;
+                    };
+                    if (keyw.rank == "Owner") {
+                       window.location.href = premium.link;
+                    };
+                 } else {
+                    alert("The key you have registered on your account doesn't exist.\nPlease change the key to another or just drop it.");
                  };
               };
-           });
+           } else {
+              let input = prompt("Please insert your id key.");
+              keys.forEach((keyr) => {
+                 if (keyr.key == input) {
+                    if (keyr.rank == "Member") {
+                       window.location.href = member.link;
+                    };
+                    if (keyr.rank == "Staff") {
+                       window.location.href = member.link;
+                    };
+                    if (keyr.rank == "Owner") {
+                       window.location.href = member.link;
+                    };
+                 } else {
+                    alert("Sorry, that key doesn't exist");
+                 };
+              });
+           };
+        };
            inactivekeys.forEach((inkey) => {
               if (inkey.key == input) {
                  alert("Sorry this key has been deactivated.\nIf you think this was a mistake, please submit a report at:\nhttps://rebrand.ly/keysuspendrepeal");
@@ -112,17 +159,36 @@ function redirect(linkNumber) {
    });
    staffs.forEach((staff) => {
         if (staff.linkNum == linkNumber) {
-           let input = prompt("Please insert your id key.");
-           keys.forEach((keyr) => {
-              if (keyr.key == input) {
-                 if (keyr.rank == "Staff") {
-                    window.location.href = staff.link;
-                 };
-                 if (keyr.rank == "Owner") {
-                    window.location.href = staff.link;
+           if (localStorage.getItem("key")) {
+              var lockey = localStorage.getItem("key");
+              keys.forEach((keyw) => {
+                 if (keyw.key == lockey) {
+                    if (keyw.rank == "Staff") {
+                       window.location.href = staff.link;
+                    };
+                    if (keyw.rank == "Owner") {
+                       window.location.href = staff.link;
+                    };
+                 } else {
+                    alert("The key you have registered on your account doesn't exist.\nPlease change the key to another or just drop it.");
                  };
               };
-           });
+           } else {
+              let input = prompt("Please insert your id key.");
+              keys.forEach((keyr) => {
+                 if (keyr.key == input) {
+                    if (keyr.rank == "Staff") {
+                       window.location.href = staff.link;
+                    };
+                    if (keyr.rank == "Owner") {
+                       window.location.href = staff.link;
+                    };
+                 } else {
+                    alert("Sorry, that key doesn't exist");
+                 };
+              });
+           };
+        };
            inactivekeys.forEach((inkey) => {
               if (inkey.key == input) {
                  alert("Sorry this key has been deactivated.\nIf you think this was a mistake, please submit a report at:\nhttps://rebrand.ly/keysuspendrepeal");
