@@ -196,4 +196,4 @@ function redirect(linkNumber) {
            });
         };
    });
-}
+};
