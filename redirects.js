@@ -67,10 +67,66 @@ const keys = [
                  window.location.href = service.link;
              };
              if (service.imgSrc == "pictures/GreenWeb.png") {
-                 
+                 if (localStorage.getItem("key") != " ") {
+                     keys.forEach((key) => {
+                         if (localStorage.getItem("key") == key.key) {
+                             if (key.rank == "Premium") or (key.rank == "Member") or (key.rank == "Staff") or (key.rank == "Owner") {
+                                 window.location.href = service.link;
+                             };
+                         } else {
+                             inactiveKeys.forEach((inkey) => {
+                                 if (localStorage.getItem("key") == inkey.key) {
+                                     alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inlinkrepeal");
+                                 };
+                             });
+                         };
+                     });
+                 } else {
+                     let input = prompt("Please type in your id key.");
+                     keys.forEach((key) => {
+                         if (key.key == input) {
+                             if (key.rank == "Premium") or (key.rank == "Member") or (key.rank == "Staff") or (key.rank == "Owner") {
+                                 window.location.href = service.link;
+                             };
+                         };
+                     });
+                     inactiveKeys.forEach((inkey) => {
+                         if (input == inkey.key) {
+                             alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inlinkrepeal");
+                         };
+                     });
+                 };
              };
              if (service.imgSrc == "pictures/RedBadge.png") {
-                 
+                 if (localStorage.getItem("key") != " ") {
+                     keys.forEach((key) => {
+                         if (localStorage.getItem("key") == key.key) {
+                             if (key.rank == "Staff") or (key.rank == "Owner") {
+                                 window.location.href = service.link;
+                             };
+                         } else {
+                             inactiveKeys.forEach((inkey) => {
+                                 if (localStorage.getItem("key") == inkey.key) {
+                                     alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inlinkrepeal");
+                                 };
+                             });
+                         };
+                     });
+                 } else {
+                     let input = prompt("Please type in your id key.");
+                     keys.forEach((key) => {
+                         if (key.key == input) {
+                             if (key.rank == "Staff") or (key.rank == "Owner") {
+                                 window.location.href = service.link;
+                             };
+                         };
+                     });
+                     inactiveKeys.forEach((inkey) => {
+                         if (input == inkey.key) {
+                             alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inlinkrepeal");
+                         };
+                     });
+                 };
              };
              if (service.imgSrc == "pictures/StaffLink.png") {
                  if (localStorage.getItem("key") != " ") {
