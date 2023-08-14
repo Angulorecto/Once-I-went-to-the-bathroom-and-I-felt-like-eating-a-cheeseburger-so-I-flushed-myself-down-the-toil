@@ -101,7 +101,7 @@ const keys = [
                  if (localStorage.getItem("key") != " ") {
                      keys.forEach((key) => {
                          if (localStorage.getItem("key") == key.key) {
-                             if (key.rank == "Staff") or (key.rank == "Owner") {
+                             if (key.rank == "Member") or (key.rank == "Staff") or (key.rank == "Owner") {
                                  window.location.href = service.link;
                              };
                          } else {
@@ -116,7 +116,7 @@ const keys = [
                      let input = prompt("Please type in your id key.");
                      keys.forEach((key) => {
                          if (key.key == input) {
-                             if (key.rank == "Staff") or (key.rank == "Owner") {
+                             if (key.rank == "Member") or (key.rank == "Staff") or (key.rank == "Owner") {
                                  window.location.href = service.link;
                              };
                          };
