@@ -55,6 +55,118 @@ const pages = [
    { linkNum: "0.4", link: "staffLinks.html" },
 ];
 
+function setupPublic() {
+   services.forEach((service) => {
+        if (service.imgSrc == "BlueInLinkBadge.png") {
+          var div = document.createElement('div');
+          div.setAttribute("class", "link");
+          var x = document.createElement('img');
+          x.setAttribute("src", service.imgSrc);
+          x.setAttribute("width", "100");
+          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
+          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
+          
+          div.appendChild(x);
+          
+          var y = document.createElement('p');
+          y.innerText = service.serviceName;
+          y.setAttribute("class", service.pClass);
+          y.setAttribute("align", "center");
+          
+          div.appendChild(y);
+          
+          document.getElementById("row1").appendChild(div);
+        }
+      });
+};
+
+function setupPremium() {
+   services.forEach((service) => {
+        if (service.imgSrc == "GreenWeb.png") {
+          var div = document.createElement('div');
+          div.setAttribute("class", "link");
+          var x = document.createElement('img');
+          x.setAttribute("src", service.imgSrc);
+          x.setAttribute("width", "100");
+          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
+          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
+          
+          div.appendChild(x);
+          
+          var y = document.createElement('p');
+          y.innerText = service.serviceName;
+          y.setAttribute("class", service.pClass);
+          y.setAttribute("align", "center");
+          
+          div.appendChild(y);
+          
+          document.getElementById("row1").appendChild(div);
+        }
+      });
+};
+
+function setupMember() {
+   services.forEach((service) => {
+        if (service.imgSrc == "RedBadge.png") {
+          var div = document.createElement('div');
+          div.setAttribute("class", "link");
+          var x = document.createElement('img');
+          x.setAttribute("src", service.imgSrc);
+          x.setAttribute("width", "100");
+          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
+          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
+          
+          div.appendChild(x);
+          
+          var y = document.createElement('p');
+          y.innerText = service.serviceName;
+          y.setAttribute("class", service.pClass);
+          y.setAttribute("align", "center");
+          
+          div.appendChild(y);
+          
+          document.getElementById("row1").appendChild(div);
+        }
+      });
+};
+
+function setupStaff() {
+   services.forEach((service) => {
+        if (service.imgSrc == "StaffLink.png") {
+          var div = document.createElement('div');
+          div.setAttribute("class", "link");
+          var x = document.createElement('img');
+          x.setAttribute("src", service.imgSrc);
+          x.setAttribute("width", "100");
+          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
+          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
+          
+          div.appendChild(x);
+          
+          var y = document.createElement('p');
+          y.innerText = service.serviceName;
+          y.setAttribute("class", service.pClass);
+          y.setAttribute("align", "center");
+          
+          div.appendChild(y);
+          
+          document.getElementById("row1").appendChild(div);
+        }
+      });
+};
+
 function redirect(num) {
     pages.forEach((page) => {
         if (num == page.linkNum) {
