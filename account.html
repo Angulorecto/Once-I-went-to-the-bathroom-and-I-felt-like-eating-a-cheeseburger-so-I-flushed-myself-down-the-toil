@@ -20,29 +20,14 @@ img {
     <div style="background-color:rgb(33,38,45);">
       <p class="whiteRight">Key:</p>
       <p class="whiteRight" id="key1"></p>
-      <button style="background-color:rgb(255,30,30); border-radius:15px;" onClick="delkey() class="blackRight">Drop</button>
       <p class="whiteRight">Username:</p>
-      <p class="whiteRight" id="username1"></p>
-      <form onSubmit="rename()">
-        <input type="text" id="username" placeholder="New Username">
-        <input type="submit" class="blackRight" style="border-radius:15px; background-color:rgb(30,255,30);">
-      </form>
+      <p class="whiteRight" id="username1"></p><br><br><br>
+      <p class="whiteRight">Want to delete your key?</p><br>
+      <p class="whiteRight">Easy! Just go back to the registry form, fill in your username and press submit.</p>
     </div>
     <script>
       var key = localStorage.getItem("key") || "No key";
       var username = localStorage.getItem("username") || "No name";
-      let name = document.getElementById("name");
-      function delkey() {
-        localStorage.removeItem("key");
-        alert("Key cleared.");
-        window.href = "account.html";
-      };
-      function rename() {
-        localStorage.removeItem("username");
-        localStorage.setItem("username", name.value);
-        alert("Renamed!");
-        window.href = "account.html";
-      };
       var keyarea = document.getElementById("key1");
       var userarea = document.getElementById("username1");
       userarea.innerHTML = username;
