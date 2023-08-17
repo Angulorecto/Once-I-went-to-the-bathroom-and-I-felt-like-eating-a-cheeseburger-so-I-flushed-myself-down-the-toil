@@ -57,7 +57,7 @@ const pages = [
 
 function setupPublic() {
    services.forEach((service) => {
-        if (service.imgSrc == "BlueInLinkBadge.png") {
+        if (service.imgSrc == "pictures/BlueInLinkBadge.png") {
           var div = document.createElement('div');
           div.setAttribute("class", "link");
           var x = document.createElement('img');
@@ -85,7 +85,7 @@ function setupPublic() {
 
 function setupPremium() {
    services.forEach((service) => {
-        if (service.imgSrc == "GreenWeb.png") {
+        if (service.imgSrc == "pictures/GreenWeb.png") {
           var div = document.createElement('div');
           div.setAttribute("class", "link");
           var x = document.createElement('img');
@@ -113,7 +113,7 @@ function setupPremium() {
 
 function setupMember() {
    services.forEach((service) => {
-        if (service.imgSrc == "RedBadge.png") {
+        if (service.imgSrc == "pictures/RedBadge.png") {
           var div = document.createElement('div');
           div.setAttribute("class", "link");
           var x = document.createElement('img');
@@ -141,7 +141,7 @@ function setupMember() {
 
 function setupStaff() {
    services.forEach((service) => {
-        if (service.imgSrc == "StaffLink.png") {
+        if (service.imgSrc == "pictures/StaffLink.png") {
           var div = document.createElement('div');
           div.setAttribute("class", "link");
           var x = document.createElement('img');
