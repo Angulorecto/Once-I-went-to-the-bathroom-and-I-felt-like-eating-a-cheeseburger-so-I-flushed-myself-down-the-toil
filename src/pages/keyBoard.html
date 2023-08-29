@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <title id="title">Keys</title>
+  <head>
+    <link rel="stylesheet" href="righty-font/righty-stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="kings/kings-stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="demon/demon-stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="easyFonts.css" type="text/css" charset="utf-8"/>
+  </head>
+  <link rel="icon" type="image/x-icon" href="pictures/InLinkBadge.png">
+  <a class='whiteRight' style="text-decoration:none; font-size: 15px; color: white;" href="home.html"> < Back </a>
+  <body style="background-color:black;">
+    <div id="keys">
+      <div id="active">
+        <div style="background-color:green; border-radius:15px;">
+          <p align="center" class="whiteRight">Active Keys</p>
+        </div>
+      </div>
+      <div id="inactive">
+        <div style="background-color:red; border-radius:15px;">
+          <p align="center" class="blackRight">Inactive Keys</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      #keys {
+        width: 300px;
+        height: 490px;
+      }
+      .key {
+        width: 160px;
+      }
+    </style>
+    <script src="redirects.js"></script>
+    <script>
+      keys.forEach((inkey) => {
+        var k = document.createElement('div');
+        k.setAttribute("align","center");
+        k.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
+        k.setAttribute("class","key");
+        document.getElementById("active").appendChild(k);
+        var e = document.createElement('p');
+        e.innerText = inkey.name;
+        e.setAttribute("class","whiteRight");
+        var w = document.createElement('p');
+        w.innerText = inkey.key;
+        w.setAttribute("class","greenRight");
+        var disc = document.createElement('button');
+        disc.innerHTML = "Disable";
+        disc.setAttribute("class","blackRight");
+        disc.setAttribute("style","border-radius:15px; background-color:rgb(255,0,0)");
+        disc.setAttribute("onclick","");
+        k.appendChild(e);
+        k.appendChild(w);
+        k.appendChild(disc);
+      });
+      inactivekeys.forEach((inkey) => {
+        var y = document.createElement('div');
+        y.setAttribute("align","center");
+        y.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
+        y.setAttribute("class","key");
+        document.getElementById("inactive").appendChild(y);
+        var s = document.createElement('p');
+        s.innerText = inkey.name;
+        s.setAttribute("class","whiteRight");
+        var r = document.createElement('p');
+        r.innerText = inkey.key;
+        r.setAttribute("class","redRight");
+        var dis = document.createElement('button');
+        dis.innerHTML = "Enable";
+        dis.setAttribute("class","blackRight");
+        dis.setAttribute("style","border-radius:15px; background-color:rgb(0,255,0)");
+        dis.setAttribute("onclick","");
+        y.appendChild(s);
+        y.appendChild(r);
+        y.appendChild(dis);
+      });
+    </script>
+  </body>
+</html>
