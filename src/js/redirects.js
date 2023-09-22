@@ -188,7 +188,7 @@ function setupAcKeys() {
         k.appendChild(e);
         k.appendChild(w);
         k.appendChild(disc);
-        body.appendChild(k);
+        document.body.appendChild(k);
       });
 };
 
@@ -213,7 +213,7 @@ function setupInKeys() {
         y.appendChild(s);
         y.appendChild(r);
         y.appendChild(dis);
-        body.appendChild(k);
+        document.body.appendChild(k);
       });
 };
 
