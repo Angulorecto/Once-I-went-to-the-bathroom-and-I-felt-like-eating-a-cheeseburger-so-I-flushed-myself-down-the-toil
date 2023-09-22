@@ -167,6 +167,30 @@ function setupStaff() {
       });
 };
 
+function setupInKeys() {
+   keys.forEach((inkey) => {
+        var k = document.createElement('div');
+        k.setAttribute("align","center");
+        k.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
+        k.setAttribute("class","key");
+        document.getElementById("active").appendChild(k);
+        var e = document.createElement('p');
+        e.innerText = inkey.name;
+        e.setAttribute("class","whiteRight");
+        var w = document.createElement('p');
+        w.innerText = inkey.key;
+        w.setAttribute("class","greenRight");
+        var disc = document.createElement('button');
+        disc.innerHTML = "Disable";
+        disc.setAttribute("class","blackRight");
+        disc.setAttribute("style","border-radius:15px; background-color:rgb(255,0,0)");
+        disc.setAttribute("onclick","");
+        k.appendChild(e);
+        k.appendChild(w);
+        k.appendChild(disc);
+      });
+};
+
 function redirect(num) {
     pages.forEach((page) => {
         if (num == page.linkNum) {
