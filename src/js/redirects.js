@@ -167,7 +167,7 @@ function setupStaff() {
       });
 };
 
-function setupInKeys() {
+function setupAcKeys() {
    keys.forEach((inkey) => {
         var k = document.createElement('div');
         k.setAttribute("align","center");
@@ -188,6 +188,30 @@ function setupInKeys() {
         k.appendChild(e);
         k.appendChild(w);
         k.appendChild(disc);
+      });
+};
+
+function setupInKeys() {
+   inactivekeys.forEach((inkey) => {
+        var y = document.createElement('div');
+        y.setAttribute("align","center");
+        y.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
+        y.setAttribute("class","key");
+        document.getElementById("inactive").appendChild(y);
+        var s = document.createElement('p');
+        s.innerText = inkey.name;
+        s.setAttribute("class","whiteRight");
+        var r = document.createElement('p');
+        r.innerText = inkey.key;
+        r.setAttribute("class","redRight");
+        var dis = document.createElement('button');
+        dis.innerHTML = "Enable";
+        dis.setAttribute("class","blackRight");
+        dis.setAttribute("style","border-radius:15px; background-color:rgb(0,255,0)");
+        dis.setAttribute("onclick","");
+        y.appendChild(s);
+        y.appendChild(r);
+        y.appendChild(dis);
       });
 };
 
