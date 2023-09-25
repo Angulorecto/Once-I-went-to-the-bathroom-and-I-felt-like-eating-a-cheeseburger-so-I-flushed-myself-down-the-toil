@@ -217,10 +217,6 @@ function setupInKeys() {
       });
 };
 
-function decode() {
-   
-};
-
 function redirect(num) {
     pages.forEach((page) => {
         if (num == page.linkNum) {
