@@ -1,7 +1,8 @@
 const CryptoJS = require("crypto-js");
 function decode() {
   var link = localStorage.getItem("hash");
-  var key = "";
-  const step1 = CryptoJS.AES.decrypt(link, key);
-  var step2 = atob();
+  var step2 = atob(link);
+  var step3 = atob(link);
+  var step4 = atob(link);
+  var step5 = atob(link);
 }
