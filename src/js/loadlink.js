@@ -1,7 +1,6 @@
-function decode() {
-  var link = localStorage.getItem("hash");
-  var step2 = atob(link);
-  var step3 = atob(link);
-  var step4 = atob(link);
-  var step5 = atob(link);
+function decode(link) {
+  var step1 = atob(link);
+  var step2 = atob(step1);
+  var step3 = atob(step2);
+  var step4 = atob(step3);
 }
