@@ -1,4 +1,3 @@
-const CryptoJS = require("crypto-js");
 function decode() {
   var link = localStorage.getItem("hash");
   var step2 = atob(link);
