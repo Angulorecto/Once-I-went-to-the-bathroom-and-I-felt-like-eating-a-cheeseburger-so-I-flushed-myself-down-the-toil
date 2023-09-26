@@ -8,62 +8,62 @@ const inactivekeys = [
    { rank: "Premium", name: "Inactive", key: "Inactive" },
 ];
 const services = [
-       { serviceNum: "1", link: "../../redirects/redirect1.html", rank: "staff"},
-       { serviceNum: "2", link: "../../redirects/redirect2.html", rank : "public"},
-       { serviceNum: "3", link: "../../redirects/redirect3.html", rank : "premium"},
-       { serviceNum: "4", link: "../../redirects/redirect4.html", rank : "member"},
-       { serviceNum: "5", link: "../../redirects/redirect5.html", rank : "staff"},
-       { serviceNum: "6", link: "../../redirects/redirect6.html", rank : "public"},
-       { serviceNum: "7", link: "../../redirects/redirect7.html", rank : "premium"},
-       { serviceNum: "8", link: "../../redirects/redirect8.html", rank : "member"},
-       { serviceNum: "9", link: "../../redirects/redirect9.html", rank : "staff"},
-       { serviceNum: "10", link: "../../redirects/redirect10.html", rank : "public"},
-       { serviceNum: "11", link: "../../redirects/redirect11.html", rank : "premium"},
-       { serviceNum: "12", link: "../../redirects/redirect12.html", rank : "member"},
-       { serviceNum: "13", link: "../../redirects/redirect13.html", rank : "staff"},
-       { serviceNum: "14", link: "../../redirects/redirect14.html", rank : "public"},
-       { serviceNum: "15", link: "../../redirects/redirect15.html", rank : "premium"},
-       { serviceNum: "16", link: "../../redirects/redirect16.html", rank : "member"},
-       { serviceNum: "17", link: "../../redirects/redirect17.html", rank : "staff"},
-       { serviceNum: "18", link: "../../redirects/redirect18.html", rank : "public"},
-       { serviceNum: "19", link: "../../redirects/redirect19.html", rank : "premium"},
-       { serviceNum: "20", link: "../../redirects/redirect20.html", rank : "member"},
-       { serviceNum: "21", link: "../../redirects/redirect21.html", rank : "staff"},
-       { serviceNum: "22", link: "../../redirects/redirect22.html", rank : "public"},
-       { serviceNum: "23", link: "../../redirects/redirect23.html", rank : "premium"},
-       { serviceNum: "24", link: "../../redirects/redirect24.html", rank : "member"},
-       { serviceNum: "25", link: "../../redirects/redirect25.html", rank : "staff"},
-       { serviceNum: "26", link: "../../redirects/redirect26.html", rank : "public"},
-       { serviceNum: "27", link: "../../redirects/redirect27.html", rank : "premium"},
-       { serviceNum: "28", link: "../../redirects/redirect28.html", rank : "member"},
-       { serviceNum: "29", link: "../../redirects/redirect29.html", rank : "staff"},
-       { serviceNum: "30", link: "../../redirects/redirect30.html", rank : "public"},
-       { serviceNum: "31", link: "../../redirects/redirect31.html", rank : "premium"},
-       { serviceNum: "32", link: "../../redirects/redirect32.html", rank : "member"},
-       { serviceNum: "33", link: "../../redirects/redirect33.html", rank : "staff"},
-       { serviceNum: "34", link: "../../redirects/redirect34.html", rank : "public"},
-       { serviceNum: "35", link: "../../redirects/redirect35.html", rank : "premium"},
-       { serviceNum: "36", link: "../../redirects/redirect36.html", rank : "member"},
-       { serviceNum: "37", link: "../../redirects/redirect37.html", rank : "staff"},
-       { serviceNum: "38", link: "../../redirects/redirect38.html", rank : "public"},
-       { serviceNum: "39", link: "../../redirects/redirect39.html", rank : "premium"}
+       { serviceNum: "1", hash: "", rank: "staff"},
+       { serviceNum: "2", hash: "", rank : "public"},
+       { serviceNum: "3", hash: "", rank : "premium"},
+       { serviceNum: "4", hash: "", rank : "member"},
+       { serviceNum: "5", hash: "", rank : "staff"},
+       { serviceNum: "6", hash: "", rank : "public"},
+       { serviceNum: "7", hash: "", rank : "premium"},
+       { serviceNum: "8", hash: "", rank : "member"},
+       { serviceNum: "9", hash: "", rank : "staff"},
+       { serviceNum: "10", hash: "", rank : "public"},
+       { serviceNum: "11", hash: "", rank : "premium"},
+       { serviceNum: "12", hash: "", rank : "member"},
+       { serviceNum: "13", hash: "", rank : "staff"},
+       { serviceNum: "14", hash: "", rank : "public"},
+       { serviceNum: "15", hash: "", rank : "premium"},
+       { serviceNum: "16", hash: "", rank : "member"},
+       { serviceNum: "17", hash: "", rank : "staff"},
+       { serviceNum: "18", hash: "", rank : "public"},
+       { serviceNum: "19", hash: "", rank : "premium"},
+       { serviceNum: "20", hash: "", rank : "member"},
+       { serviceNum: "21", hash: "", rank : "staff"},
+       { serviceNum: "22", hash: "", rank : "public"},
+       { serviceNum: "23", hash: "", rank : "premium"},
+       { serviceNum: "24", hash: "", rank : "member"},
+       { serviceNum: "25", hash: "", rank : "staff"},
+       { serviceNum: "26", hash: "", rank : "public"},
+       { serviceNum: "27", hash: "", rank : "premium"},
+       { serviceNum: "28", hash: "", rank : "member"},
+       { serviceNum: "29", hash: "", rank : "staff"},
+       { serviceNum: "30", hash: "", rank : "public"},
+       { serviceNum: "31", hash: "", rank : "premium"},
+       { serviceNum: "32", hash: "", rank : "member"},
+       { serviceNum: "33", hash: "", rank : "staff"},
+       { serviceNum: "34", hash: "", rank : "public"},
+       { serviceNum: "35", hash: "", rank : "premium"},
+       { serviceNum: "36", hash: "", rank : "member"},
+       { serviceNum: "37", hash: "", rank : "staff"},
+       { serviceNum: "38", hash: "", rank : "public"},
+       { serviceNum: "39", hash: "", rank : "premium"}
 ];
 const pages = [
-   { linkNum: "0.1", link: "publicLinks.html" },
-   { linkNum: "0.2", link: "premiumLinks.html" },
-   { linkNum: "0.3", link: "memberLinks.html" },
-   { linkNum: "0.4", link: "staffLinks.html" },
+   { hashNum: "0.1", hash: "publichashs" },
+   { hashNum: "0.2", hash: "premiumhashs" },
+   { hashNum: "0.3", hash: "memberhashs" },
+   { hashNum: "0.4", hash: "staffhashs" },
 ];
 
 function setupPublic() {
    services.forEach((service) => {
         if (service.rank == "public") {
           var div = document.createElement('div');
-          div.setAttribute("class", "link");
+          div.setAttribute("class", "hash");
           var x = document.createElement('img');
-          x.setAttribute("src", "../photos/BlueInLinkBadge.png");
+          x.setAttribute("src", "../photos/BlueInhashBadge.png");
           x.setAttribute("width", "100");
-          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
           x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
@@ -87,11 +87,11 @@ function setupPremium() {
    services.forEach((service) => {
         if (service.rank == "premium") {
           var div = document.createElement('div');
-          div.setAttribute("class", "link");
+          div.setAttribute("class", "hash");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/GreenWeb.png");
           x.setAttribute("width", "100");
-          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
           x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
@@ -115,11 +115,11 @@ function setupMember() {
    services.forEach((service) => {
         if (service.rank == "member") {
           var div = document.createElement('div');
-          div.setAttribute("class", "link");
+          div.setAttribute("class", "hash");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/RedBadge.png");
           x.setAttribute("width", "100");
-          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
           x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
@@ -143,11 +143,11 @@ function setupStaff() {
    services.forEach((service) => {
         if (service.rank == "staff") {
           var div = document.createElement('div');
-          div.setAttribute("class", "link");
+          div.setAttribute("class", "hash");
           var x = document.createElement('img');
-          x.setAttribute("src", "../photos/StaffLink.png");
+          x.setAttribute("src", "../photos/Staffhash.png");
           x.setAttribute("width", "100");
-          x.setAttribute("alt", "IntLinkBadge");
+          x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
           x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
@@ -219,34 +219,34 @@ function setupInKeys() {
 
 function redirect(num) {
     pages.forEach((page) => {
-        if (num == page.linkNum) {
-            window.location.href = page.link;
+        if (num == page.hashNum) {
+            window.location.href = page.hash;
         };
     });
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
-                window.location.href = service.link;
+                window.location.href = service.hash;
             };
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != " ") {
                     keys.forEach((key) => {
                         if (localStorage.getItem("key") == key.key) {
                             if (key.rank == "Premium") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else if (key.rank == "Member") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else if (key.rank == "Staff") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else if (key.rank == "Owner") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         } else {
                             inactiveKeys.forEach((inkey) => {
                                 if (localStorage.getItem("key") == inkey.key) {
-                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inlinkrepeal");
+                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
                                 };
                             });
                         };
@@ -256,13 +256,13 @@ function redirect(num) {
                     keys.forEach((key) => {
                         if (key.key == input) {
                            if (key.rank == "Premium") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else if (key.rank == "Member") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else if (key.rank == "Staff") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else if (key.rank == "Owner") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
@@ -270,7 +270,7 @@ function redirect(num) {
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inlinkrepeal");
+                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
                         };
                     });
                 };
@@ -280,18 +280,18 @@ function redirect(num) {
                     keys.forEach((key) => {
                         if (localStorage.getItem("key") == key.key) {
                            if (key.rank == "Member") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else if (key.rank == "Staff") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else if (key.rank == "Owner") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         } else {
                             inactiveKeys.forEach((inkey) => {
                                 if (localStorage.getItem("key") == inkey.key) {
-                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inlinkrepeal");
+                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
                                 };
                             });
                         };
@@ -301,11 +301,11 @@ function redirect(num) {
                     keys.forEach((key) => {
                         if (key.key == input) {
                             if (key.rank == "Member") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else if (key.rank == "Staff") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else if (key.rank == "Owner") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
@@ -313,26 +313,26 @@ function redirect(num) {
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inlinkrepeal");
+                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
                         };
                     });
                 };
             };
-            if (service.imgSrc == "pictures/StaffLink.png") {
+            if (service.imgSrc == "pictures/Staffhash.png") {
                 if (localStorage.getItem("key") != " ") {
                     keys.forEach((key) => {
                         if (localStorage.getItem("key") == key.key) {
                            if (key.rank == "Staff") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else if (key.rank == "Owner") {
-                              window.location.href = service.link;
+                              window.location.href = service.hash;
                            } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         } else {
                             inactiveKeys.forEach((inkey) => {
                                 if (localStorage.getItem("key") == inkey.key) {
-                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inlinkrepeal");
+                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
                                 };
                             });
                         };
@@ -342,9 +342,9 @@ function redirect(num) {
                     keys.forEach((key) => {
                         if (key.key == input) {
                             if (key.rank == "Staff") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else if (key.rank == "Owner") {
-                                window.location.href = service.link;
+                                window.location.href = service.hash;
                             } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
@@ -352,7 +352,7 @@ function redirect(num) {
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inlinkrepeal");
+                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
                         };
                     });
                 };
