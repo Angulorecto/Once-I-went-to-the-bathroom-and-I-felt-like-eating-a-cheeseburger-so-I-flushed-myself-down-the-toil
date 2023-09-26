@@ -2,10 +2,18 @@
   <head>
     <title>Encode</title>
     <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
-    <script src="../js/code.js"></script>
   </head>
   <body style="background-color:black;">
-    <form onsubmit="encode();">
+    <script>
+      function encode() {
+        var text = document.getElementById("item").value;
+        var step1 = btoa(text);
+        var step2 = btoa(step1);
+        var step3 = btoa(step2);
+        var step4 = btoa(step3);
+      }
+    </script>
+    <form onsubmit="encode()">
       <input id="item" class="whiteRight" type="url">
     </form><br>
     <p class="whiteRight" id="output"></p>
