@@ -3,6 +3,8 @@ const keys = [
    { rank: "Owner", name: "Ethan", key: "Icy13" },
    { rank: "Staff", name: "Matthew", key: "Math01" },
    { rank: "Member", name: "Test", key: "Member" },
+   { rank: "Staff", name: "Caleb", key: "Calo" },
+   { rank: "Staff", name: "BJ", key: "Bejota" },
 ];
 const inactivekeys = [
    { rank: "Premium", name: "Inactive", key: "Inactive" },
