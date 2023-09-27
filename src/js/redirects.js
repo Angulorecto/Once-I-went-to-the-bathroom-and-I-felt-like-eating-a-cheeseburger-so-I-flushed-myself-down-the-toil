@@ -232,6 +232,7 @@ function load(num) {
    services.forEach((service) => {
       if (num == service.serviceNum) {
          localStorage.setItem("link", service.serviceNum);
+         localStorage.setItem("hash", service.hash);
       }
    });
    window.location.href = "load.html";
