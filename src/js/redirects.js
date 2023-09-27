@@ -231,7 +231,7 @@ function decode(link) {
 function storeNum(num) {
    services.forEach((service) => {
       if (num == service.serviceNum) {
-         localStorage.setItem("link", service.serviceNum)
+         localStorage.setItem("link", service.serviceNum);
       }
    });
 }
