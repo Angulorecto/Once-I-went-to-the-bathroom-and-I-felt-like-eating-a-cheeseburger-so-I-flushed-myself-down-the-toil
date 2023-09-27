@@ -219,19 +219,24 @@ function setupInKeys() {
       });
 };
 
-function decode(link) {
-  var step1 = atob(link);
-  var step2 = atob(step1);
-  var step3 = atob(step2);
-  var step4 = atob(step3);
-  var iframe = document.getElementById("iframe");
-  iframe.src = step4;
-}
-
 function load(num) {
    services.forEach((service) => {
       if (num == service.serviceNum) {
-         localStorage.setItem("hash", service.hash);
+         if (service.rank == "public") {
+            localStorage.setItem("hash", service.hash);
+         } else if (service.rank == "premium") {
+            if (localStorage.getItem("key") != "") {
+               keys.forEach((key) => {
+                  if (localStorage.getItem("key") == key.key) {
+                     
+                  }
+               });
+            }
+         } else if (service.rank == "member") {
+            
+         } else {
+            
+         }
       }
    });
    window.location.href = "load.html";
