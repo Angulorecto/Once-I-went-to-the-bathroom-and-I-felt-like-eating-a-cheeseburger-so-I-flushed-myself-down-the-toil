@@ -51,10 +51,10 @@ const services = [
        { serviceNum: "39", hash: "", rank : "premium"}
 ];
 const pages = [
-   { hashNum: "0.1", hash: "publichashs" },
-   { hashNum: "0.2", hash: "premiumhashs" },
-   { hashNum: "0.3", hash: "memberhashs" },
-   { hashNum: "0.4", hash: "staffhashs" },
+   { hashNum: "0.1", hash: "publicLinks.html" },
+   { hashNum: "0.2", hash: "premiumLinks.html" },
+   { hashNum: "0.3", hash: "memberLinks.html" },
+   { hashNum: "0.4", hash: "staffLinks.html" },
 ];
 
 function setupPublic() {
@@ -221,6 +221,44 @@ function setupInKeys() {
 
 function redirect(num) {
     pages.forEach((page) => {
+       if (num == page.hashNum) {
+                if (localStorage.getItem("key") != " ") {
+                    keys.forEach((key) => {
+                        if (localStorage.getItem("key") == key.key) {
+                           if (key.rank == "Staff") {
+                              window.location.href = service.hash;
+                           } else if (key.rank == "Owner") {
+                              window.location.href = service.hash;
+                           } else {
+                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
+                            };
+                        } else {
+                            inactiveKeys.forEach((inkey) => {
+                                if (localStorage.getItem("key") == inkey.key) {
+                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
+                                };
+                            });
+                        };
+                    });
+                } else {
+                    let input = prompt("Please type in your id key.");
+                    keys.forEach((key) => {
+                        if (key.key == input) {
+                            if (key.rank == "Staff") {
+                                window.location.href = service.hash;
+                            } else if (key.rank == "Owner") {
+                                window.location.href = service.hash;
+                            } else {
+                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
+                            };
+                        };
+                    });
+                    inactiveKeys.forEach((inkey) => {
+                        if (input == inkey.key) {
+                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
+                        };
+                    });
+                };
         if (num == page.hashNum) {
             window.location.href = page.hash;
         };
