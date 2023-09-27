@@ -222,51 +222,13 @@ function setupInKeys() {
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.hashNum) {
-                if (localStorage.getItem("key") != " ") {
-                    keys.forEach((key) => {
-                        if (localStorage.getItem("key") == key.key) {
-                           if (key.rank == "Staff") {
-                              window.location.href = service.hash;
-                           } else if (key.rank == "Owner") {
-                              window.location.href = service.hash;
-                           } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
-                            };
-                        } else {
-                            inactiveKeys.forEach((inkey) => {
-                                if (localStorage.getItem("key") == inkey.key) {
-                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
-                                };
-                            });
-                        };
-                    });
-                } else {
-                    let input = prompt("Please type in your id key.");
-                    keys.forEach((key) => {
-                        if (key.key == input) {
-                            if (key.rank == "Staff") {
-                                window.location.href = service.hash;
-                            } else if (key.rank == "Owner") {
-                                window.location.href = service.hash;
-                            } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
-                            };
-                        };
-                    });
-                    inactiveKeys.forEach((inkey) => {
-                        if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
-                        };
-                    });
-                };
-        if (num == page.hashNum) {
             window.location.href = page.hash;
         };
     });
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
-                window.location.href = service.hash;
+                decode(service.hash);
             };
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != " ") {
