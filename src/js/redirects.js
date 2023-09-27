@@ -228,12 +228,13 @@ function decode(link) {
   iframe.src = step4;
 }
 
-function storeNum(num) {
+function load(num) {
    services.forEach((service) => {
       if (num == service.serviceNum) {
          localStorage.setItem("link", service.serviceNum);
       }
    });
+   window.location.href = "load.html";
 }
 
 function redirect(num) {
