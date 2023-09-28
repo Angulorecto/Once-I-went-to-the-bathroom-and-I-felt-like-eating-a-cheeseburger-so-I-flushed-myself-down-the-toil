@@ -58,6 +58,11 @@ const pages = [
 ];
 
 function load(num) {
+   pages.forEach((page) => {
+      if (num == page.hashNum) {
+         window.location.href = page.hash;
+      }
+   });
    services.forEach((service) => {
       if (num == service.serviceNum) {
          if (service.rank == "public") {
