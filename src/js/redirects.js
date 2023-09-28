@@ -224,30 +224,133 @@ function load(num) {
       if (num == service.serviceNum) {
          if (service.rank == "public") {
             localStorage.setItem("hash", service.hash);
+            window.location.href = "load.html";
          } else if (service.rank == "premium") {
             if (localStorage.getItem("key") != "") {
                keys.forEach((key) => {
                   if (localStorage.getItem("key") == key.key) {
-                     if (key.rank == "premium") {
-                        
-                     } else if (key.rank == "member") {
-                        
-                     } else if (key.rank == "staff") {
-                        
+                     if (key.rank == "Premium") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Member") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Staff") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Owner") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
                      } else {
                         alert("The key on your account isn't the correct rank to use this link.");
                      }
+                  } else {
+                     alert("The key on your account doesn't exist.");
+                  }
+               });
+            } else {
+               let prompt = prompt("Please enter you id key:");
+               keys.forEach((key) => {
+                  if (prompt == key.key) {
+                     if (key.rank == "Premium") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Member") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Staff") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Owner") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else {
+                        alert("The key on your account isn't the correct rank to use this link.");
+                     }
+                  } else {
+                     alert("You're using a key doesn't exist.");
                   }
                });
             }
          } else if (service.rank == "member") {
-            
+            if (localStorage.getItem("key") != "") {
+               keys.forEach((key) => {
+                  if (localStorage.getItem("key") == key.key) {
+                     if (key.rank == "Member") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Staff") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Owner") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else {
+                        alert("The key on your account isn't the correct rank to use this link.");
+                     }
+                  } else {
+                     alert("The key on your account doesn't exist.");
+                  }
+               });
+            } else {
+               let prompt = prompt("Please enter you id key:");
+               keys.forEach((key) => {
+                  if (prompt == key.key) {
+                     if (key.rank == "Member") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Staff") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Owner") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else {
+                        alert("The key on your account isn't the correct rank to use this link.");
+                     }
+                  } else {
+                     alert("You're using a key doesn't exist.");
+                  }
+               });
+            }
          } else {
-            
+            if (localStorage.getItem("key") != "") {
+               keys.forEach((key) => {
+                  if (localStorage.getItem("key") == key.key) {
+                     if (key.rank == "Staff") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Owner") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else {
+                        alert("The key on your account isn't the correct rank to use this link.");
+                     }
+                  } else {
+                     alert("The key on your account doesn't exist.");
+                  }
+               });
+            } else {
+               let prompt = prompt("Please enter you id key:");
+               keys.forEach((key) => {
+                  if (prompt == key.key) {
+                     if (key.rank == "Staff") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else if (key.rank == "Owner") {
+                        localStorage.setItem("hash", service.hash);
+                        window.location.href = "load.html";
+                     } else {
+                        alert("The key on your account isn't the correct rank to use this link.");
+                     }
+                  } else {
+                     alert("You're using a key doesn't exist.");
+                  }
+               });
+            }
          }
       }
    });
-   window.location.href = "load.html";
 }
 
 function redirect(num) {
