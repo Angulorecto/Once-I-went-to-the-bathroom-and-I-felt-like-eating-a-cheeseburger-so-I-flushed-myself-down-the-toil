@@ -50,19 +50,8 @@ const services = [
        { serviceNum: "38", hash: "", rank : "public"},
        { serviceNum: "39", hash: "", rank : "premium"}
 ];
-const pages = [
-   { hashNum: "0.1", hash: "publicLinks.html" },
-   { hashNum: "0.2", hash: "premiumLinks.html" },
-   { hashNum: "0.3", hash: "memberLinks.html" },
-   { hashNum: "0.4", hash: "staffLinks.html" },
-];
 
 function load(num) {
-   pages.forEach((page) => {
-      if (num == page.hashNum) {
-         window.location.href = page.hash;
-      };
-   });
    services.forEach((service) => {
       if (num == service.serviceNum) {
          if (service.rank == "public") {
