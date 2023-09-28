@@ -10,8 +10,8 @@ const inactivekeys = [
    { rank: "Premium", name: "Inactive", key: "Inactive" },
 ];
 const services = [
-       { serviceNum: "1", hash: "", rank: "staff"},
-       { serviceNum: "2", hash: "", rank : "public"},
+       { serviceNum: "1", hash: "V1ZWb1UwMUhUa2xVVkZwTlpWUnJNbFF3VWs5a1ZUQjZXVE5TVUZKRlJUQlVWVTB4WVcxTmVWTllWbHBYUlVvelZFaGpPVkJSUFQwPQ==", rank: "staff"},
+       { serviceNum: "2", hash: "V1ZWb1UwMUhUa2xVVkZwTlpWUnJlbFJ0TVhaTlIwVjVZak5TVUZKRlJUQlVWVTB4WVcxTmVWTllWbHBYUlVvelZFaGpPVkJSUFQwPQ==", rank : "public"},
        { serviceNum: "3", hash: "", rank : "premium"},
        { serviceNum: "4", hash: "", rank : "member"},
        { serviceNum: "5", hash: "", rank : "staff"},
