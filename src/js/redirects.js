@@ -61,7 +61,7 @@ function load(num) {
    pages.forEach((page) => {
       if (num == page.hashNum) {
          window.location.href = page.hash;
-      }
+      };
    });
    services.forEach((service) => {
       if (num == service.serviceNum) {
@@ -86,7 +86,7 @@ function load(num) {
                         window.location.href = "load.html";
                      } else {
                         alert("The key on your account isn't the correct rank to use this link.");
-                     }
+                     };
                   } else if {
                      inactiveKeys.forEach((inkey) => {
                         if (localStorage.getItem("key") == inkey.key) {
@@ -95,7 +95,7 @@ function load(num) {
                      });
                   } else {
                      alert("They key on your account doesn't exist");
-                  }
+                  };
                });
             } else {
                let prompt = prompt("Please enter you id key:");
@@ -115,12 +115,12 @@ function load(num) {
                         window.location.href = "load.html";
                      } else {
                         alert("The key your trying to use isn't the correct rank to use this link.");
-                     }
+                     };
                   } else {
                      alert("You're using a key doesn't exist.");
-                  }
+                  };
                });
-            }
+            };
          } else if (service.rank == "member") {
             if (localStorage.getItem("key") != "") {
                keys.forEach((key) => {
@@ -145,7 +145,7 @@ function load(num) {
                      });
                   } else {
                      alert("They key on your account doesn't exist");
-                  }
+                  };
                });
             } else {
                let prompt = prompt("Please enter you id key:");
@@ -165,9 +165,9 @@ function load(num) {
                      }
                   } else {
                      alert("You're using a key doesn't exist.");
-                  }
+                  };
                });
-            }
+            };
          } else {
             if (localStorage.getItem("key") != "") {
                keys.forEach((key) => {
@@ -189,7 +189,7 @@ function load(num) {
                      });
                   } else {
                      alert("They key on your account doesn't exist");
-                  }
+                  };
                });
             } else {
                let prompt = prompt("Please enter you id key:");
@@ -206,10 +206,10 @@ function load(num) {
                      }
                   } else {
                      alert("You're using a key doesn't exist.");
-                  }
+                  };
                });
-            }
-         }
-      }
+            };
+         };
+      };
    });
-}
+};
