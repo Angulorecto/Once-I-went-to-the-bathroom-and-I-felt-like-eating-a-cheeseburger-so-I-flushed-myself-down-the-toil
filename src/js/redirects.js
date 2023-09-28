@@ -63,7 +63,7 @@ function setupPublic() {
           var div = document.createElement('div');
           div.setAttribute("class", "hash");
           var x = document.createElement('img');
-          x.setAttribute("src", "../photos/BlueInhashBadge.png");
+          x.setAttribute("src", "../photos/BlueInLinkBadge.png");
           x.setAttribute("width", "100");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
@@ -147,7 +147,7 @@ function setupStaff() {
           var div = document.createElement('div');
           div.setAttribute("class", "hash");
           var x = document.createElement('img');
-          x.setAttribute("src", "../photos/Staffhash.png");
+          x.setAttribute("src", "../photos/StaffLink.png");
           x.setAttribute("width", "100");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
@@ -228,7 +228,15 @@ function load(num) {
             if (localStorage.getItem("key") != "") {
                keys.forEach((key) => {
                   if (localStorage.getItem("key") == key.key) {
-                     
+                     if (key.rank == "premium") {
+                        
+                     } else if (key.rank == "member") {
+                        
+                     } else if (key.rank == "staff") {
+                        
+                     } else {
+                        alert("The key on your account isn't the correct rank to use this link.");
+                     }
                   }
                });
             }
