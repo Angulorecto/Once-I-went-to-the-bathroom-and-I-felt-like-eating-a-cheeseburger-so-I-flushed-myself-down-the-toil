@@ -46,7 +46,7 @@ img {
       var account = document.getElementById("account");
 
       if (typeof localkey === 'undefined') {
-        account.innerHTML = " ";
+        account.innerHTML = "";
       } else {
         account.innerHTML = "Manage Account"
       }
@@ -55,6 +55,17 @@ img {
       } else {
         account.innerHTML = "Manage Account"
       }
+      function topage(num) {
+        if (num == 1) {
+          window.location.href = "publicLinks.html";
+        } else if (num == 2) {
+          window.location.href = "premiumLinks.html";
+        } else if (num == 3) {
+          window.location.href = "memberLinks.html";
+        } else {
+          window.location.href = "staffLinks.html";
+        };
+      };
     </script>
     <style>
       #link {
