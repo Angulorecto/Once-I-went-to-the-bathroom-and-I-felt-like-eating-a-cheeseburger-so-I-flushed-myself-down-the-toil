@@ -51,10 +51,17 @@ const services = [
        { serviceNum: "39", hash: "", rank : "premium"}
 ];
 
+const pages = [
+   { linkNum: "0.1", page: "publicLinks.html"},
+   { linkNum: "0.2", page: "premiumLinks.html"},
+   { linkNum: "0.3", page: "memberLinks.html"},
+   { linkNum: "0.4", page: "staffLinks.html"},
+];
+
 function redirect(num) {
     pages.forEach((page) => {
-       if (num == page.hashNum) {
-            window.location.href = page.hash;
+       if (num == page.linkNum) {
+            window.location.href = page.page;
         };
     });
     services.forEach((service) => {
