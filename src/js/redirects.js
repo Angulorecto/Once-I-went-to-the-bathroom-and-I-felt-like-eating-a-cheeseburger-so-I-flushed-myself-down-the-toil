@@ -102,14 +102,17 @@ function redirect(num) {
                     keys.forEach((key) => {
                         if (key.key == input) {
                            if (key.rank == "Premium") {
-                              localStorage.setItem("");
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else if (key.rank == "Member") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else if (key.rank == "Staff") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else if (key.rank == "Owner") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
@@ -122,16 +125,19 @@ function redirect(num) {
                     });
                 };
             };
-            if (service.imgSrc == "pictures/RedBadge.png") {
+            if (service.rank == "member") {
                 if (localStorage.getItem("key") != " ") {
                     keys.forEach((key) => {
                         if (localStorage.getItem("key") == key.key) {
                            if (key.rank == "Member") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else if (key.rank == "Staff") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else if (key.rank == "Owner") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
@@ -148,11 +154,14 @@ function redirect(num) {
                     keys.forEach((key) => {
                         if (key.key == input) {
                             if (key.rank == "Member") {
-                                window.location.href = service.hash;
+                               localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                             } else if (key.rank == "Staff") {
-                                window.location.href = service.hash;
+                               localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                             } else if (key.rank == "Owner") {
-                                window.location.href = service.hash;
+                               localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                             } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
