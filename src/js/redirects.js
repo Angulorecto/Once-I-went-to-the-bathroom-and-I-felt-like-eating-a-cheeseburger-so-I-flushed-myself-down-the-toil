@@ -1,10 +1,9 @@
 const keys = [
-   { rank: "Staff", name: "Static", key: "Static" },
-   { rank: "Owner", name: "Ethan", key: "Icy13" },
-   { rank: "Staff", name: "Matthew", key: "Math01" },
-   { rank: "Member", name: "Test", key: "Member" },
-   { rank: "Staff", name: "Caleb", key: "Calo" },
-   { rank: "Staff", name: "BJ", key: "Bejota" },
+   { rank: "Owner", name: "Ethan", key: "SWN5MTM=" },
+   { rank: "Staff", name: "Matthew", key: "TWF0aDAx" },
+   { rank: "Member", name: "Test", key: "TWVtYmVy" },
+   { rank: "Staff", name: "Caleb", key: "Q2Fsbw==" },
+   { rank: "Staff", name: "BJ", key: "QmVqb3Rh" },
 ];
 const inactivekeys = [
    { rank: "Premium", name: "Inactive", key: "Inactive" },
