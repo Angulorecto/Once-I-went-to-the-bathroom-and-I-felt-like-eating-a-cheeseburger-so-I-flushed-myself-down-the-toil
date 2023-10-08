@@ -177,7 +177,7 @@ function redirect(num) {
                     });
                 };
             };
-            if (service.imgSrc == "pictures/Staffhash.png") {
+            if (service.rank == "staff") {
                 if (localStorage.getItem("key") != " ") {
                     keys.forEach((key) => {
                        var decodedKey = atob(key.key);
