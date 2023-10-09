@@ -214,7 +214,7 @@ function redirect(num) {
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
+                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inlinkrepeal");
                         };
                     });
                 };
