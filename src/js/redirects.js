@@ -132,7 +132,7 @@ function redirect(num) {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
                        decodedKey = atob(key.key);
-                        if (localStorage.getItem("key") == memberdecodedKey) {
+                        if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Member") {
                               localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
@@ -157,7 +157,7 @@ function redirect(num) {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
                        decodedKey = atob(key.key);
-                        if (memberinputdecodedKey == input) {
+                        if (decodedKey == input) {
                             if (key.rank == "Member") {
                                localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
@@ -183,7 +183,7 @@ function redirect(num) {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
                        decodedKey = atob(key.key);
-                        if (localStorage.getItem("key") == staffdecodedKey) {
+                        if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Staff") {
                               localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
@@ -205,7 +205,7 @@ function redirect(num) {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
                        decodedKey = atob(key.key);
-                        if (staffinputdecodedKey == input) {
+                        if (decodedKey == input) {
                             if (key.rank == "Staff") {
                                localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
