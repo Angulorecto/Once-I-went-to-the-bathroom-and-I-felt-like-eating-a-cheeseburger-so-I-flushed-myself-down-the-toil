@@ -70,7 +70,7 @@ function redirect(num) {
                window.location.href = "load.html";
             };
             if (service.rank == "premium") {
-                if (localStorage.getItem("key") != " ") {
+                if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
                        var decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == decodedKey) {
@@ -127,7 +127,7 @@ function redirect(num) {
                 };
             };
             if (service.rank == "member") {
-                if (localStorage.getItem("key") != " ") {
+                if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
                        var decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == decodedKey) {
@@ -178,14 +178,16 @@ function redirect(num) {
                 };
             };
             if (service.rank == "staff") {
-                if (localStorage.getItem("key") != " ") {
+                if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
                        var decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Staff") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else if (key.rank == "Owner") {
-                              window.location.href = service.hash;
+                              localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                            } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
@@ -203,9 +205,11 @@ function redirect(num) {
                        var decodedKey = atob(key.key);
                         if (decodedKey == input) {
                             if (key.rank == "Staff") {
-                                window.location.href = service.hash;
+                               localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                             } else if (key.rank == "Owner") {
-                                window.location.href = service.hash;
+                               localStorage.setItem("hash",service.hash);
+                              window.location.href = "load.html";
                             } else {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
