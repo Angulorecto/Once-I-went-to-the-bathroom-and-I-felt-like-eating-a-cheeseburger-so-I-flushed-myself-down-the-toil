@@ -72,7 +72,7 @@ function redirect(num) {
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       var decodedKey = atob(key.key);
+                       let decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == decodedKey) {
                             if (key.rank == "Premium") {
                                localStorage.setItem("hash",service.hash);
@@ -128,7 +128,7 @@ function redirect(num) {
             if (service.rank == "member") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       var decodedKey = atob(key.key);
+                       let decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Member") {
                               localStorage.setItem("hash",service.hash);
@@ -178,7 +178,7 @@ function redirect(num) {
             if (service.rank == "staff") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       var decodedKey = atob(key.key);
+                       let decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Staff") {
                               localStorage.setItem("hash",service.hash);
