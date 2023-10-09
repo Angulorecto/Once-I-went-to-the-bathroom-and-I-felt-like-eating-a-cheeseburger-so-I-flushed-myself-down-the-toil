@@ -100,8 +100,7 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       var decodedKey = atob(key.key);
-                        if (decodedKey == input) {
+                        if (key.key == input) {
                            if (key.rank == "Premium") {
                               localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
@@ -154,8 +153,7 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       var decodedKey = atob(key.key);
-                        if (decodedKey == input) {
+                        if (key.key == input) {
                             if (key.rank == "Member") {
                                localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
@@ -202,8 +200,7 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       var decodedKey = atob(key.key);
-                        if (decodedKey == input) {
+                        if (key.key == input) {
                             if (key.rank == "Staff") {
                                localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
