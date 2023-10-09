@@ -57,6 +57,8 @@ const pages = [
    { linkNum: "0.4", page: "staffLinks.html"},
 ];
 
+var decodedKey = "placeholder";
+
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
@@ -72,8 +74,8 @@ function redirect(num) {
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       let premiumdecodedKey = atob(key.key);
-                        if (localStorage.getItem("key") == premiumdecodedKey) {
+                       decodedKey = atob(key.key);
+                        if (localStorage.getItem("key") == decodedKey) {
                             if (key.rank == "Premium") {
                                localStorage.setItem("hash",service.hash);
                                window.location.href = "load.html";
@@ -100,8 +102,8 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       let premiuminputdecodedKey = atob(key.key);
-                        if (premiuminputdecodedKey == input) {
+                       decodedKey = atob(key.key);
+                        if (decodedKey == input) {
                            if (key.rank == "Premium") {
                               localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
@@ -129,7 +131,7 @@ function redirect(num) {
             if (service.rank == "member") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       let memberdecodedKey = atob(key.key);
+                       decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == memberdecodedKey) {
                            if (key.rank == "Member") {
                               localStorage.setItem("hash",service.hash);
@@ -154,7 +156,7 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       let memberinputdecodedKey = atob(key.key);
+                       decodedKey = atob(key.key);
                         if (memberinputdecodedKey == input) {
                             if (key.rank == "Member") {
                                localStorage.setItem("hash",service.hash);
@@ -180,7 +182,7 @@ function redirect(num) {
             if (service.rank == "staff") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       let staffdecodedKey = atob(key.key);
+                       decodedKey = atob(key.key);
                         if (localStorage.getItem("key") == staffdecodedKey) {
                            if (key.rank == "Staff") {
                               localStorage.setItem("hash",service.hash);
@@ -202,7 +204,7 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       let staffinputdecodedKey = atob(key.key);
+                       decodedKey = atob(key.key);
                         if (staffinputdecodedKey == input) {
                             if (key.rank == "Staff") {
                                localStorage.setItem("hash",service.hash);
