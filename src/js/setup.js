@@ -2,7 +2,7 @@ function setupPublic() {
    services.forEach((service) => {
         if (service.rank == "public") {
           var div = document.createElement('div');
-          div.setAttribute("class", "hash");
+          div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/BlueInLinkBadge.png");
           x.setAttribute("width", "100");
@@ -30,7 +30,7 @@ function setupPremium() {
    services.forEach((service) => {
         if (service.rank == "premium") {
           var div = document.createElement('div');
-          div.setAttribute("class", "hash");
+          div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/GreenWeb.png");
           x.setAttribute("width", "100");
@@ -58,7 +58,7 @@ function setupMember() {
    services.forEach((service) => {
         if (service.rank == "member") {
           var div = document.createElement('div');
-          div.setAttribute("class", "hash");
+          div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/RedBadge.png");
           x.setAttribute("width", "100");
@@ -86,7 +86,7 @@ function setupStaff() {
    services.forEach((service) => {
         if (service.rank == "staff") {
           var div = document.createElement('div');
-          div.setAttribute("class", "hash");
+          div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/StaffLink.png");
           x.setAttribute("width", "100");
