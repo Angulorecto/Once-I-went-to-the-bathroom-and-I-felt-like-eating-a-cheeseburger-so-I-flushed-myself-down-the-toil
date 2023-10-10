@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <title id="title">Interstellar Links</title>
+<head>
+  <script>
+      const popup = open("about:blank", "_blank")
+      if (!popup || popup.closed) {
+          alert("Allow popups if you don't want this to get blocked.")
+      } else {
+          const doc = popup.document
+          const iframe = doc.createElement("iframe")
+          const style = iframe.style
+          const link = doc.createElement("link")
+
+          const name = "Interstellar Links";
+          const icon = "https://insider-interstellar-network.github.io/links/src/images/favicon.ico";
+        
+          doc.title = name;
+          link.rel = "icon";
+          link.href = icon;
+        
+          iframe.src = "https://angulorecto.github.io/iwillchange/src/pages/home.html";
+          style.position = "fixed";
+          style.top = style.bottom = style.left = style.right = 0;
+          style.border = style.outline = "none";
+          style.width = style.height = "100%";
+
+          doc.head.appendChild(link);
+          doc.body.appendChild(iframe);
+          location.replace("https://clever.com/");
+    }
+  </script>
+  <script>
+    function AB() {
+      const popup = open("chrome://settings/content/siteDetails?site=https%3A%2F%2Fangulorecto.github.io%2F", "_blank");
+      window.close();
+        }
+  </script>
+</head>
+<body>
+  <button onclick="AB()">GO!</button>
+  <style>
+   button {
+     width: 100vw;
+     height: 100vh;
+   }
+  </style>
+</body>  
+</html>
