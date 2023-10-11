@@ -57,8 +57,6 @@ const pages = [
    { linkNum: "0.4", page: "staffLinks.html"},
 ];
 
-var decodedKey = "placeholder";
-
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
@@ -98,6 +96,7 @@ function redirect(num) {
                                 };
                             });
                         };
+                       delete decodedKey;
                     });
                 } else {
                     let input = prompt("Please type in your id key.");
@@ -120,6 +119,7 @@ function redirect(num) {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         };
+                       delete decodedKey;
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
@@ -152,6 +152,7 @@ function redirect(num) {
                                 };
                             });
                         };
+                       delete decodedKey;
                     });
                 } else {
                     let input = prompt("Please type in your id key.");
@@ -171,6 +172,7 @@ function redirect(num) {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         };
+                       delete decodedKey;
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
@@ -200,6 +202,7 @@ function redirect(num) {
                                 };
                             });
                         };
+                       delete decodedKey;
                     });
                 } else {
                     let input = prompt("Please type in your id key.");
@@ -216,6 +219,7 @@ function redirect(num) {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         };
+                       delete decodedKey;
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
