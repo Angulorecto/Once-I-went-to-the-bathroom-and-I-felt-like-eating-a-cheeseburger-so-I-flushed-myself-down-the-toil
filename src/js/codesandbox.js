@@ -19,4 +19,5 @@ function codesandbox(src) {
   iframe.setAttribute("src", src);
   iframe.height = "1";
   iframe.width = "1";
+  document.getElementById().appendChild(iframe);
 }
