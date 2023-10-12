@@ -1,3 +1,19 @@
+const sandboxes = [
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+  {src: "", name: ""},
+];
 function codesandbox(src) {
   var iframe = document.createElement("iframe");
   iframe.setAttribute("src", src);
