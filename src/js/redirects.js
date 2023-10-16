@@ -57,6 +57,8 @@ const pages = [
    { linkNum: "0.4", page: "staffLinks.html"},
 ];
 
+let decodedKey;
+
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
@@ -96,7 +98,6 @@ function redirect(num) {
                                 };
                             });
                         };
-                       delete decodedKey;
                     });
                 } else {
                     let input = prompt("Please type in your id key.");
