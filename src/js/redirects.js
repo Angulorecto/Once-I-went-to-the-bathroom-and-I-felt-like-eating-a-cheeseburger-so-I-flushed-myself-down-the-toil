@@ -57,14 +57,13 @@ const pages = [
    { linkNum: "0.4", page: "staffLinks.html"},
 ];
 
-let decodedKey;
-
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
             window.location.href = page.page;
         };
     });
+    let decodedKey = "pain";
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
