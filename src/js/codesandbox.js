@@ -18,8 +18,7 @@ function codesandbox(src, name) {
   var div = document.createElement("div");
   var iframe = document.createElement("iframe");
   iframe.setAttribute("src", src);
-  iframe.style.height = "50";
-  iframe.style.width = "50";
+  iframe.setAttribute("class", "iframe");
   var p = document.createElement("p");
   p.setAttribute("class", "whiteRight");
   p.innerHTML = name;
