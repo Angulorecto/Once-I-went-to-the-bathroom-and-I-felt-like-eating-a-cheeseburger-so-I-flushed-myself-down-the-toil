@@ -18,12 +18,12 @@ function codesandbox(src, name) {
   var div = document.createElement("div");
   var iframe = document.createElement("iframe");
   iframe.setAttribute("src", src);
-  iframe.height = "50";
-  iframe.width = "50";
+  iframe.style.height = "50";
+  iframe.style.width = "50";
   var p = document.createElement("p");
-  p.class = "whiteRight";
+  p.setAttribute("class", "whiteRight");
   p.innerHTML = name;
-  p.align = "center";
+  p.setAttribute("align", "center");
   div.appendChild(iframe);
   div.appendChild(p);
   document.getElementById("iframes").appendChild(div);
