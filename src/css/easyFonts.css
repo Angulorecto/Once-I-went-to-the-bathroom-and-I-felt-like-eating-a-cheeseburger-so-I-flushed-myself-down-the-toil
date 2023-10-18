@@ -2,8 +2,17 @@
 	width: 50px;
 	height: 50px;
 }
-.link {
+#link1 {
 	display: inline-block;
+}
+#link2 {
+	display: none;
+}
+#link3 {
+	display: none;
+}
+#link4 {
+	display: none;
 }
 .frame {
   z-index: 99;
