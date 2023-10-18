@@ -63,7 +63,6 @@ function redirect(num) {
             window.location.href = page.page;
         };
     });
-    let decodedKey = "pain";
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
@@ -127,6 +126,7 @@ function redirect(num) {
                         };
                     });
                 };
+            delete decodedKey;
             };
             if (service.rank == "member") {
                 if (localStorage.getItem("key") != "") {
@@ -180,6 +180,7 @@ function redirect(num) {
                         };
                     });
                 };
+            delete decodedKey;
             };
             if (service.rank == "staff") {
                 if (localStorage.getItem("key") != "") {
@@ -227,6 +228,7 @@ function redirect(num) {
                         };
                     });
                 };
+            delete decodedKey;
             };
         };
     });
