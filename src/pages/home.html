@@ -82,6 +82,16 @@ img {
             document.getElementById("link3").style.display = "none";
             document.getElementById("link4").style.display = "none";
           }
+
+          if (key.rank == "Owner") {
+            document.getElementById("link2").style.display = "block";
+            document.getElementById("link3").style.display = "block";
+            document.getElementById("link4").style.display = "block";
+          } else {
+            document.getElementById("link2").style.display = "none";
+            document.getElementById("link3").style.display = "none";
+            document.getElementById("link4").style.display = "none";
+          }
         }
       });
     </script>
