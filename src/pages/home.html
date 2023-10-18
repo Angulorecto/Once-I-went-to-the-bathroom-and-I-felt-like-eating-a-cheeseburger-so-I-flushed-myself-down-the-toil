@@ -57,7 +57,32 @@ img {
       };
 
       keys.forEach((key) => {
-        
+        decodedKey = atob(key.key);
+        if (localKey == decodedKey) {
+          if (key.rank == "Premium") {
+            document.getElementById("link2").style.display = "block";
+          } else {
+            document.getElementById("link2").style.display = "none";
+          }
+          
+          if (key.rank == "Member") {
+            document.getElementById("link2").style.display = "block";
+            document.getElementById("link3").style.display = "block";
+          } else {
+            document.getElementById("link2").style.display = "none";
+            document.getElementById("link3").style.display = "none";
+          }
+
+          if (key.rank == "Staff") {
+            document.getElementById("link2").style.display = "block";
+            document.getElementById("link3").style.display = "block";
+            document.getElementById("link4").style.display = "block";
+          } else {
+            document.getElementById("link2").style.display = "none";
+            document.getElementById("link3").style.display = "none";
+            document.getElementById("link4").style.display = "none";
+          }
+        }
       });
     </script>
     <style>
