@@ -57,13 +57,13 @@ img {
       };
 
       keys.forEach((key) => {
-        decodedKey = atob(key.key);
-        if (localKey == decodedKey) {
+        decodedKey = btoa(localStorage.getItem("key"));
+        if (key.key == decodedKey) {
           if (key.rank == "Premium") {
             document.getElementById("link2").style.display = "inline-block";
           } else {
             document.getElementById("link2").style.display = "none";
-          }
+          };
           
           if (key.rank == "Member") {
             document.getElementById("link2").style.display = "inline-block";
@@ -71,7 +71,7 @@ img {
           } else {
             document.getElementById("link2").style.display = "none";
             document.getElementById("link3").style.display = "none";
-          }
+          };
 
           if (key.rank == "Staff") {
             document.getElementById("link2").style.display = "inline-block";
@@ -81,7 +81,7 @@ img {
             document.getElementById("link2").style.display = "none";
             document.getElementById("link3").style.display = "none";
             document.getElementById("link4").style.display = "none";
-          }
+          };
 
           if (key.rank == "Owner") {
             document.getElementById("link2").style.display = "inline-block";
@@ -91,8 +91,8 @@ img {
             document.getElementById("link2").style.display = "none";
             document.getElementById("link3").style.display = "none";
             document.getElementById("link4").style.display = "none";
-          }
-        }
+          };
+        };
       });
     </script>
     <style>
