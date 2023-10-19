@@ -72,8 +72,8 @@ function redirect(num) {
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       decodedKey = atob(key.key);
-                        if (localStorage.getItem("key") == decodedKey) {
+                       decodedKey = btoa(localStorage.getItem("key"));
+                        if (key.key == decodedKey) {
                             if (key.rank == "Premium") {
                                localStorage.setItem("hash",service.hash);
                                window.location.href = "load.html";
@@ -100,7 +100,7 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       decodedKey = atob(key.key);
+                       decodedKey = btoa(localStorage.getItem("key"));
                         if (decodedKey == input) {
                            if (key.rank == "Premium") {
                               localStorage.setItem("hash",service.hash);
@@ -131,7 +131,7 @@ function redirect(num) {
             if (service.rank == "member") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       decodedKey = atob(key.key);
+                       decodedKey = btoa(localStorage.getItem("key"));
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Member") {
                               localStorage.setItem("hash",service.hash);
