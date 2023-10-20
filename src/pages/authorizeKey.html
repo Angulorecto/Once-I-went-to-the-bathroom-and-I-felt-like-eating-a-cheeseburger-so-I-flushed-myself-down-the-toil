@@ -12,9 +12,8 @@
     <a class='whiteRight' style="text-decoration:none; font-size: 15px; color: white;" href="home.html"> < Back </a>
     <script src="../js/redirects.js"></script>
     <script>
-      const user = localStorage.getItem("username");
-      if (user != "") {
-        document.getElementById("username").value = user;
+      if (localStorage.getItem("username") != "") {
+        document.getElementById("username").value = "user";
       }
       
       function AuthKey() {
