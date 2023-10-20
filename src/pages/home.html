@@ -39,8 +39,8 @@ img {
       <H2 class="whiteRight">Have a key?</H2><br>
       <H4 class="whiteRight">Click <a href="authorizeKey.html" class="whiteRight">here</a> to authorize and add your key to your account.</H4>
     </div>
-    <div id="staffArea" style="border-style:solid; border-radius:15px; border-color:red;">
-      <a class="whiteRight" href="serverManager.html">Server Manager</a>
+    <div id="staffArea" style="display:none; border-style:solid; border-radius:15px; border-color:red;">
+      <a class="whiteRight" href="serverManager.html" style="text-decoration:none;">Server Manager</a>
     </div>
     <script src="../js/redirects.js"></script>
     <script>
@@ -76,12 +76,14 @@ img {
             document.getElementById("link2").style.display = "inline-block";
             document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
+            document.getElementById("staffArea").style.display = "block";
           };
 
           if (key.rank == "Owner") {
             document.getElementById("link2").style.display = "inline-block";
             document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
+            document.getElementById("staffArea").style.display = "block";
           };
         };
       });
