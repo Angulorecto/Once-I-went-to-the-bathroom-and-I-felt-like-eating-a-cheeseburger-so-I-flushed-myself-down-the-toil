@@ -57,7 +57,9 @@ img {
       };
 
       keys.forEach((key) => {
-        decodedKey = btoa(localStorage.getItem("key"));
+        account.createAttibute("decodedKey");
+        account.setAttribute("decodedKey", btoa(localStorage.getItem("key")));
+        const decodedKey = account.getAttribute("decodedKey");
         if (key.key == decodedKey) {
           if (key.rank == "Premium") {
             document.getElementById("link2").style.display = "inline-block";
@@ -93,7 +95,7 @@ img {
             document.getElementById("link4").style.display = "none";
           };
         };
-        delete decodedKey;
+        account.deleteAttribute("decodedKey");
       });
     </script>
     <style>
