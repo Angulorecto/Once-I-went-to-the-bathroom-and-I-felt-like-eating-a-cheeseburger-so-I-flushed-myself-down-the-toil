@@ -57,8 +57,8 @@ img {
       };
 
       keys.forEach((key) => {
-        account.createAttibute("decodedKey");
-        account.setAttribute("decodedKey", btoa(localStorage.getItem("key")));
+        const att = account.createAttibute("decodedKey");
+        att.value = btoa(localStorage.getItem("key"));
         const decodedKey = account.getAttribute("decodedKey");
         if (key.key == decodedKey) {
           if (key.rank == "Premium") {
