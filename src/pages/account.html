@@ -20,6 +20,7 @@ img {
     <div style="background-color:rgb(33,38,45);">
       <p class="whiteRight">Key:</p>
       <p class="whiteRight" id="key1"></p>
+      <button class="blackRight" onclick="removeKey()">Remove Key</button>
       <p class="whiteRight">Username:</p>
       <p class="whiteRight" id="username1"></p><br><br><br>
       <p class="whiteRight">Want to delete your key?</p><br>
@@ -32,6 +33,10 @@ img {
       var userarea = document.getElementById("username1");
       userarea.innerHTML = username;
       keyarea.innerHTML = key;
+
+      function removeKey() {
+        localStorage.setItem("key", "");
+      }
     </script>
   </body>
 </html>
