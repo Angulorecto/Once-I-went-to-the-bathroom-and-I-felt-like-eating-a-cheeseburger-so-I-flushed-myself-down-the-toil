@@ -12,8 +12,6 @@
     <a class='whiteRight' style="text-decoration:none; font-size: 15px; color: white;" href="home.html"> < Back </a>
     <script src="../js/redirects.js"></script>
     <script>
-      document.getElementById("username").value = localStorage.getItem("username");
-      
       function AuthKey() {
         let keyt = document.getElementById("key").value;
         let username = document.getElementById("username").value;
@@ -29,6 +27,9 @@
       <input class="whiteRight" id="username" type="text" style="line-height:2.0; border-radius:15px; background-color:rgb(23,28,35);"><br>
       <input style="font-size:30px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit">
     </form>
+    <script>
+      document.getElementById("username").value = localStorage.getItem("username");
+    </script>
     <style>
       #form {
         left: 50%;
