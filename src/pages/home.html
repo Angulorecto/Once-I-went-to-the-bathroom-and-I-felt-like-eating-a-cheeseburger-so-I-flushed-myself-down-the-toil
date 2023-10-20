@@ -15,7 +15,7 @@ img {
 </head>
 <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
   <body style="background-color:black;">
-    <a href="account.html" class="whiteRight" style="text-decoration:none; font-size: 15px;" id="account"></a>
+    <a data-key="x" href="account.html" class="whiteRight" style="text-decoration:none; font-size: 15px;" id="account"></a>
     <H1 align="center" class='whiteRight' style="font-size: 50px;">Interstellar Links</H1>
     <div id="row1" align="center">
       <div id="link1" style="display:inline-block;">
@@ -57,45 +57,25 @@ img {
       };
 
       keys.forEach((key) => {
-        const att = account.createAttibute("data-decodedKey");
-        account.setAttribute("data-decodedKey", btoa(localStorage.getItem("key")));
-        const decodedKey = account.getAttribute("data-decodedKey");
+        account.setAttribute("data-key", btoa(localStorage.getItem("key")));
+        const decodedKey = account.getAttribute("data-key");
         if (key.key == decodedKey) {
           if (key.rank == "Premium") {
             document.getElementById("link2").style.display = "inline-block";
-          } else {
-            document.getElementById("link2").style.display = "none";
           };
           
           if (key.rank == "Member") {
-            document.getElementById("link2").style.display = "inline-block";
             document.getElementById("link3").style.display = "inline-block";
-          } else {
-            document.getElementById("link2").style.display = "none";
-            document.getElementById("link3").style.display = "none";
           };
 
           if (key.rank == "Staff") {
-            document.getElementById("link2").style.display = "inline-block";
-            document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
-          } else {
-            document.getElementById("link2").style.display = "none";
-            document.getElementById("link3").style.display = "none";
-            document.getElementById("link4").style.display = "none";
           };
 
           if (key.rank == "Owner") {
-            document.getElementById("link2").style.display = "inline-block";
-            document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
-          } else {
-            document.getElementById("link2").style.display = "none";
-            document.getElementById("link3").style.display = "none";
-            document.getElementById("link4").style.display = "none";
           };
         };
-        account.deleteAttribute("data-decodedKey");
       });
     </script>
     <style>
