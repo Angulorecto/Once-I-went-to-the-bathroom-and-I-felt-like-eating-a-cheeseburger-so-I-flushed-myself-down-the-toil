@@ -35,7 +35,7 @@ img {
         <p class='whiteRight'>Staff Links</p>
       </div>
     </div>
-    <div align="center">
+    <div id="keyInfo" align="center">
       <H2 class="whiteRight">Have a key?</H2><br>
       <H4 class="whiteRight">Click <a href="authorizeKey.html" class="whiteRight">here</a> to authorize and add your key to your account.</H4>
     </div>
@@ -65,11 +65,13 @@ img {
         if (key.key == decodedKey) {
           if (key.rank == "Premium") {
             document.getElementById("link2").style.display = "inline-block";
+            document.getElementById("keyInfo").style.display = "none";
           };
           
           if (key.rank == "Member") {
             document.getElementById("link2").style.display = "inline-block";
             document.getElementById("link3").style.display = "inline-block";
+            document.getElementById("keyInfo").style.display = "none";
           };
 
           if (key.rank == "Staff") {
@@ -77,6 +79,7 @@ img {
             document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
             document.getElementById("staffArea").style.display = "block";
+            document.getElementById("keyInfo").style.display = "none";
           };
 
           if (key.rank == "Owner") {
@@ -84,6 +87,7 @@ img {
             document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
             document.getElementById("staffArea").style.display = "block";
+            document.getElementById("keyInfo").style.display = "none";
           };
         };
       });
