@@ -17,12 +17,18 @@ img {
   <body style="background-color:black;">
     <a href="home.html" class="whiteRight" style="text-decoration:none; font-size:15px;">< Back</a>
     <H1 align="center" class="whiteRight" style="font-size:50px;">Manage Account</H1>
-    <div style="background-color:rgb(33,38,45);">
+    <div style="border-radius:15px; background-color:rgb(33,38,45);">
       <p class="whiteRight">Key:</p>
       <p class="whiteRight" style="display:inline-block;" id="key1"></p>
       <button id="button" class="blackRight" style="background-color:red; border-radius:15px;" onclick="removeKey()">Remove Key</button>
       <p class="whiteRight">Username:</p>
       <p class="whiteRight" id="username1"></p>>
+    </div><br><br><br><br>
+    <div>
+      <H1 class="whiteRight" style="font-size:35px;">Theme:</H1>
+      <select class="whiteRight" style="border-radius:15px; background-color:rgb(23,28,35);">
+        <option></option>
+      </select>
     </div>
     <script>
       var key = localStorage.getItem("key") || "No key";
