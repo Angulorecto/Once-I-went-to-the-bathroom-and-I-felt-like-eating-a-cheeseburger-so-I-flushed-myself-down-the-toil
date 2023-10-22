@@ -20,7 +20,7 @@ img {
     <div style="background-color:rgb(33,38,45);">
       <p class="whiteRight">Key:</p>
       <p class="whiteRight" style="display:inline-block;" id="key1"></p>
-      <button class="blackRight" style="background-color:red; border-radius:15px;" onclick="removeKey()">Remove Key</button>
+      <button id="button" class="blackRight" style="background-color:red; border-radius:15px;" onclick="removeKey()">Remove Key</button>
       <p class="whiteRight">Username:</p>
       <p class="whiteRight" id="username1"></p>>
     </div>
@@ -31,6 +31,10 @@ img {
       var userarea = document.getElementById("username1");
       userarea.innerHTML = username;
       keyarea.innerHTML = key;
+
+      if (key != "No key") {
+        document.getElementById("button").style.display = "none";
+      }
 
       function removeKey() {
         localStorage.setItem("key", "");
