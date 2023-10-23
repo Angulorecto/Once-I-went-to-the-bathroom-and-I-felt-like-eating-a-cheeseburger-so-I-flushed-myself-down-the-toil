@@ -42,6 +42,7 @@ const localkey = localStorage.getItem("key");
             document.getElementById("link4").style.display = "inline-block";
             document.getElementById("staffArea").style.display = "block";
             document.getElementById("keyInfo").style.display = "none";
+            document.getElementsByClassName("owner").style.display = "block";
           };
         };
       });
