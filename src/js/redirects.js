@@ -57,6 +57,8 @@ const pages = [
    { linkNum: "0.4", page: "staffLinks.html"},
 ];
 
+var a = document.getElementById("decKey");
+
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
@@ -72,7 +74,7 @@ function redirect(num) {
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       decodedKey = btoa(localStorage.getItem("key"));
+                       var decodedKey = a.setAttribute("data-key", btoa(localStorage.getItem("key")));
                         if (key.key == decodedKey) {
                             if (key.rank == "Premium") {
                                localStorage.setItem("hash",service.hash);
@@ -118,7 +120,6 @@ function redirect(num) {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         };
-                       delete decodedKey;
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
@@ -131,7 +132,7 @@ function redirect(num) {
             if (service.rank == "member") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       decodedKey = btoa(localStorage.getItem("key"));
+                       var decodedKey = a.setAttribute("data-key", btoa(localStorage.getItem("key")));
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Member") {
                               localStorage.setItem("hash",service.hash);
@@ -152,7 +153,6 @@ function redirect(num) {
                                 };
                             });
                         };
-                       delete decodedKey;
                     });
                 } else {
                     let input = prompt("Please type in your id key.");
@@ -172,7 +172,6 @@ function redirect(num) {
                                alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
                         };
-                       delete decodedKey;
                     });
                     inactiveKeys.forEach((inkey) => {
                         if (input == inkey.key) {
@@ -180,12 +179,11 @@ function redirect(num) {
                         };
                     });
                 };
-            delete decodedKey;
             };
             if (service.rank == "staff") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       decodedKey = atob(key.key);
+                       var decodedKey = a.setAttribute("data-key", btoa(localStorage.getItem("key")));
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Staff") {
                               localStorage.setItem("hash",service.hash);
@@ -203,7 +201,6 @@ function redirect(num) {
                                 };
                             });
                         };
-                       delete decodedKey;
                     });
                 } else {
                     let input = prompt("Please type in your id key.");
@@ -228,7 +225,6 @@ function redirect(num) {
                         };
                     });
                 };
-            delete decodedKey;
             };
         };
     });
