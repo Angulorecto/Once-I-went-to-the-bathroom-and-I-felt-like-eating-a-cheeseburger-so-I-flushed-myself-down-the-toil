@@ -75,64 +75,16 @@ function redirect(num) {
                window.location.href = "load.html";
             };
             if (service.rank == "premium") {
-                if (localStorage.getItem("key") != "") {
-                    keys.forEach((key) => {
-                       b.setAttribute("data-key", localStorage.getItem("key"));
-                       const premiumDecodedKey = b.getAttribute("data-key");
-                        if (key.key == premiumDecodedKey) {
-                            if (key.rank == "Premium") {
-                               localStorage.setItem("hash",service.hash);
-                               window.location.href = "load.html";
-                            } else if (key.rank == "Member") {
-                               localStorage.setItem("hash",service.hash);
-                               window.location.href = "load.html";
-                            } else if (key.rank == "Staff") {
-                               localStorage.setItem("hash",service.hash);
-                               window.location.href = "load.html";
-                            } else if (key.rank == "Owner") {
-                               localStorage.setItem("hash",service.hash);
-                               window.location.href = "load.html";
-                            };
-                        };
-                    });
-                };
+               localStorage.setItem("hash",service.hash);
+               window.location.href = "load.html";
             };
             if (service.rank == "member") {
-                if (localStorage.getItem("key") != "") {
-                    keys.forEach((key) => {
-                       c.setAttribute("data-key", localStorage.getItem("key"));
-                       const memberDecodedKey = c.getAttribute("data-key");
-                        if (localStorage.getItem("key") == memberDecodedKey) {
-                           if (key.rank == "Member") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           } else if (key.rank == "Staff") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           } else if (key.rank == "Owner") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           };
-                        };
-                    });
-                };
+               localStorage.setItem("hash",service.hash);
+               window.location.href = "load.html";
             };
             if (service.rank == "staff") {
-                if (localStorage.getItem("key") != "") {
-                    keys.forEach((key) => {
-                       d.setAttribute("data-key", localStorage.getItem("key"));
-                       const staffdecodedKey = d.getAttribute("data-key");
-                        if (localStorage.getItem("key") == staffDecodedKey) {
-                           if (key.rank == "Staff") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           } else if (key.rank == "Owner") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           };
-                        };
-                    });
-                };
+               localStorage.setItem("hash",service.hash);
+               window.location.href = "load.html";
             };
         };
     });
