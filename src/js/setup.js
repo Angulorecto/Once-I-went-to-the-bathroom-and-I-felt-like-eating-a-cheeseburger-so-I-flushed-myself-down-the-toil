@@ -111,12 +111,11 @@ function setupStaff() {
 };
 
 function setupAcKeys() {
-   keys.forEach((inkey) => {
+   keys.forEach((key) => {
         var k = document.createElement('div');
         k.setAttribute("align","center");
         k.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
         k.setAttribute("class","key");
-        document.getElementById("active").appendChild(k);
         var e = document.createElement('p');
         e.innerText = inkey.name;
         e.setAttribute("class","whiteRight");
@@ -131,7 +130,7 @@ function setupAcKeys() {
         k.appendChild(e);
         k.appendChild(w);
         k.appendChild(disc);
-        document.body.appendChild(k);
+        document.getElementById("active").appendChild(k);
       });
 };
 
@@ -141,7 +140,6 @@ function setupInKeys() {
         y.setAttribute("align","center");
         y.setAttribute("style","background-color:rgb(33,38,45); border-radius:15px;");
         y.setAttribute("class","key");
-        document.getElementById("inactive").appendChild(y);
         var s = document.createElement('p');
         s.innerText = inkey.name;
         s.setAttribute("class","whiteRight");
@@ -156,7 +154,7 @@ function setupInKeys() {
         y.appendChild(s);
         y.appendChild(r);
         y.appendChild(dis);
-        document.body.appendChild(k);
+        document.getElementById("inactive").appendChild(y);
       });
 };
 
