@@ -77,6 +77,7 @@ function redirect(num) {
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
+                       b.setAttribute("data-key", localStorage.getItem("key"));
                        const premiumDecodedKey = b.getAttribute("data-key");
                         if (key.key == premiumDecodedKey) {
                             if (key.rank == "Premium") {
@@ -91,41 +92,7 @@ function redirect(num) {
                             } else if (key.rank == "Owner") {
                                localStorage.setItem("hash",service.hash);
                                window.location.href = "load.html";
-                            } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
                             };
-                        } else {
-                            inactiveKeys.forEach((inkey) => {
-                                if (localStorage.getItem("key") == inkey.key) {
-                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
-                                };
-                            });
-                        };
-                    });
-                } else {
-                    let input = prompt("Please type in your id key.");
-                    keys.forEach((key) => {
-                        if (decodedKey == input) {
-                           if (key.rank == "Premium") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           } else if (key.rank == "Member") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           } else if (key.rank == "Staff") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           } else if (key.rank == "Owner") {
-                              localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                           } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
-                            };
-                        };
-                    });
-                    inactiveKeys.forEach((inkey) => {
-                        if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
                         };
                     });
                 };
@@ -133,6 +100,7 @@ function redirect(num) {
             if (service.rank == "member") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
+                       c.setAttribute("data-key", localStorage.getItem("key"));
                        const memberDecodedKey = c.getAttribute("data-key");
                         if (localStorage.getItem("key") == memberDecodedKey) {
                            if (key.rank == "Member") {
@@ -144,38 +112,7 @@ function redirect(num) {
                            } else if (key.rank == "Owner") {
                               localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
-                           } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
-                            };
-                        } else {
-                            inactiveKeys.forEach((inkey) => {
-                                if (localStorage.getItem("key") == inkey.key) {
-                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
-                                };
-                            });
-                        };
-                    });
-                } else {
-                    let input = prompt("Please type in your id key.");
-                    keys.forEach((key) => {
-                        if (decodedKey == input) {
-                            if (key.rank == "Member") {
-                               localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                            } else if (key.rank == "Staff") {
-                               localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                            } else if (key.rank == "Owner") {
-                               localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                            } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
-                            };
-                        };
-                    });
-                    inactiveKeys.forEach((inkey) => {
-                        if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inhashrepeal");
+                           };
                         };
                     });
                 };
@@ -183,7 +120,8 @@ function redirect(num) {
             if (service.rank == "staff") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       const staffFecodedKey = d.getAttribute("data-key");
+                       d.setAttribute("data-key", localStorage.getItem("key"));
+                       const staffdecodedKey = d.getAttribute("data-key");
                         if (localStorage.getItem("key") == staffDecodedKey) {
                            if (key.rank == "Staff") {
                               localStorage.setItem("hash",service.hash);
@@ -191,35 +129,7 @@ function redirect(num) {
                            } else if (key.rank == "Owner") {
                               localStorage.setItem("hash",service.hash);
                               window.location.href = "load.html";
-                           } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
-                            };
-                        } else {
-                            inactiveKeys.forEach((inkey) => {
-                                if (localStorage.getItem("key") == inkey.key) {
-                                    alert("Sorry the key you have on your account is inactive.\nIf you think this is a mistake go to:\nrebrand.ly/inhashrepeal");
-                                };
-                            });
-                        };
-                    });
-                } else {
-                    let input = prompt("Please type in your id key.");
-                    keys.forEach((key) => {
-                        if (decodedKey == input) {
-                            if (key.rank == "Staff") {
-                               localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                            } else if (key.rank == "Owner") {
-                               localStorage.setItem("hash",service.hash);
-                              window.location.href = "load.html";
-                            } else {
-                               alert("You're trying to use a key that is at the wrong rank.\nPlease upgrade to get this rank.");
-                            };
-                        };\
-                    });
-                    inactiveKeys.forEach((inkey) => {
-                        if (input == inkey.key) {
-                            alert("This key is inactive.\nIf you think this is a mistake, please go to:\nrebrand.ly/inlinkrepeal");
+                           };
                         };
                     });
                 };
