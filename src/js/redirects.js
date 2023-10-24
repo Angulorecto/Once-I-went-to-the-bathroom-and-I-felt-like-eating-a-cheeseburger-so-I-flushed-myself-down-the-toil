@@ -74,7 +74,6 @@ function redirect(num) {
             if (service.rank == "premium") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       a.setAttribute("data-key", btoa(localStorage.getItem("key")));
                        const decodedKey = a.getAttribute("data-key");
                         if (key.key == decodedKey) {
                             if (key.rank == "Premium") {
@@ -103,7 +102,6 @@ function redirect(num) {
                 } else {
                     let input = prompt("Please type in your id key.");
                     keys.forEach((key) => {
-                       a.setAttribute("data-key", btoa(localStorage.getItem("key")));
                        const decodedKey = a.getAttribute("data-key");
                         if (decodedKey == input) {
                            if (key.rank == "Premium") {
@@ -133,7 +131,6 @@ function redirect(num) {
             if (service.rank == "member") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       a.setAttribute("data-key", btoa(localStorage.getItem("key")));
                        const decodedKey = a.getAttribute("data-key");
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Member") {
@@ -185,7 +182,6 @@ function redirect(num) {
             if (service.rank == "staff") {
                 if (localStorage.getItem("key") != "") {
                     keys.forEach((key) => {
-                       a.setAttribute("data-key", btoa(localStorage.getItem("key")));
                        const decodedKey = a.getAttribute("data-key");
                         if (localStorage.getItem("key") == decodedKey) {
                            if (key.rank == "Staff") {
