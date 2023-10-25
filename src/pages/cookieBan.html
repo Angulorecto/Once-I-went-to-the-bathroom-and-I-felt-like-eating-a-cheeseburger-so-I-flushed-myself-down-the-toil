@@ -9,6 +9,24 @@
   <link rel="stylesheet" href="../css/easyFonts.css" type="text/css" charset="utf-8"/>
 </head>
 <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
-<body style="background-color:black;">
-  <a href="home.html" class="whiteRight" style="text-decoration:none; font-size:15px;">< Back</a>
-</body>
+  <body style="background-color:black;">
+      <a href="home.html" class="whiteRight" style="text-decoration:none; font-size:15px;">< Back</a>
+      <form id="form" align="center" onsubmit="generateBanLink()">
+        <label style="font-size:50px;" class="whiteRight">Permanent?</label><br>
+        <label class="switch">
+          <input id="perma" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <label style="font-size:50px;" class=whiteRight>Date of Unban</label><br>
+        <input class="whiteRight" id="date" type="date" style="line-height:2.0; border-radius:15px; background-color:rgb(23,28,35);"><br>
+        <input style="font-size:30px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit">
+      </form>
+      <style>
+      #form {
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </body>
