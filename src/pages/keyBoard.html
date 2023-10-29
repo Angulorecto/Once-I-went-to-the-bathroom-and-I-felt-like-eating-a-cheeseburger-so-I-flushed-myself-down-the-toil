@@ -12,15 +12,18 @@
   <body style="background-color:black;">
     <script src="../js/redirects.js"></script>
     <script src="../js/setup.js"></script>
+    <style>
+      
+    </style>
     <div id="keys">
       <div id="active" onload="setupAcKeys();">
         <div style="background-color:green; border-radius:15px;">
           <p align="center" class="whiteRight">Active Keys</p>
         </div>
         <div id="template" style="border-radius:50px; border:1px solid white;">
-          <p style="margin-left:5px; display:inline;" class="whiteRight">Rank:</p>
-          <p style="display:inline;" class="whiteRight">Name:</p>
-          <p style="display:inline;" class="whiteRight">Key:</p>
+          <p style="text-align:left; margin-left:5px; display:inline;" class="whiteRight">Rank:</p>
+          <p style="text-align:center; display:inline;" class="whiteRight">Name:</p>
+          <p style="text-align:right; display:inline;" class="whiteRight">Key:</p>
           <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
@@ -32,11 +35,8 @@
             let clone = template.cloneNode(true);
 
             clone.children[0].innerHTML = key.rank;
-            clone.children[0].align = "left";
             clone.children[1].innerHTML = key.name;
-            clone.children[1].align = "center";
             clone.children[2].innerHTML = atob(key.key);
-            clone.children[2].align = "right";
             clone.children[3].children[0].checked = true;
             document.getElementById("active").appendChild(clone);
           });
