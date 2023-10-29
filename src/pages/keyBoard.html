@@ -45,12 +45,12 @@
           });
           inactivekeys.forEach((inkey) => {
             var template = document.getElementById("template");
-            let clone = template.cloneNode(true);
+            let inclone = template.cloneNode(true);
 
-            clone.children[0].innerHTML = inkey.rank;
-            clone.children[1].innerHTML = inkey.name;
-            clone.children[2].innerHTML = atob(inkey.key);
-            document.getElementById("inactive").appendChild(clone);
+            inclone.children[0].innerHTML = inkey.rank;
+            inclone.children[1].innerHTML = inkey.name;
+            inclone.children[2].innerHTML = atob(inkey.key);
+            document.getElementById("inactive").appendChild(inclone);
           });
           document.getElementById("template").remove();
         </script>
