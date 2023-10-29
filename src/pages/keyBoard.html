@@ -50,7 +50,6 @@
             clone.children[0].innerHTML = inkey.rank;
             clone.children[1].innerHTML = inkey.name;
             clone.children[2].innerHTML = atob(inkey.key);
-            clone.children[3].children[0].children[0].checked = false;
             document.getElementById("inactive").appendChild(clone);
           });
           document.getElementById("template").remove();
