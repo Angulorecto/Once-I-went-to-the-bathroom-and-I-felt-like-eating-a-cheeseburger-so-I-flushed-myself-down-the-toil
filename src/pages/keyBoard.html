@@ -42,13 +42,13 @@
             clone.children[3].children[0].children[0].checked = true;
             document.getElementById("active").appendChild(clone);
           });
-          inkeys.forEach((inkey) => {
+          inactivekeys.forEach((inkey) => {
             var template = document.getElementById("template");
             let clone = template.cloneNode(true);
 
-            clone.children[0].innerHTML = key.rank;
-            clone.children[1].innerHTML = key.name;
-            clone.children[2].innerHTML = atob(key.key);
+            clone.children[0].innerHTML = inkey.rank;
+            clone.children[1].innerHTML = inkey.name;
+            clone.children[2].innerHTML = atob(inkey.key);
             clone.children[3].children[0].children[0].checked = false;
             document.getElementById("inactive").appendChild(clone);
           });
