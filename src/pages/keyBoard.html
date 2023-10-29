@@ -34,9 +34,9 @@
             clone.children[0].innerHTML = key.rank;
             clone.children[0].align = "left";
             clone.children[1].innerHTML = key.name;
-            clone.children[1].innerHTML = "center";
+            clone.children[1].align = "center";
             clone.children[2].innerHTML = atob(key.key);
-            clone.children[2].innerHTML = "right";
+            clone.children[2].align = "right";
             clone.children[3].children[0].checked = true;
             document.getElementById("active").appendChild(clone);
           });
