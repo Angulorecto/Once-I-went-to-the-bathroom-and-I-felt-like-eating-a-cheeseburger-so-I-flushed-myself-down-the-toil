@@ -61,7 +61,7 @@
     <script>
           keys.forEach((key) => {
             var actemplate = document.getElementById("actemplate");
-            let clone = template.cloneNode(true);
+            let clone = actemplate.cloneNode(true);
             
             clone.removeAttribute("id");
             clone.children[0].innerHTML = key.rank;
@@ -72,7 +72,7 @@
           });
           inactivekeys.forEach((inkey) => {
             var intemplate = document.getElementById("intemplate");
-            let inclone = template.cloneNode(true);
+            let inclone = intemplate.cloneNode(true);
 
             inclone.removeAttribute("id");
             inclone.children[0].innerHTML = inkey.rank;
