@@ -35,7 +35,8 @@
           keys.forEach((key) => {
             var template = document.getElementById("template");
             let clone = template.cloneNode(true);
-
+            
+            clone.id = "";
             clone.children[0].innerHTML = key.rank;
             clone.children[1].innerHTML = key.name;
             clone.children[2].innerHTML = atob(key.key);
