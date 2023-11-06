@@ -25,10 +25,12 @@
       <script>
         function generateBanLink() {
           let perma = document.getElementById("perma").checked;
-          let dataOfUnban = document.getElementById().value;
+          let dataOfUnban = document.getElementById("date").value;
           var output = document.getElementById("output");
           if (perma = true) {
-            output.innerHTML = "https://angulorecto.github.io/iwillchange/src/pages/home.html?perma=true&till=" + ;
+            output.innerHTML = "https://angulorecto.github.io/iwillchange/src/pages/home.html?perma=true&till=" + dateOfUnban;
+          } else {
+            output.innerHTML = "https://angulorecto.github.io/iwillchange/src/pages/home.html?perma=false&till=" + dateOfUnban;
           }
         }
       </script>
