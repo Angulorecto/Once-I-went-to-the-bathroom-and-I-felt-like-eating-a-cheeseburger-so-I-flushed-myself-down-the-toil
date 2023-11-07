@@ -44,7 +44,6 @@ const localkey = localStorage.getItem("key");
             document.getElementById("keyInfo").style.display = "none";
             document.getElementById("keyMgr").style.display = "block";
             document.getElementById("cookieBan").style.display = "block";
-            document.getElementById("localBan").style.display = "block";
             document.getElementById("to404").style.display = "block";
           };
         };
