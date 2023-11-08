@@ -12,12 +12,12 @@
   </head>
   <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
   <body style="background-color:black;">
-    <div style="z-index:1;" id="container" class="video-wrapper">
+    <div style="z-index:-1;" id="container" class="video-wrapper">
       <video id="liquid" playsinline autoplay muted loop>
         <source id="vidsrc" src="../videos/bg2.mp4" type="video/mp4">
       </video>
     </div>
-    <a class='whiteRight' style="z-index: 10; text-decoration:none; font-size: 15px; color: white;" href="home.html"> < Back </a>
+    <a class='whiteRight' style="text-decoration:none; font-size: 15px; color: white;" href="home.html"> < Back </a>
     <script src="../js/redirects.js"></script>
     <script>
       function AuthKey() {
@@ -29,11 +29,11 @@
       }
     </script>
     <form id="form" align="center" onsubmit="AuthKey()">
-      <label style="z-index: 10; font-size:50px;" class="whiteRight">Key</label><br>
-      <input class="whiteRight" id="key" type="text" style="z-index: 10; background-color:rgb(23,28,35); border-radius:15px;"><br>
-      <label style="z-index: 10; font-size:50px;" class=whiteRight>Username</label><br>
-      <input class="whiteRight" id="username" type="text" style="z-index: 10; line-height:2.0; border-radius:15px; background-color:rgb(23,28,35);"><br>
-      <input style="z-index: 10; font-size:30px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit">
+      <label style="font-size:50px;" class="whiteRight">Key</label><br>
+      <input class="whiteRight" id="key" type="text" style="background-color:rgb(23,28,35); border-radius:15px;"><br>
+      <label style="font-size:50px;" class=whiteRight>Username</label><br>
+      <input class="whiteRight" id="username" type="text" style="line-height:2.0; border-radius:15px; background-color:rgb(23,28,35);"><br>
+      <input style="font-size:30px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit">
     </form>
     <script>
       document.getElementById("username").value = localStorage.getItem("username");
