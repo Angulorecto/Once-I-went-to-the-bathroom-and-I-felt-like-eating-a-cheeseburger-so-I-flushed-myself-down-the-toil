@@ -6,6 +6,14 @@
         height: 100%;
         width: 100%;
       }
+#world {
+        position:absolute;
+        top:0;
+        left:0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
       .video-wrapper {
          /* Telling our absolute positioned video to 
          be relative to this element */
