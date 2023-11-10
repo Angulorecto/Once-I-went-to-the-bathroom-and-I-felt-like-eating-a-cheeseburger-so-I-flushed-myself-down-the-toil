@@ -1,17 +1,6 @@
-const localkey = localStorage.getItem("key");
+      const localkey = localStorage.getItem("key");
       const localuser = localStorage.getItem("username");
       var account = document.getElementById("account");
-
-      if (localkey == "") {
-        account.innerHTML = "";
-      } else {
-        account.innerHTML = "Manage Account"
-      };
-      if (localuser == "") {
-        account.innerHTML = "";
-      } else {
-        account.innerHTML = "Manage Account"
-      };
 
       keys.forEach((key) => {
         account.setAttribute("data-key", btoa(localStorage.getItem("key")));
