@@ -20,8 +20,11 @@ function setupPublic() {
           y.setAttribute("align", "center");
           
           div.appendChild(y);
-          
-          document.getElementById("row1").appendChild(div);
+          if (service.serviceNum < 50) {
+             document.getElementById("row1").appendChild(div);
+          } else {
+             document.getElementById("row2").appendChild(div);
+          }
         }
       });
 };
