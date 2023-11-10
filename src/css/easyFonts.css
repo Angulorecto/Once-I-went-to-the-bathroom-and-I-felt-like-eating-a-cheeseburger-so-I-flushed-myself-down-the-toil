@@ -2,6 +2,9 @@
   color: #ffffff;
   align-self: flex-start;
   transition: 0.3s;
+  display: absolute;
+  left:0;
+  top:0;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
