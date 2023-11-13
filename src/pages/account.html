@@ -17,7 +17,13 @@
 </head>
 <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
   <script>
-    const options = []
+    const options = ["None", "Ring of fire", "Dust", "Custom"]
+    options.forEach((option) => {
+      var newElmt = document.createElement("option");
+      newElmt.setAttribute("class", "whiteRight");
+      document.getElementById("HomeVid").appendChild(newElmt);
+      document.getElementById("404Vid").appendChild(newElmt);
+    })
   </script>
   <body style="background-color:black;">
     <a href="home.html" class="whiteRight-hover" style="text-decoration:none; font-size:15px;">< Back</a>
@@ -43,20 +49,12 @@
         <H1 class="whiteRight" style="align-items:flex-start; font-size:35px;">Live Backgrounds:</H1>
         <div style="margin-right:15px; display:inline-block;">
           <H1 class="whiteRight" style="font-size:25px;">Home</H1>
-          <select class="whiteRight" style="border-color:black; width:100px; height:50px; border-radius:10px; background-color:rgb(23,28,35);">
-            <option class="whiteRight">None</option>
-            <option class="whiteRight">Ring of fire</option>
-            <option class="whiteRight">Dust</option>
-            <option class="whiteRight">Custom</option>
+          <select id="HomeVid" class="whiteRight" style="border-color:black; width:100px; height:50px; border-radius:10px; background-color:rgb(23,28,35);">
           </select>
         </div>
         <div style="margin-right:15px; display:inline-block;">
           <H1 class="whiteRight" style="font-size:25px;">404</H1>
-          <select class="whiteRight" style="border-color:black; width:100px; height:50px; border-radius:10px; background-color:rgb(23,28,35);">
-            <option class="whiteRight">Ring of fire</option>
-            <option class="whiteRight">Dust</option>
-            <option class="whiteRight">Custom</option>
-            <option class="whiteRight">None</option>
+          <select id="HomeVid" class="whiteRight" style="border-color:black; width:100px; height:50px; border-radius:10px; background-color:rgb(23,28,35);">
           </select>
         </div>
       </div>
