@@ -20,8 +20,33 @@ const videos = [
   { name: "Dust", src: "../videos/bg2.mp4" },
 ]
 
+const keywords = [
+  { word: "public" },
+  { word: "premium" },
+  { word: "member" },
+  { word: "staff" },
+]
+
 function changeVideo() {
-  
+  videos.forEach((video) => {
+    elmtsSrc.forEach((elmt) => {
+      if (elmt.type == "Input") {
+        if (document.getElementById(elmt.id).value == video.name) {
+          keywords.forEach((keyword) => {
+            if (elmt.id.includes(keyword.word) == true) {
+              elmtsSrc.forEach((elmt) => {
+                if (elmt.type == "Storage") {
+                  if (elmt.id.includes(keyword.word) == true) {
+                    localStorage.setItem(elmt.id, video.name)
+                  }
+                }
+              })
+            }
+          })
+        }
+      }
+    })
+  })
 }
 
 elmtsSrc.forEach((elmt) => {
