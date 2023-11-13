@@ -16,15 +16,6 @@
   <script src="../js/reloadKey.js"></script>
 </head>
 <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
-  <script>
-    const options = ["None", "Ring of fire", "Dust", "Custom"]
-    options.forEach((option) => {
-      var newElmt = document.createElement("option");
-      newElmt.setAttribute("class", "whiteRight");
-      document.getElementById("HomeVid").appendChild(newElmt);
-      document.getElementById("404Vid").appendChild(newElmt);
-    })
-  </script>
   <body style="background-color:black;">
     <a href="home.html" class="whiteRight-hover" style="text-decoration:none; font-size:15px;">< Back</a>
     <H1 align="center" class="whiteRight" style="font-size:50px;">Manage Account</H1>
@@ -60,6 +51,14 @@
       </div>
     </div>
     <script>
+      const options = ["None", "Ring of fire", "Dust", "Custom"]
+      options.forEach((option) => {
+        var newElmt = document.createElement("option");
+        newElmt.setAttribute("class", "whiteRight");
+        document.getElementById("HomeVid").appendChild(newElmt);
+        document.getElementById("404Vid").appendChild(newElmt);
+      })
+      
       var key = localStorage.getItem("key") || "No key";
       var username = localStorage.getItem("username") || "No name";
       var keyarea = document.getElementById("key1");
