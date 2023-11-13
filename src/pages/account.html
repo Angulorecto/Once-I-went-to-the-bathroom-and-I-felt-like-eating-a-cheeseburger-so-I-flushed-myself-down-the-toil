@@ -51,14 +51,6 @@
       </div>
     </div>
     <script>
-      const options = ["None", "Ring of fire", "Dust", "Custom"]
-      options.forEach((option) => {
-        var newElmt = document.createElement("option");
-        newElmt.setAttribute("class", "whiteRight");
-        document.getElementById("HomeVid").appendChild(newElmt);
-        document.getElementById("404Vid").appendChild(newElmt);
-      })
-      
       var key = localStorage.getItem("key") || "No key";
       var username = localStorage.getItem("username") || "No name";
       var keyarea = document.getElementById("key1");
