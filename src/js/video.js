@@ -37,16 +37,16 @@ function changeVideo() {
               elmtsSrc.forEach((elmt) => {
                 if (elmt.type == "Storage") {
                   if (elmt.id.includes(keyword.word) == true) {
-                    localStorage.setItem(elmt.id, video.name)
+                    localStorage.setItem(elmt.id, video.name);
                   }
                 }
-              })
+              });
             }
-          })
+          });
         }
       }
-    })
-  })
+    });
+  });
 }
 
 elmtsSrc.forEach((elmt) => {
