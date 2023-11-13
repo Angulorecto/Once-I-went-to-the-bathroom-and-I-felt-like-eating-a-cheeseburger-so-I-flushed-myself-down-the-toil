@@ -28,10 +28,10 @@
         <source id="homeVidSrc" src="../videos/bg.mp4" type="video/mp4">
       </video>
     </div>
-    <a data-key="x" href="account.html" class="whiteRight-hover" style="text-decoration:none; font-size: 15px;" id="account">Manage Account</a>
-    <a href="pricing.html" class="whiteRight-hover" style="float:right; text-decoration:none; font-size:15px;">Pricing</a>
-    <H1 align="center" class='whiteRight' style="font-size: 50px;">Interstellar Links</H1>
-    <div id="row1" align="center">
+    <a style="z-index:2;"data-key="x" href="account.html" class="whiteRight-hover" style="text-decoration:none; font-size: 15px;" id="account">Manage Account</a>
+    <a style="z-index:2;" href="pricing.html" class="whiteRight-hover" style="float:right; text-decoration:none; font-size:15px;">Pricing</a>
+    <H1 style="z-index:2;" align="center" class='whiteRight' style="font-size: 50px;">Interstellar Links</H1>
+    <div style="z-index:2;" id="row1" align="center">
       <div id="link1" style="display:inline-block;">
         <img onclick="redirect(0.1)" class="border" src="../photos/BlueInLinkBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
         <p class='whiteRight'>Public Links</p>
@@ -49,12 +49,12 @@
         <p class='whiteRight'>Staff Links</p>
       </div>
     </div>
-    <div id="keyInfo" align="center">
-      <H2 class="whiteRight">Have a key?</H2><br>
-      <H4 class="whiteRight">Click <a href="authorizeKey.html" class="whiteRight">here</a> to authorize and add your key to your account.</H4>
+    <div style="z-index:2;" id="keyInfo" align="center">
+      <H2 style="z-index:2;" class="whiteRight">Have a key?</H2><br>
+      <H4 style="z-index:2;" class="whiteRight">Click <a href="authorizeKey.html" class="whiteRight">here</a> to authorize and add your key to your account.</H4>
     </div>
-    <p align="center" class="whiteRight">Did you know? You can press the ` key to go back to the home page when you're in a link!</p>
-    <div align="center" class="padded" id="staffArea" style="display:none; border-style:solid; border-radius:15px; border-color:red;">
+    <p style="z-index:2;" align="center" class="whiteRight">Did you know? You can press the ` key to go back to the home page when you're in a link!</p>
+    <div align="center" class="padded" id="staffArea" style="z-index:2; display:none; border-style:solid; border-radius:15px; border-color:red;">
       <H1 class="whiteRight" style="line-height:0.1; font-size:30px;">Admin Area</H1><br>
       <a align="center" class="whiteRight" href="serverManager.html" style="text-decoration:none;">Server Manager</a><br>
       <a align="center" class="whiteRight" href="sandbox.html" style="text-decoration:none;">Trigger all low class links</a><br>
