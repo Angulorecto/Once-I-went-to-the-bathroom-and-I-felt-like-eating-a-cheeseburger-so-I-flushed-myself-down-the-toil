@@ -21,6 +21,8 @@ const videos = [
 ]
 
 const keywords = [
+  { word: "404" },
+  { word: "account" },
   { word: "public" },
   { word: "premium" },
   { word: "member" },
