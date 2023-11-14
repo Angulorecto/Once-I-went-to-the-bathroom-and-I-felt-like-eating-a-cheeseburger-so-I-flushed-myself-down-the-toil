@@ -58,6 +58,7 @@
       backgrounds.forEach((background) => {
         let clone = document.createElement("option");
         clone.setAttribute("class", "whiteRight");
+        clone.innerHTML = background.name;
         document.getElementById("HomeVid").appendChild(clone);
       });
       var key = localStorage.getItem("key") || "No key";
