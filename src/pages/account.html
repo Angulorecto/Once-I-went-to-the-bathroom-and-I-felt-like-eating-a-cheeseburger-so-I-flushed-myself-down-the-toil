@@ -45,12 +45,21 @@
         </div>
         <div style="margin-right:15px; display:inline-block;">
           <H1 class="whiteRight" style="font-size:25px;">404</H1>
-          <select id="HomeVid" class="whiteRight" style="border-color:black; width:100px; height:50px; border-radius:10px; background-color:rgb(23,28,35);">
+          <select id="404Vid" class="whiteRight" style="border-color:black; width:100px; height:50px; border-radius:10px; background-color:rgb(23,28,35);">
           </select>
         </div>
       </div>
     </div>
     <script>
+      const backgrounds = [
+        { name: "Ring of fire", src: "../videos/bg.mp4" },
+        { name: "Dust", src: "../videos/bg.2mp4" },
+      ];
+      backgrounds.forEach((background) => {
+        let clone = document.createElement("option");
+        clone.setAttribute("class", "whiteRight");
+        document.getElementById("HomeVid").appendChild(clone);
+      });
       var key = localStorage.getItem("key") || "No key";
       var username = localStorage.getItem("username") || "No name";
       var keyarea = document.getElementById("key1");
