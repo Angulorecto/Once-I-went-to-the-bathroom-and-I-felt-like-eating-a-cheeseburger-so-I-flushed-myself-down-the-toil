@@ -56,12 +56,17 @@
         { name: "Ring of fire", src: "../videos/bg.mp4" },
         { name: "Dust", src: "../videos/bg2.mp4" },
       ];
+      const places = [
+        { prefix: "Home" },
+        { prefix: "404" },
+      ];
       backgrounds.forEach((background) => {
-        let clone = document.createElement("option");
-        clone.setAttribute("class", "whiteRight");
-        clone.innerHTML = background.name;
-        document.getElementById("HomeVid").appendChild(clone);
-        document.getElementById("404Vid").appendChild(clone);
+        places.forEach((place) => {
+          let clone = document.createElement("option");
+          clone.setAttribute("class", "whiteRight");
+          clone.innerHTML = background.name;
+          document.getElementById(place.prefix + "Vid").appendChild(clone);
+        });
       });
       function changeBackground() {
         var home = document.getElementById("HomeVid");
