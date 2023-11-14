@@ -79,6 +79,11 @@
           }
         });
       }
+
+      places.forEach((place) => {
+        let area = document.getElementById(place.prefix + "Vid");
+        area.value = localStorage.getItem(place.prefix + "BG");
+      });
       
       var key = localStorage.getItem("key") || "No key";
       var username = localStorage.getItem("username") || "No name";
