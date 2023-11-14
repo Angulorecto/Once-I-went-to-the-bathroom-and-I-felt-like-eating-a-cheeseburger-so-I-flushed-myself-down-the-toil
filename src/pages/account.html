@@ -63,6 +63,18 @@
         document.getElementById("HomeVid").appendChild(clone);
         document.getElementById("404Vid").appendChild(clone);
       });
+      function changeBackground() {
+        var home = document.getElementById("HomeVid");
+        var v404 = document.getElementById("404Vid");
+        backgrounds.forEach((background) => {
+          if (home.value == background.name) {
+            localStorage.setItem("HomeBG", background.name);
+          } else if (v404.value == background.name) {
+            localStorage.setItem("404BG", background.name);
+          }
+        });
+      }
+      
       var key = localStorage.getItem("key") || "No key";
       var username = localStorage.getItem("username") || "No name";
       var keyarea = document.getElementById("key1");
