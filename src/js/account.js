@@ -16,14 +16,13 @@ const backgrounds = [
         });
       });
       function changeBackground() {
-        var home = document.getElementById("HomeVid");
-        var v404 = document.getElementById("404Vid");
-        backgrounds.forEach((background) => {
-          if (home.value == background.name) {
-            localStorage.setItem("HomeBG", background.name);
-          } else if (v404.value == background.name) {
-            localStorage.setItem("404BG", background.name);
-          }
+        places.forEach((place) => {
+          let l = document.getElementById(place.prefix + "Vid");
+          backgrounds.forEach((background) => {
+            if (l.value == background.name) {
+              localStorage.setItem(place.prefix + "BG", background.name);
+            }
+          });
         });
         location.reload();
       }
