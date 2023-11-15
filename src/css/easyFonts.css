@@ -3,17 +3,16 @@
   align-self: flex-start;
   transition: 0.3s;
   display: absolute;
+  position: absolute;
   font-family:"righty";
   left:0;
   top:0;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
 }
 .whiteRight-hover:hover {
   color: white;
-  font-size: 18px;
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #21262d;
 }
