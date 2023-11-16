@@ -2,7 +2,7 @@
   color: white;
   align-self: flex-start;
   transition: 0.3s;
-  position: relative; 
+  position: absolute; 
   top: 0px;
   right: 0px;
   font-family:"righty";
