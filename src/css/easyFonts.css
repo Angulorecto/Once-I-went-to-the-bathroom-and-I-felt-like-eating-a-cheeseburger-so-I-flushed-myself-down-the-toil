@@ -11,6 +11,11 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
+.whiteRight-hover-right:hover {
+  color: white;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #21262d;
+}
 .whiteRight-hover {
   color: white;
   align-self: flex-start;
