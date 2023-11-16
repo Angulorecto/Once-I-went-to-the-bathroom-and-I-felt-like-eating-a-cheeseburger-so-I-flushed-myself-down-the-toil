@@ -95,6 +95,14 @@
   transition: .4s;
 }
 
+.slider-big.round {
+  border-radius: 34px;
+}
+
+.slider-big.round:before {
+  border-radius: 50%;
+}
+
 input:checked + .slider {
   background-color: #2196F3;
 }
