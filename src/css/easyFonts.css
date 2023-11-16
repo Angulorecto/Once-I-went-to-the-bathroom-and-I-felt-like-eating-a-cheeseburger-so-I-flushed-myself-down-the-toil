@@ -125,9 +125,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider-big:before {
-  -webkit-transform: translateX(22px);
-  -ms-transform: translateX(22px);
-  transform: translateX(22px);
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
 }
 
 input:checked + .slider-big {
