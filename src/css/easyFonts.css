@@ -88,8 +88,8 @@
   content: "";
   height: 27px;
   width: 27px;
-  left: 2px;
-  bottom: 2px;
+  left: 4px;
+  bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
