@@ -65,13 +65,13 @@ var c = document.getElementById("memberdecKey");
 var d = document.getElementById("staffdecKey");
 
 
-function redirect() {
+function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
             window.location.href = page.page;
         };
     });
-    services.forEach((service) => {
+    services.forEach((mom) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
                localStorage.setItem("hash",service.hash);
