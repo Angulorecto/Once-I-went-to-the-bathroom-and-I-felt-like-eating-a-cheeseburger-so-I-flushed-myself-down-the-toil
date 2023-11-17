@@ -71,7 +71,7 @@ function redirect(num) {
             window.location.href = page.page;
         };
     });
-    services.forEach((mom) => {
+    services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
                localStorage.setItem("hash",service.hash);
