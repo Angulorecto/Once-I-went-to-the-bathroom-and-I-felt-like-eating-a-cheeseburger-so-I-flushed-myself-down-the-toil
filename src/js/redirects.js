@@ -64,6 +64,9 @@ var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
 var d = document.getElementById("staffdecKey");
 
+function back() {
+   location.href = "home.html";
+}
 
 function redirect(num) {
     pages.forEach((page) => {
