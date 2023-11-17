@@ -65,7 +65,7 @@ var c = document.getElementById("memberdecKey");
 var d = document.getElementById("staffdecKey");
 
 
-function redirect(num1) {
+function redirect() {
     pages.forEach((page) => {
        if (num == page.linkNum) {
             window.location.href = page.page;
