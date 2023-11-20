@@ -6,6 +6,9 @@ const backgrounds = [
       const places = [
         { prefix: "Home" },
         { prefix: "404" },
+        { prefix: "Account" },
+        { prefix: "Pricing" },
+        { prefix: "PublicLinks" },
       ];
       backgrounds.forEach((background) => {
         places.forEach((place) => {
@@ -45,3 +48,36 @@ const backgrounds = [
         localStorage.setItem("key", "");
         location.reload();
       }
+      function advanced() {
+        var area = document.getElementById("advancedArea");
+        var checked = area.children[1].children[0].value;
+        if (checked == true) {
+          document.getElementById("")
+        } else {
+          
+        }
+      }
+      const localkey = localStorage.getItem("key");
+      var account = document.getElementById("back");
+
+      keys.forEach((key) => {
+        account.setAttribute("data-key", btoa(localStorage.getItem("key")));
+        const decodedKey = account.getAttribute("data-key");
+        if (key.key == decodedKey) {
+          if (key.rank == "Premium") {
+            
+          };
+          
+          if (key.rank == "Member") {
+            
+          };
+
+          if (key.rank == "Staff") {
+            
+          };
+
+          if (key.rank == "Owner") {
+            
+          };
+        };
+      });
