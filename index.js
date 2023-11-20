@@ -16,30 +16,13 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'static')));
 
 const routes = [
-  { path: '/', file: 'index.html' },
+  { path: '/', file: 'placeholder.html' },
   { path: '/news', file: 'apps.html' },
   { path: '/events', file: 'games.html' },
   { path: '/diagnostic', file: 'settings.html' },
   { path: '/local-news', file: 'tabs.html' },
   { path: '/image-galleries', file: 'go.html' },
 ];
-
-app.get('/edu/*', cors({ origin: false }), async (req, res, next) => {
-  try {
-    const reqTarget = `https://raw.githubusercontent.com/InterstellarNetwork/Interstellar-Assets/main/${req.params[0]}`;
-    const asset = await fetch(reqTarget);
-    
-    if (asset.ok) {
-      const data = await asset.arrayBuffer();
-      res.end(Buffer.from(data));
-    } else {
-      next();
-    }
-  } catch (error) {
-    console.error('Error fetching:', error);
-    next(error);
-  }
-});
 
 routes.forEach((route) => {
   app.get(route.path, (req, res) => {
