@@ -91,3 +91,28 @@ function redirect(num) {
         };
     });
 };
+      keys.forEach((key) => {
+        account.setAttribute("data-key", btoa(localStorage.getItem("key")));
+        const decodedKey = account.getAttribute("data-key");
+        if (key.key == decodedKey) {
+          if (localStorage.getItem("advanced") == "true") {
+            if (key.rank == "Premium") {
+              document.getElementById("premium").style.display = "inline-block";
+            };
+            if (key.rank == "Member") {
+              document.getElementById("premium").style.display = "inline-block";
+              document.getElementById("member").style.display = "inline-block";
+            };
+            if (key.rank == "Staff") {
+              document.getElementById("premium").style.display = "inline-block";
+              document.getElementById("member").style.display = "inline-block";
+              document.getElementById("staff").style.display = "inline-block";
+            };
+            if (key.rank == "Owner") {
+              document.getElementById("premium").style.display = "inline-block";
+              document.getElementById("member").style.display = "inline-block";
+              document.getElementById("staff").style.display = "inline-block";
+            };
+          };
+        };
+      });
