@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .whiteRight-hover-right {
   color: white;
   align-self: flex-start;
