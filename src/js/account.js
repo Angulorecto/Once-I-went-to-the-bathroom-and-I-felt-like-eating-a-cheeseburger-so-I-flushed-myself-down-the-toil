@@ -38,7 +38,7 @@ const backgrounds = [
           let l = document.getElementById(place.prefix + "VidSrc");
           backgrounds.forEach((background) => {
             if (localStorage.getItem(place.prefix + "BG") == background.name) {
-              l.setAttribute("src", ));
+              l.setAttribute("src", background.src));
             }
           });
         });
@@ -73,28 +73,4 @@ const backgrounds = [
         } else {
           localStorage.setItem("advanced","false");
         }
-      }
-
-      var account = document.getElementById("back");
-
-      keys.forEach((key) => {
-        account.setAttribute("data-key", btoa(localStorage.getItem("key")));
-        const decodedKey = account.getAttribute("data-key");
-        if (key.key == decodedKey) {
-          if (localStorage.getItem("advanced") == "true") {
-            if (key.rank == "Premium") {
-              document.getElementById("public").style.display = "inline-block";
-            };
-            if (key.rank == "Member") {
-              document.getElementById("public").style.display = "inline-block";
-              document.getElementById("pr").style.display = "inline-block";
-            };
-            if (key.rank == "Staff") {
-              document.getElementById("public").style.display = "inline-block";
-            };
-            if (key.rank == "Owner") {
-              document.getElementById("public").style.display = "inline-block";
-            };
-          };
-        };
-      });
+      };
