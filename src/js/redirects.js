@@ -4,6 +4,7 @@ const keys = [
    { rank: "Member", name: "Test", key: "TWVtYmVy" },
    { rank: "Staff", name: "Caleb", key: "Q2Fsbw==" },
    { rank: "Staff", name: "BJ", key: "QmVqb3Rh" },
+   { rank: "Premium", name: "Marcos", key: "bWFyY29z" },
 ];
 const inactivekeys = [
    { rank: "Premium", name: "Inactive", key: "SW5hY3RpdmU=" },
