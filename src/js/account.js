@@ -9,6 +9,9 @@ const backgrounds = [
         { prefix: "Account" },
         { prefix: "Pricing" },
         { prefix: "PublicLinks" },
+        { prefix: "PremiumLinks" },
+        { prefix: "MemberLinks" },
+        { prefix: "StaffLinks" },
       ];
       backgrounds.forEach((background) => {
         places.forEach((place) => {
@@ -30,6 +33,17 @@ const backgrounds = [
         location.reload();
       }
 
+      function setBackground() {
+        places.forEach((place) => {
+          let l = document.getElementById(place.prefix + "VidSrc");
+          backgrounds.forEach((background) => {
+            if (localStorage.getItem(place.prefix + "BG") == background.name) {
+              l.setAttribute("src", ));
+            }
+          });
+        });
+      }
+
       places.forEach((place) => {
         let area = document.getElementById(place.prefix + "Vid");
         area.value = localStorage.getItem(place.prefix + "BG");
@@ -41,43 +55,46 @@ const backgrounds = [
       var userarea = document.getElementById("username1");
       userarea.innerHTML = username;
       keyarea.innerHTML = key;
+
       if (key == "No key") {
         document.getElementById("button").style.display = "none";
       }
+
       function removeKey() {
         localStorage.setItem("key", "");
         location.reload();
       }
+
       function advanced() {
         var area = document.getElementById("advancedArea");
         var checked = area.children[1].children[0].value;
         if (checked == true) {
-          document.getElementById("")
+          localStorage.setItem("advanced","true");
         } else {
-          
+          localStorage.setItem("advanced","false");
         }
       }
-      const localkey = localStorage.getItem("key");
+
       var account = document.getElementById("back");
 
       keys.forEach((key) => {
         account.setAttribute("data-key", btoa(localStorage.getItem("key")));
         const decodedKey = account.getAttribute("data-key");
         if (key.key == decodedKey) {
-          if (key.rank == "Premium") {
-            
-          };
-          
-          if (key.rank == "Member") {
-            
-          };
-
-          if (key.rank == "Staff") {
-            
-          };
-
-          if (key.rank == "Owner") {
-            
+          if (localStorage.getItem("advanced") == "true") {
+            if (key.rank == "Premium") {
+              document.getElementById("public").style.display = "inline-block";
+            };
+            if (key.rank == "Member") {
+              document.getElementById("public").style.display = "inline-block";
+              document.getElementById("pr").style.display = "inline-block";
+            };
+            if (key.rank == "Staff") {
+              document.getElementById("public").style.display = "inline-block";
+            };
+            if (key.rank == "Owner") {
+              document.getElementById("public").style.display = "inline-block";
+            };
           };
         };
       });
