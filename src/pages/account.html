@@ -25,7 +25,15 @@
       <p class="whiteRight" style="margin-left:0.5%; display:inline-block;" id="key1"></p>
       <button id="button" class="blackRight" style="border: 3px solid black; background-color:red; border-radius:15px;" onclick="removeKey()">Remove Key</button>
       <p style="margin-left:0.5%;" class="whiteRight">Username:</p>
-      <p style="margin-left:0.5%;" class="whiteRight" id="username1"></p>>
+      <p style="margin-left:0.5%;" class="whiteRight" id="username1"></p>
+      <button onclick="alertDate()">Alert</button>
+      <script>
+        function alertDate() {
+          const d = new Date();
+          let time = d.getTime();
+          alert(time);
+        }
+      </script>
     </div><br><br><br><br>
     <div style="display:flex; align-items:flex-start;">
       <div style="margin-right:5%; display:inline-block;">
