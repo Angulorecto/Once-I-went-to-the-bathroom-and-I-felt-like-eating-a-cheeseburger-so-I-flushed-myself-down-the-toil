@@ -29,9 +29,13 @@
       <button onclick="alertDate()">Alert</button>
       <script>
         function alertDate() {
-          const d = new Date();
-          let time = d.getTime();
-          alert(time);
+          let dateObj = new Date();
+          let month = dateObj.getUTCMonth() + 1; //months from 1-12
+          let day = dateObj.getUTCDate();
+          let year = dateObj.getUTCFullYear();
+
+          let newdate = year + "/" + month + "/" + day;
+          alert(newdate);
         }
       </script>
     </div><br><br><br><br>
