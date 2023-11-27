@@ -117,6 +117,3 @@ keys.forEach((key) => {
       };
    };
 });
-const d = new Date();
-let time = d.getTime();
-alert(time);
