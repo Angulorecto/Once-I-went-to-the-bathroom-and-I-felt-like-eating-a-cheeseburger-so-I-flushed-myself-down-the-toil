@@ -5,8 +5,8 @@ const keys = [
    { rank: "Staff", name: "Caleb", key: "Q2Fsbw==" },
    { rank: "Staff", name: "BJ", key: "QmVqb3Rh" },
 ];
-const inactivekeys = [
-   { rank: "Premium", name: "Inactive", key: "SW5hY3RpdmU=" },
+const tempKeys = [
+   { rank: "Premium", name: "Marcos", key: "bWFyY29z", activeUntill: "27/11/2023"},
 ];
 const services = [
        { serviceNum: "1", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LWplMjQudmVyY2VsLmFwcC8=", rank: "staff"},
@@ -117,3 +117,6 @@ keys.forEach((key) => {
       };
    };
 });
+const d = new Date();
+let time = d.getTime();
+alert(time);
