@@ -91,6 +91,17 @@ function redirect(num) {
         };
     });
 };
+tempKeys.forEach((tempKey) =>{
+   let dateObj = new Date();
+   let month = dateObj.getUTCMonth() + 1; //months from 1-12
+   let day = dateObj.getUTCDate();
+   let year = dateObj.getUTCFullYear();
+
+   let newdate = day + "/" + month + "/" + year;
+   if (newdate != tempKey.activeUntill) {
+      
+   }
+});
 var account = document.getElementById("back");
 keys.forEach((key) => {
    account.setAttribute("data-key", btoa(localStorage.getItem("key")));
