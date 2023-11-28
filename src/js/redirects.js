@@ -4,7 +4,7 @@ const keys = [
    { rank: "Member", name: "Test", key: "TWVtYmVy" },
    { rank: "Staff", name: "Caleb", key: "Q2Fsbw==" },
    { rank: "Staff", name: "BJ", key: "QmVqb3Rh" },
-   { rank: "Premium", name: "Roblox", key: "Um9ibG94" },
+   { rank: "Roblox", name: "Roblox", key: "Um9ibG94" },
    { rank: "Premium", name: "Vikram", key: "bWFya2l2" },
 ];
 const tempKeys = [
