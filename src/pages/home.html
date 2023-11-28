@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/root.css" type="text/css" charset="utf-8"/>
   <link rel="stylesheet" href="../css/video.css" type="text/css" charset="utf-8"/>
   <script src="../js/reloadKey.js"></script>
+  <script src="../js/setup.js"></script>
 <style>
   img {
     border-radius: 20%;
@@ -23,7 +24,7 @@
 </style>
 </head>
 <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
-  <body style="background-color:black;">
+  <body style="background-color:black;" onload="setupRoblox()">
     <div style="z-index:-1;" id="container" class="video-wrapper">
       <video class="toPlayVideo" playsinline autoplay muted loop>
         <source id="HomeVidSrc" src="" type="video/mp4">
@@ -48,10 +49,6 @@
       <div id="link4" style="display:none;">
         <img onclick="redirect(0.4)" class="border" src="../photos/StaffLink.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
         <p class='whiteRight'>Staff Links</p>
-      </div>
-      <div id="link5" style="display:none;">
-        <img onclick="redirect(0.5)" class="border" src="../photos/Robloxlogo2019.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
-        <p class='whiteRight'>Roblox</p>
       </div>
     </div>
     <div style="z-index:2;" id="keyInfo" align="center">
