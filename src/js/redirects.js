@@ -53,6 +53,7 @@ const services = [
        { serviceNum: "42", hash: "aHR0cHM6Ly96ODNuM3ctODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "46", hash: "aHR0cHM6Ly80cnk2NXYtODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "50", hash: "aHR0cHM6Ly9wZjY1bWMtODA4MC5jc2IuYXBwLw==", rank : "public"},
+       { serviceNum: "100", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LXRzcXQudmVyY2VsLmFwcC8=", rank : "roblox"},
 ];
 
 const pages = [
@@ -60,6 +61,7 @@ const pages = [
    { linkNum: "0.2", page: "premiumLinks.html"},
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
+   { linkNum: "0.5", page: "load.html"},
 ];
 
 var b = document.getElementById("premiumdecKey");
@@ -88,6 +90,11 @@ function redirect(num) {
             };
             if (service.rank == "staff") {
                localStorage.setItem("hash",service.hash);
+               window.location.href = "load.html";
+            };
+           if (service.rank == "roblox") {
+               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("roblox", "true");
                window.location.href = "load.html";
             };
         };
