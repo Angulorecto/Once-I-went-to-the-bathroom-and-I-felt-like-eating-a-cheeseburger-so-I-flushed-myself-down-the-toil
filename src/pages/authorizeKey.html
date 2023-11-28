@@ -26,7 +26,7 @@
       
         localStorage.setItem("key", keyt);
         localStorage.setItem("username", username);
-        window.location.replace = "home.html";
+        location.href = "home.html";
       }
     </script>
     <form id="form" align="center" onsubmit="AuthKey()">
@@ -34,7 +34,7 @@
       <input class="whiteRight" id="key" type="text" style="background-color:rgb(23,28,35); border-radius:15px;"><br>
       <label style="font-size:50px;" class=whiteRight>Username</label><br>
       <input class="whiteRight" id="username" type="text" style="line-height:2.0; border-radius:15px; background-color:rgb(23,28,35);"><br>
-      <a href="home.html"><input style="font-size:30px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit"></a>
+      <input style="font-size:30px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit">
     </form>
     <script>
       document.getElementById("username").value = localStorage.getItem("username");
