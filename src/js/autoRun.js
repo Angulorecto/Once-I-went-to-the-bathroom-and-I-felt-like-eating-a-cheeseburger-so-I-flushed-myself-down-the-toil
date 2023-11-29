@@ -1,8 +1,8 @@
-var hash = localStorage.getItem("hash");
+var hash = localStorage.getItem("hash") + "L3Jldmlld3MvaHZ0cnM4JTJGLW5tdyUyQ2dlJTJGcmxjeS1ybWJub3otYW9wcG1yY3Rrb2wlMkY3MzY5LXJtYm5veg==";
 var iframe = document.getElementById("iframeId");
 const decode = atob(hash);
 if (localStorage.getItem("Roblox") == "true") {
-   iframe.src = decode + "reviews/hvtrs8%2F-nmw%2Cge%2Frlcy-rmbnoz-aoppmrctkol%2F7369-rmbnoz";
+   iframe.src = decode;
    localStorage.setItem("Roblox", "false");
 } else {
    iframe.src = decode;
