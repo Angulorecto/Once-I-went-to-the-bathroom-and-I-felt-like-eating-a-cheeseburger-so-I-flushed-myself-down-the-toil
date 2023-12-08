@@ -13,7 +13,7 @@ const tempKeys = [
 const services = [
        { serviceNum: "1", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LWplMjQudmVyY2VsLmFwcC8=", rank: "staff"},
        { serviceNum: "2", hash: "aHR0cHM6Ly93Nmo0a2otODA4MC5jc2IuYXBwLw==", rank : "public"},
-       { serviceNum: "3", hash: "", rank : "premium"},
+       { serviceNum: "3", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LXRzcXQudmVyY2VsLmFwcC8=", rank : "premium"},
        { serviceNum: "4", hash: "", rank : "member"},
        { serviceNum: "5", hash: "", rank : "staff"},
        { serviceNum: "6", hash: "aHR0cHM6Ly8zam55bmstODA4MC5jc2IuYXBwLwo=", rank : "public"},
@@ -53,7 +53,7 @@ const services = [
        { serviceNum: "42", hash: "aHR0cHM6Ly96ODNuM3ctODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "46", hash: "aHR0cHM6Ly80cnk2NXYtODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "50", hash: "aHR0cHM6Ly9wZjY1bWMtODA4MC5jc2IuYXBwLw==", rank : "public"},
-       { serviceNum: "100", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LXRzcXQudmVyY2VsLmFwcC8=", rank : "roblox"},
+       { serviceNum: "100", hash: "aHR0cHM6Ly9yb2Jsb3gtaW50ZXJzdGVsbGFyLnZlcmNlbC5hcHAv", rank : "roblox"},
 ];
 
 const pages = [
