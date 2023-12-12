@@ -96,6 +96,7 @@
   transition: 0.3s ease;
 }
 button:hover {
+  background-color:#002ead;
   color: #008000;
   border-color: #fff;
   background: #fff;
