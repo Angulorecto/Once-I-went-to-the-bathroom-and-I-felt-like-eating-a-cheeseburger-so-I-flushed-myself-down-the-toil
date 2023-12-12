@@ -95,10 +95,20 @@
   background-color: var(--dl-color-gray-black);
   transition: 0.3s ease;
 }
-button:hover {
+
+.premium:hover {
   background-color:rgb(0,128,0);
   color: rgb(0,0,0);
 }
+.member:hover {
+  background-color:rgb(255,0,0);
+  color: rgb(0,0,0);
+}
+.supmember:hover {
+  background-color:rgb(0,128,0);
+  color: rgb(0,0,0);
+}
+
 .home-pricing-card1 {
   width: 100%;
   display: flex;
