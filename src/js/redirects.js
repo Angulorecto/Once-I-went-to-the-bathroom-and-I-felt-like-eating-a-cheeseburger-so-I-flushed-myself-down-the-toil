@@ -1,6 +1,6 @@
 const keys = [
    { rank: "Owner", name: "Ethan", key: "SWN5MTM=" },
-   { rank: "Staff", name: "Matthew", key: "TWF0aDAx" },
+   { rank: "Owner", name: "Matthew", key: "TWF0aDAx" },
    { rank: "Member", name: "Test", key: "TWVtYmVy" },
    { rank: "Staff", name: "Caleb", key: "Q2Fsbw==" },
    { rank: "Staff", name: "BJ", key: "QmVqb3Rh" },
