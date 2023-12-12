@@ -98,7 +98,7 @@
 button:hover {
   color: #fff;
   border-color: #fff;
-  background: rgba(0,225,0);
+  background: rgb(0,128,0);
 }
 .home-pricing-card1 {
   width: 100%;
