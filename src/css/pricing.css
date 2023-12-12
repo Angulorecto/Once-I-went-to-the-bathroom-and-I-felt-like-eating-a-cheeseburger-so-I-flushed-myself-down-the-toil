@@ -44,7 +44,7 @@
 }
 .home-pricing-card:hover {
   transform: scale(1.02);
-  opacity: 0.5;
+  opacity: 0;
 }
 .home-text {
   font-size: 1.5rem;
@@ -109,6 +109,7 @@
 }
 .home-pricing-card1:hover {
   transform: scale(1.02);
+  opacity: 0;
 }
 .home-text13 {
   font-size: 1.5rem;
@@ -190,6 +191,7 @@
 }
 .home-pricing-card2:hover {
   transform: scale(1.02);
+  opacity: 0;
 }
 .home-text33 {
   font-size: 1.5rem;
