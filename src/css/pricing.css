@@ -93,6 +93,7 @@
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-unit);
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s ease;
 }
 .home-pricing-card1 {
   width: 100%;
@@ -173,6 +174,7 @@
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-unit);
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s ease;
 }
 .home-pricing-card2 {
   width: 100%;
@@ -253,6 +255,7 @@
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-unit);
   background-color: var(--dl-color-gray-black);
+  transition: 0.3s ease;
 }
 @media(max-width: 991px) {
   .home-pricing-card {
