@@ -98,8 +98,6 @@
 button:hover {
   background-color:rgb(0,128,0);
   color: rgb(0,0,0);
-  border-color: #fff;
-  background: #fff;
 }
 .home-pricing-card1 {
   width: 100%;
@@ -182,11 +180,6 @@ button:hover {
   background-color: var(--dl-color-gray-black);
   transition: 0.3s ease;
 }
-button:hover {
-  color: #fff;
-  border-color: #fff;
-  background: rgba(0,0,0)(0,0,255)(0,255,0)(0,255,255)(255,0,0);
-}
 .home-pricing-card2 {
   width: 100%;
   display: flex;
@@ -267,11 +260,6 @@ button:hover {
   padding-bottom: var(--dl-space-space-unit);
   background-color: var(--dl-color-gray-black);
   transition: 0.3s ease;
-}
-button:hover {
-  color: #fff;
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.15);
 }
 @media(max-width: 991px) {
   .home-pricing-card {
