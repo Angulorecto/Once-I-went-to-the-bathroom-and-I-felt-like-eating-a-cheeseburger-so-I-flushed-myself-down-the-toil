@@ -13,7 +13,6 @@
   display: flex;
   justify-content: center;
   background-color: rgb(0,0,0);
-  opacity: 0.5;
 }
 .home-container1 {
   width: 100%;
@@ -23,6 +22,7 @@
   align-items: center;
   background-size: cover;
   justify-content: center;
+  opacity: 0.5;
 }
 .home-pricing-card {
   width: 100%;
