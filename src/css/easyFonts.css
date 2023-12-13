@@ -1,6 +1,23 @@
 .hidden {
   display: none;
-}  
+}
+.whiteRight-hover-settings {
+  color: white;
+  align-self: flex-start;
+  transition: 0.3s;
+  position: absolute; 
+  top: 0px;
+  right: 0px;
+  font-family:"righty";
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.whiteRight-hover-settings:hover > .settings-icon {
+    animation: spin 0.5s;
+    animation-timing-function: cubic-bezier(0, 1.04, 0.91, 0.99);
+}
 .whiteRight-hover-right {
   color: white;
   align-self: flex-start;
