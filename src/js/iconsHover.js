@@ -3,9 +3,7 @@ function removeText(text, animationTag) {
     let originalText = text;
     // Replace method to remove given text
     let newText = originalText.replace(animationTag, '');
-     
-    // Display output
-    console.log(newText);
+    return newText;
 }
 function startAnimation(elementId, aniTag) {
   var currentClass = document.getElementById(elementId).class;
@@ -13,6 +11,6 @@ function startAnimation(elementId, aniTag) {
 }
 function stopAnimation(elementId, aniTag) {
   var currentClass = document.getElementById(elementId).class;
-  removeText(currentClass, aniTag);
-  
+  let newText = removeText(currentClass, aniTag);
+  document.getElementById(elementId).class = newText;
 }
