@@ -5,7 +5,8 @@
   color: white;
   align-self: flex-start;
   transition: 0.3s;
-  position: absolute; 
+  position: absolute;
+  left: 0px;
   top: 0px;
   font-family: "righty";
   padding-top: var(--dl-space-space-halfunit);
@@ -13,9 +14,15 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.whiteRight-hover-settings:hover > .settings-icon {
-    animation: spin 0.5s;
-    animation-timing-function: cubic-bezier(0, 1.04, 0.91, 0.99);
+.whiteRight-hover-settings:hover {
+  color: white;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #21262d;
+}
+.whiteRight-hover-settings:hover .settings-icon{
+    color: rgb(21,125,23);
+    transition: 900000s;
+    transform: rotateY(180000000deg);
 }
 .whiteRight-hover-right {
   color: white;
