@@ -13,5 +13,6 @@ function startAnimation(elementId, aniTag) {
 }
 function stopAnimation(elementId, aniTag) {
   var currentClass = document.getElementById(elementId).class;
-  currentClass + aniTag;
+  removeText(currentClass, aniTag);
+  
 }
