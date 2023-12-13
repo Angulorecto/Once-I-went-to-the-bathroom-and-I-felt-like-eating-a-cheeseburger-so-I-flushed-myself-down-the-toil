@@ -7,8 +7,7 @@
   transition: 0.3s;
   position: absolute; 
   top: 0px;
-  right: 0px;
-  font-family:"righty";
+  font-family: "righty";
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
