@@ -45,7 +45,7 @@
   transition: 250000s;
   transform: rotateY(-180000000deg);
 }
-.reverse {
+.money-reverse {
   -ms-transform: rotate(0deg); 
   -webkit-transform: rotate(0deg); 
   transform: rotate(0deg);
