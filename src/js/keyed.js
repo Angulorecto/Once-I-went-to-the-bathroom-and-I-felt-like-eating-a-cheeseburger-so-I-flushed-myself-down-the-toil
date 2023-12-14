@@ -32,7 +32,6 @@
             document.getElementById("link2").style.display = "inline-block";
             document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
-            document.getElementById("link5").style.display = "inline-block";
             document.getElementById("staffArea").style.display = "block";
             document.getElementById("keyInfo").style.display = "none";
             document.getElementById("keyMgr").style.display = "block";
