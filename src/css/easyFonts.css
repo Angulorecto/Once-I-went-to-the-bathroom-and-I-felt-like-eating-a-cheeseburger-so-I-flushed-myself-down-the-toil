@@ -43,7 +43,7 @@
 .whiteRight-hover-pricing:hover .money-icon{
   color: rgb(21,125,23);
   transition: 250000s;
-  transform: rotateY(180000000deg);
+  transform: rotateY(-180000000deg);
 }
 .whiteRight-hover-pricing:hover {
   color: white;
