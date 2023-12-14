@@ -20,7 +20,7 @@
 .whiteRight-hover-settings:hover {
   color: white;
   border-radius: var(--dl-radius-radius-radius8);
-  background-color: #21262d;
+  background-color: rgb(59,137,14);
 }
 .whiteRight-hover-pricing {
   color: white;
@@ -44,7 +44,7 @@
 .whiteRight-hover-pricing:hover {
   color: white;
   border-radius: var(--dl-radius-radius-radius8);
-  background-color: #21262d;
+  background-color: rgb(59,137,14);
 }
 .whiteRight-hover-right {
   color: white;
@@ -62,7 +62,7 @@
 .whiteRight-hover-right:hover {
   color: white;
   border-radius: var(--dl-radius-radius-radius8);
-  background-color: #21262d;
+  background-color: rgb(59,137,14);
 }
 .whiteRight-hover {
   color: white;
@@ -80,7 +80,7 @@
 .whiteRight-hover:hover {
   color: white;
   border-radius: var(--dl-radius-radius-radius8);
-  background-color: #21262d;
+  background-color: rgb(59,137,14);
 }
 .switch {
   position: relative;
