@@ -22,6 +22,11 @@
   -moz-transform: rotateZ(720deg);
   transform: rotateZ(720deg);
 }
+.whiteRight-hover-settings:hover {
+  color: white;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #21262d;
+}
 .whiteRight-hover-pricing {
   color: white;
   align-self: flex-start;
@@ -39,6 +44,11 @@
   color: rgb(21,125,23);
   transition: 550000s;
   transform: rotateY(180000000deg);
+}
+.whiteRight-hover-pricing:hover {
+  color: white;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #21262d;
 }
 .whiteRight-hover-right {
   color: white;
