@@ -40,7 +40,7 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.whiteRight-hover-pricing:hover .money-icon{
+.money-forward{
   color: rgb(21,125,23);
   transition: 250000s;
   transform: rotateY(-180000000deg);
