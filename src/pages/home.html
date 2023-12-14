@@ -70,8 +70,10 @@
     <script src="../js/redirects.js"></script>
     <script src="../js/keyed.js"></script>
     <script>
-      $(".whiteRight-hover-pricing").mouseout(function(){
-        $(".money-icon").removeClass("hover").addClass("reverse");
+      $(".whiteRight-hover-pricing").mouseover(function(){
+        $(".money-icon").removeClass("money-reverse").addClass("");
+      }).mouseout(function(){
+        $(".money-icon").removeClass("").addClass("money-reverse");
       });
     </script>
     <style>
