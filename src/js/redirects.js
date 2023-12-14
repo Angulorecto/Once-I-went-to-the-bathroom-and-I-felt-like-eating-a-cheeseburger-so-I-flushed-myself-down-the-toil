@@ -5,7 +5,6 @@ const keys = [
    { rank: "Staff", name: "Caleb", key: "Q2Fsbw==" },
    { rank: "Staff", name: "BJ", key: "QmVqb3Rh" },
    { rank: "Roblox", name: "Roblox", key: "Um9ibG94" },
-   { rank: "Premium", name: "Vikram", key: "bWFya2l2" },
 ];
 const tempKeys = [
    { rank: "Premium", name: "Marcos", key: "bWFyY29z", activeUntill: "27/11/2023"},
