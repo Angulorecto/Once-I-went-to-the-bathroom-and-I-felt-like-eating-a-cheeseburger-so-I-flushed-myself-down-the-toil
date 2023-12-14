@@ -13,16 +13,14 @@
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
-}
-.whiteRight-hover-settings:hover {
-  color: white;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: #21262d;
+  -webkit-transition: 1s ease-out;
+  -moz-transition:  1s ease-out;
+  transition:  1s ease-out;
 }
 .whiteRight-hover-settings:hover .settings-icon{
-    color: rgb(21,125,23);
-    transition: 900000s;
-    transform: rotateY(180000000deg);
+  -webkit-transform: rotateZ(720deg);
+  -moz-transform: rotateZ(720deg);
+  transform: rotateZ(720deg);
 }
 .whiteRight-hover-pricing {
   color: white;
