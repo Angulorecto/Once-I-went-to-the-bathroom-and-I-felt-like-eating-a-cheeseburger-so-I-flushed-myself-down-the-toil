@@ -35,9 +35,11 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
+.money-icon {
+  transition: transform 1s ease-in-out;
+}
 .whiteRight-hover.pricing:hover .money-icon{
-  transition: transform 250000s ease-in-out;
-  transform: rotateY(180000000deg);
+  transform: rotateY(360deg);
 }
 .whiteRight-hover-pricing:hover {
   color: white;
