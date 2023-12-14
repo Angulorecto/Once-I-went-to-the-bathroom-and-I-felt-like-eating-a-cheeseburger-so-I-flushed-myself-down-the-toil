@@ -39,15 +39,10 @@
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
+  transition: transform 250000s ease-in-out;
 }
-.money-forward{
-  color: rgb(21,125,23);
-  transition: 250000s;
+.whiteRight-hover.pricing:hover .money-icon{
   transform: rotateY(180000000deg);
-}
-.money-reverse {
-  transition: 0.001s;
-  transform: rotateY(0deg);
 }
 .whiteRight-hover-pricing:hover {
   color: white;
