@@ -43,7 +43,7 @@
 .money-forward{
   color: rgb(21,125,23);
   transition: 250000s;
-  transform: rotateY(-180000000deg);
+  transform: rotateY(180000000deg);
 }
 .money-reverse {
   transition: 0.001s;
