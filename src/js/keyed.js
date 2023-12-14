@@ -7,19 +7,16 @@
         const decodedKey = account.getAttribute("data-key");
         if (key.key == decodedKey) {
           if (key.rank == "Roblox") {
-            document.getElementById("link5").style.display = "inline-block";
             document.getElementById("keyInfo").style.display = "none";
           }
           if (key.rank == "Premium") {
             document.getElementById("link2").style.display = "inline-block";
-            document.getElementById("link5").style.display = "inline-block";
             document.getElementById("keyInfo").style.display = "none";
           };
           
           if (key.rank == "Member") {
             document.getElementById("link2").style.display = "inline-block";
             document.getElementById("link3").style.display = "inline-block";
-            document.getElementById("link5").style.display = "inline-block";
             document.getElementById("keyInfo").style.display = "none";
           };
 
@@ -27,7 +24,6 @@
             document.getElementById("link2").style.display = "inline-block";
             document.getElementById("link3").style.display = "inline-block";
             document.getElementById("link4").style.display = "inline-block";
-            document.getElementById("link5").style.display = "inline-block";
             document.getElementById("staffArea").style.display = "block";
             document.getElementById("keyInfo").style.display = "none";
           };
