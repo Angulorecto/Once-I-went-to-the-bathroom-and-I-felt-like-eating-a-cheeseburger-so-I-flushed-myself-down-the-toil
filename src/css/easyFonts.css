@@ -13,7 +13,6 @@
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
-  transition: transform 1s ease-out;
 }
 .whiteRight-hover-settings:hover .settings-icon{
   transform: rotateZ(720deg);
@@ -35,7 +34,6 @@
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
-  transition: transform 250000s ease-in-out;
 }
 .whiteRight-hover.pricing:hover .money-icon{
   transition: transform 250000s ease-in-out;
