@@ -38,7 +38,7 @@
 .money-icon {
   transition: transform 1s ease-in-out;
 }
-.whiteRight-hover.pricing:hover .money-icon{
+.whiteRight-hover-pricing:hover .money-icon{
   transform: rotateY(360deg);
 }
 .whiteRight-hover-pricing:hover {
