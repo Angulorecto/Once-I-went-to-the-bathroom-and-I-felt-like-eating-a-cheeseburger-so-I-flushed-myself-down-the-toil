@@ -14,6 +14,9 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
+.settings-icon {
+  transition: transform 1s ease-in-out;
+}
 .whiteRight-hover-settings:hover .settings-icon{
   transform: rotateZ(720deg);
 }
