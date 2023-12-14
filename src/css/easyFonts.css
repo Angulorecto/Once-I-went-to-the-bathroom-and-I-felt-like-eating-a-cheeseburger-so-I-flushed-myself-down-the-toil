@@ -24,6 +24,24 @@
     transition: 900000s;
     transform: rotateY(180000000deg);
 }
+.whiteRight-hover-pricing {
+  color: white;
+  align-self: flex-start;
+  transition: 0.3s;
+  position: absolute; 
+  top: 0px;
+  right: 0px;
+  font-family:"righty";
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.whiteRight-hover-pricing:hover .money-icon{
+  color: rgb(21,125,23);
+  transition: 900000s;
+  transform: rotateY(180000000deg);
+}
 .whiteRight-hover-right {
   color: white;
   align-self: flex-start;
