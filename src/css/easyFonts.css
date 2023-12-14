@@ -45,6 +45,14 @@
   transition: 250000s;
   transform: rotateY(-180000000deg);
 }
+.reverse {
+  -ms-transform: rotate(0deg); 
+  -webkit-transform: rotate(0deg); 
+  transform: rotate(0deg);
+  -ms-transition:1s all;
+  -webkit-transition:1s all;
+  transition:1s all;
+}
 .whiteRight-hover-pricing:hover {
   color: white;
   border-radius: var(--dl-radius-radius-radius8);
