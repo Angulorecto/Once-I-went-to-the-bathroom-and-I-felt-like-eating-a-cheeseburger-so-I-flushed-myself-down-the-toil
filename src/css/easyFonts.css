@@ -43,7 +43,7 @@ body {
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .money-icon {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 .whiteRight-hover-pricing:hover .money-icon{
   transform: rotateY(360deg);
