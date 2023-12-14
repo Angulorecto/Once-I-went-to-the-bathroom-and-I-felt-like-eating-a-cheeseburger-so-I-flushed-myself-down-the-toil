@@ -13,13 +13,9 @@
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
-  -webkit-transition: 1s ease-out;
-  -moz-transition:  1s ease-out;
-  transition:  1s ease-out;
+  transition: transform 1s ease-out;
 }
 .whiteRight-hover-settings:hover .settings-icon{
-  -webkit-transform: rotateZ(720deg);
-  -moz-transform: rotateZ(720deg);
   transform: rotateZ(720deg);
 }
 .whiteRight-hover-settings:hover {
@@ -41,10 +37,8 @@
   padding-bottom: var(--dl-space-space-halfunit);
   transition: transform 250000s ease-in-out;
 }
-.money-icon{
-  transition: transform 250000s ease-in-out;
-}
 .whiteRight-hover.pricing:hover .money-icon{
+  transition: transform 250000s ease-in-out;
   transform: rotateY(180000000deg);
 }
 .whiteRight-hover-pricing:hover {
