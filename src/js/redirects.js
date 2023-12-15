@@ -61,6 +61,7 @@ const pages = [
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
    { linkNum: "0.5", page: "load.html"},
+   { linkNum: "0.6", page: "checkout.html"},
 ];
 
 var b = document.getElementById("premiumdecKey");
