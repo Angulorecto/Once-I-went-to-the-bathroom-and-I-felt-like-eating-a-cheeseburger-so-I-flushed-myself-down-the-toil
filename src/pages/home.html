@@ -26,7 +26,16 @@
     margin: 0 auto; /* Horizontal centering using margin */
     width: 50%; /* Adjust the width as needed */
   }
-  #link1 {
+  #link1:active #publicImg {
+    
+  }
+  #link2:active #premiumImg {
+    
+  }
+  #link3:active #memberImg {
+    
+  }
+  #link4:active  {
     
   }
 </style>
@@ -65,15 +74,15 @@
         <p class='whiteRight'>Public Links</p>
       </div>
       <div id="link2" style="display:none;">
-        <img onclick="redirect(0.2)" class="border" src="../photos/GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
+        <img id="premiumImg" onclick="redirect(0.2)" class="border" src="../photos/GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
         <p class='whiteRight'>Premium Links</p>
       </div>
       <div id="link3" style="display:none;">
-        <img onclick="redirect(0.3)" class="border" src="../photos/RedBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
+        <img id="memberImg" onclick="redirect(0.3)" class="border" src="../photos/RedBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
         <p class='whiteRight'>Member Links</p>
       </div>
       <div id="link4" style="display:none;">
-        <img onclick="redirect(0.4)" class="border" src="../photos/StaffLink.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
+        <img id="staffImg" onclick="redirect(0.4)" class="border" src="../photos/StaffLink.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
         <p class='whiteRight'>Staff Links</p>
       </div>
     </div>
