@@ -234,6 +234,7 @@ input:checked + .slider:before {
 .greenRight {
   color:green;
   font-family: 'righty';
+	background: rgb(137, 207, 240);
 }
 .blueRight {
   color:blue;
