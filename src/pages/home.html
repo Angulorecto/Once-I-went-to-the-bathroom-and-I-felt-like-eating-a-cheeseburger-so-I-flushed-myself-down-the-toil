@@ -26,13 +26,8 @@
     margin: 0 auto; /* Horizontal centering using margin */
     width: 50%; /* Adjust the width as needed */
   }
-  .box {
-    display: none;
-  }
-
-  #public:checked + #link1 > #publicImg {
-    width: 700px;
-    height: 700px;
+  #link1 {
+    
   }
 </style>
 </head>
@@ -65,13 +60,10 @@
       <span class="redRight">s</span>
     </H1>
     <div style="z-index:2;" id="row1" align="center">
-      <input type="checkbox" id="public" class="box"/>
-      <label for="public">
-        <div id="link1" style="display:inline-block;">
-          <img id="publicImg" onclick="redirect(0.)" class="border" src="../photos/BlueInLinkBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
-          <p class='whiteRight'>Public Links</p>
-        </div>
-      </label>
+      <div id="link1" style="display:inline-block;">
+        <img id="publicImg" onclick="redirect(0.)" class="border" src="../photos/BlueInLinkBadge.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
+        <p class='whiteRight'>Public Links</p>
+      </div>
       <div id="link2" style="display:none;">
         <img onclick="redirect(0.2)" class="border" src="../photos/GreenWeb.png" alt="IntLinkBadge" onmouseout="this.style.transition='width 0.5s'; this.style.width='100px';" onmouseover="this.style.transition='width 0.5s'; this.style.width='120px';" style="width:100px">
         <p class='whiteRight'>Premium Links</p>
