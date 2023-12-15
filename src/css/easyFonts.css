@@ -29,6 +29,9 @@ body {
 .hidden {
   display: none;
 }
+#supportArea:hover .support-icon {
+  animation: shake 0.5s;
+}
 .whiteRight-hover-settings {
   color: white;
   align-self: flex-start;
