@@ -4,7 +4,6 @@ const keys = [
    { rank: "Member", name: "Test", key: "TWVtYmVy" },
    { rank: "Staff", name: "Caleb", key: "Q2Fsbw==" },
    { rank: "Staff", name: "BJ", key: "QmVqb3Rh" },
-   { rank: "Roblox", name: "Roblox", key: "Um9ibG94" },
    { rank: "Premium", name: "Vikram", key: "bWFya2l2" },
 ];
 const tempKeys = [
@@ -71,7 +70,12 @@ var d = document.getElementById("staffdecKey");
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
-            window.location.href = page.page;
+          if (num < 0.5) {
+             setTimeout(4000);
+             window.location.href = page.page;
+          } else {
+             window.location.href = page.page;
+          };
         };
     });
     services.forEach((service) => {
