@@ -100,8 +100,6 @@ body {
   align-self: flex-start;
   transition: 0.3s;
   display: absolute;
-  top: 0;
-  left: 0;
   font-family:"righty";
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
