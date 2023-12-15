@@ -2,30 +2,6 @@ body {
   background-image: url('../photos/christmas.jpg');
   background-size: cover;
 }
-.link1 {
-  transition: transform 4s ease-in-out;
-}
-.link1:active #publicImg {
-  transform: scale(15);
-}
-.link2 {
-  transition: transform 4s ease-in-out;
-}
-.link2:active #premiumImg {
-  transform: scale(15);
-}
-.link3 {
-  transition: transform 4s ease-in-out;
-}
-.link3:active #memberImg {
-  transform: scale(15);
-}
-.link4 {
-  transition: transform 4s ease-in-out;
-}
-.link4:active  {
-  transform: scale(15);
-}
 .hidden {
   display: none;
 }
