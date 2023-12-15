@@ -94,6 +94,8 @@ body {
   margin: 5px;
   transition: 0.3s;
   display: absolute;
+  right: 0px;
+  top: 0px;
   font-family:"righty";
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
