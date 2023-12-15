@@ -62,12 +62,24 @@ const pages = [
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
    { linkNum: "0.5", page: "load.html"},
-   { linkNum: "0.6", page: "checkout.html"},
 ];
 
 var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
 var d = document.getElementById("staffdecKey");
+
+function checkout(rank) {
+   if (rank == 1) {
+      localStorage.setItem("checkoutRank", "premium");
+      window.location.href = "checkout.html";
+   } else if (rank == 2) {
+      localStorage.setItem("checkoutRank", "member");
+      window.location.href = "checkout.html";
+   } else {
+      localStorage.setItem("checkoutRank", "superMember");
+      window.location.href = "checkout.html";
+   }
+}
 
 function redirect(num) {
     pages.forEach((page) => {
