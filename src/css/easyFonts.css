@@ -221,7 +221,7 @@ input:checked + .slider:before {
 .redRight {
   color:red;
   font-family: 'righty';
-	background: blue;
+	background: rgb(137, 207, 240);
 }
 .orangeRight {
   color:orange;
