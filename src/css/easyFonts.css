@@ -214,10 +214,6 @@ input:checked + .slider:before {
 .frame {
   z-index: 99;
 }
-.mattRight {
-	color:rgba(255,255,255,0);
-	font-family: 'righty';
-	background: rgb(137, 207, 240);
 .whiteRight {
   color:white;
   font-family: 'righty';
