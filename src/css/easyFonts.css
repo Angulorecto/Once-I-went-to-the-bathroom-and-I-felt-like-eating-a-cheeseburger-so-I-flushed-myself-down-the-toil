@@ -2,6 +2,26 @@ body {
   background-image: url('../photos/christmas.jpg');
   background-size: cover;
 }
+#link1:active #publicImg {
+  animation: open 4s;
+}
+#link2:active #premiumImg {
+  animation: open 4s;
+}
+#link3:active #memberImg {
+  animation: open 4s;
+}
+#link4:active  {
+  animation: open 4s;
+}
+@keyframes open {
+  0% {
+    width: 80px;
+  }
+  100% {
+    width: 1500px;
+  }
+}
 .hidden {
   display: none;
 }
