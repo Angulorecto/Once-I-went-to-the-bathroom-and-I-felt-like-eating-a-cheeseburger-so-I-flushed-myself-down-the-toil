@@ -114,6 +114,8 @@ body {
 .whiteRight-hover {
   color: white;
   align-self: flex-start;
+  border-radius: 0px;
+  margin: 5px;
   transition: 0.3s;
   display: absolute;
   font-family:"righty";
