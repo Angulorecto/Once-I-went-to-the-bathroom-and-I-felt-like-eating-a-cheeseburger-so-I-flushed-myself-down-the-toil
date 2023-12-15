@@ -70,12 +70,7 @@ var d = document.getElementById("staffdecKey");
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
-          if (num < 0.5) {
-             setTimeout(4000);
-             window.location.href = page.page;
-          } else {
-             window.location.href = page.page;
-          };
+          window.location.href = page.page;
         };
     });
     services.forEach((service) => {
