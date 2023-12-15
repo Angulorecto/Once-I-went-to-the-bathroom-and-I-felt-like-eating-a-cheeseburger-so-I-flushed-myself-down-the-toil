@@ -59,6 +59,8 @@ body {
   transition: 0.3s;
   position: absolute; 
   font-family:"righty";
+  left: 0px;
+  top: 0px;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
