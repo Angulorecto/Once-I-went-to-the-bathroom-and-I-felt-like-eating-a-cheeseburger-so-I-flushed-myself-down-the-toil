@@ -93,7 +93,6 @@ body {
   border-radius: 0px;
   margin: 5px;
   transition: 0.3s;
-  display: absolute;
   font-family:"righty";
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
