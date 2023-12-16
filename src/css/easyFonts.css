@@ -21,6 +21,24 @@ body {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+.whiteRight-hover-back {
+  color: white;
+  align-self: flex-start;
+  transition: 0.3s;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: "righty";
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.whiteRight-hover-back:hover {
+  color: white;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(59,137,14);
+}
 .whiteRight-hover-settings {
   color: white;
   align-self: flex-start;
