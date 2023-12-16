@@ -3,7 +3,7 @@ body {
   background-size: cover;
 }
 .home-pricing {
-  background-image: url('../photos/christmas');
+  background-image: url('../photos/christmas.jpg');
 }
 .hidden {
   display: none;
