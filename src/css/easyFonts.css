@@ -68,7 +68,7 @@ body {
   transition: transform 1s ease-in-out;
 }
 .whiteRight-hover-settings:hover .settings-icon{
-  transform: rotateZ(540deg);
+  transform: rotateZ(360deg);
 }
 .whiteRight-hover-settings:hover {
   color: white;
