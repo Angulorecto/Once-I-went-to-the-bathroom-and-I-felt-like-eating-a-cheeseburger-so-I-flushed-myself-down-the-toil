@@ -92,7 +92,7 @@ body {
   transition: transform 0.7s ease-in-out;
 }
 .whiteRight-hover-pricing:hover .money-icon{
-  transform: rotateY(720deg);
+  transform: rotateY(360deg);
 }
 .whiteRight-hover-pricing:hover {
   color: white;
