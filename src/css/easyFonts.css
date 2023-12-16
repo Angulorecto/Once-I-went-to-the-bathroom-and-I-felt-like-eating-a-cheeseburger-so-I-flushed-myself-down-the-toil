@@ -2,6 +2,9 @@ body {
   background-image: url('../photos/christmas.jpg');
   background-size: cover;
 }
+.home-pricing {
+  background-image: url('../photos/christmas');
+}
 .hidden {
   display: none;
 }
