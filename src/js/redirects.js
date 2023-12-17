@@ -83,6 +83,8 @@ function checkout(rank) {
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
+          window.location.href = page.page;
+        } else if (num = "dev") {
           document.getElementById('door1').style.animation="slideDown 1s linear";
           document.getElementById('door2').style.animation="slideUp 1s linear";
           setTimeout(function(){ window.location.href = page.page; }, 0);
