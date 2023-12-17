@@ -13,7 +13,7 @@ body {
   animation-iteration-count: 2;
 }
 @keyframes bounce {
-  50% { translate: 0px -10px;
+  50% { translate: 0px -8px;
       	scale: 0.7 1.3;
       }
 }
