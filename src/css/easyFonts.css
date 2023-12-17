@@ -9,7 +9,8 @@ body {
   display: none;
 }
 #supportArea:hover .support-icon {
-  animation: bounce 0.5s;
+  animation: bounce 0.3s ;
+  animation-iteration-count: 5;
 }
 @keyframes bounce {
   50% { translate: 0px -10px;
