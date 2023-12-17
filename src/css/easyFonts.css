@@ -4,6 +4,7 @@ body {
 }
 .home-pricing {
   background-image: url('../photos/christmas.jpg');
+  background-size: cover;
 }
 .hidden {
   display: none;
