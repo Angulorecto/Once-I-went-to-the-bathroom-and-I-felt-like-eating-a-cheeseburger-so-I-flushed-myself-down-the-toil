@@ -12,8 +12,8 @@ body {
   animation: shake 0.5s;
 }
 @keyframes shake {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(-25deg); }
+  0% { scale: 0.7 1.3; }
+  10% { translate: 0px -10px; }
   20% { transform: rotate(25deg); }
   30% { transform: rotate(0deg); }
   40% { transform: rotate(25deg); }
