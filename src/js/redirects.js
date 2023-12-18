@@ -104,6 +104,10 @@ function redirect(num) {
                localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
+            if (service.rank == "roblox") {
+               localStorage.setItem("hash",service.hash);
+               window.location.href = "load.html";
+            };
         };
     });
 };
