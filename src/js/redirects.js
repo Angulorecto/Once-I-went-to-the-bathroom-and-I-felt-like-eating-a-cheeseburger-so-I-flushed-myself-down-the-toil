@@ -79,8 +79,8 @@ function checkout(rank) {
       window.location.href = "checkout.html";
    }
 }
-function send() {
-   window.location.href = "load.html";
+function send(location) {
+   window.location.href = location;
 }
 function blueDone() {
   document.getElementById("box1").style.bottom = "50%";
@@ -136,16 +136,18 @@ function setupTransition(rank) {
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
-          window.location.href = page.page;
+          if (num == 0.1) {
+            setupTransition("public");
+            blue();
+            setTimeout(function() { send(page.page); }, 3100);
+          }
         };
     });
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
-               setupTransition("public");
                localStorage.setItem("hash", service.hash);
-               blue();
-               setTimeout(send, 3100);
+               window.location.href = "load.html";
             };
             if (service.rank == "premium") {
                localStorage.setItem("hash", service.hash);
