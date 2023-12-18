@@ -2,6 +2,18 @@ body {
   background-image: url('../photos/christmas.jpg');
   background-size: cover;
 }
+.border {
+  border: 1px solid transparent;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+.border:hover {
+  border-width: 5px;
+  border-color: rgb(59,137,14);
+}
+.border:mouseout {
+  border-width: 0px;
+  border-color: solid transparent;
+}
 .grayBox1 {
   width: 100%;
   height: 50vh;
