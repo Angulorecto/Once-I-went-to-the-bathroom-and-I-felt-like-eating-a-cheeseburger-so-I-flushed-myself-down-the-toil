@@ -19,6 +19,7 @@ body {
   position: absolute;
 }
 .blueLink {
+  top: 20%;
   width: 30%;
   opacity: 0%;
   display: block;
