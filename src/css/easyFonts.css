@@ -37,12 +37,12 @@ body {
   }
 }
 @keyframes down {
-  100% {
+  98% {
     bottom: 50%;
   }
 }
 @keyframes up {
-  100% {
+  98% {
     top: 50%;
   }
 }
