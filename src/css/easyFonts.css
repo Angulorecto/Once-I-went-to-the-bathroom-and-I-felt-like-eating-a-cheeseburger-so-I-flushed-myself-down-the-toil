@@ -2,14 +2,14 @@ body {
   background-image: url('../photos/christmas.jpg');
   background-size: cover;
 }
-.graybox1 {
+.grayBox1 {
   width: 100%;
   height: 50%;
   background-color: rgb(41,42,44);
   left: 0px;
   bottom: 100%;
 }
-.graybox2 {
+.grayBox2 {
   width: 100%;
   height: 50%;
   background-color: rgb(41,42,44);
