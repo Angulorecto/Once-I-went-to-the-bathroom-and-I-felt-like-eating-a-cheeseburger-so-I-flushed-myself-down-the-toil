@@ -16,6 +16,11 @@ body {
   left: 0px;
   top: 100%;
 }
+.blueLink {
+  width: 30%;
+  align: center;
+  opacity: 0%;
+}
 .home-pricing {
   background-image: url('../photos/christmas.jpg');
   background-size: cover;
