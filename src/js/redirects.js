@@ -79,7 +79,9 @@ function checkout(rank) {
       window.location.href = "checkout.html";
    }
 }
-
+function send() {
+   window.location.href = "load.html";
+}
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
@@ -90,7 +92,8 @@ function redirect(num) {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
                localStorage.setItem("hash",service.hash);
-               window.location.href = "load.html";
+               blue();
+               setTimeout(send, 3100);
             };
             if (service.rank == "premium") {
                localStorage.setItem("hash",service.hash);
