@@ -94,6 +94,23 @@ function blue() {
   // Note: this line's timing has to be 0.15 less then the 3 above.
   setTimeout(blueDone, 2850)
 }
+function setupTransition(rank) {
+   if (rank == "public") {
+      let box1 = document.createElement("div");
+      box1.setAttribute("class", "grayBox1");
+      box1.setAttribute("id", "Box1");
+      let box2 = document.createElement("div");
+      box2.setAttribute("class", "grayBox2");
+      box2.setAttribute("id", "Box2");
+      let image = document.createElement("img");
+   } else if (rank == "premium") {
+      
+   } else if (rank == "member") {
+      
+   } else {
+      
+   }
+}
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
@@ -103,6 +120,9 @@ function redirect(num) {
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
+               let box1 = document.createElement("div");
+               let box2 = document.createElement("div");
+               let image = document.createElement("img");
                localStorage.setItem("hash",service.hash);
                blue();
                setTimeout(send, 3100);
