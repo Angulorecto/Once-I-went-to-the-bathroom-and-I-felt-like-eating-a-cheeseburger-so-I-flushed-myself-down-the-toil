@@ -79,59 +79,10 @@ function checkout(rank) {
       window.location.href = "checkout.html";
    }
 }
-function send(location) {
-   window.location.href = location;
-}
 function blueDone() {
   document.getElementById("box1").style.bottom = "50%";
   document.getElementById("box2").style.top = "50%";
   document.getElementById("blueBadge").style.opacity = "100%";
-}
-function blue() {
-  document.getElementById("box1").style.animation = "down 3s";
-  document.getElementById("box2").style.animation = "up 3s";
-  document.getElementById("blueBadge").style.animation = "fade 3s";
-  // Note: this line's timing has to be 0.15 less then the 3 above.
-  setTimeout(blueDone, 2850)
-}
-function setupBoxes() {
-   let box1 = document.createElement("div");
-   box1.setAttribute("class", "grayBox1");
-   box1.setAttribute("id", "Box1");
-   let box2 = document.createElement("div");
-   box2.setAttribute("class", "grayBox2");
-   box2.setAttribute("id", "Box2");
-}
-function setupTransition(rank) {
-   if (rank == "public") {
-      setupBoxes();
-      let image = document.createElement("img");
-      image.setAttribute("id", "blueBadge");
-      image.setAttribute("class", "blueLink");
-      image.setAttribute("align", "center");
-      image.setAttribute("src", "../photos/BlueInLinkBadge.png");
-   } else if (rank == "premium") {
-      setupBoxes();
-      let image = document.createElement("img");
-      image.setAttribute("id", "greenBadge");
-      image.setAttribute("class", "greenLink");
-      image.setAttribute("align", "center");
-      image.setAttribute("src", "../photos/GreenWeb.png");
-   } else if (rank == "member") {
-      setupBoxes();
-      let image = document.createElement("img");
-      image.setAttribute("id", "redBadge");
-      image.setAttribute("class", "redLink");
-      image.setAttribute("align", "center");
-      image.setAttribute("src", "../photos/RedBadge.png");
-   } else {
-      setupBoxes();
-      let image = document.createElement("img");
-      image.setAttribute("id", "yellowBadge");
-      image.setAttribute("class", "yellowLink");
-      image.setAttribute("align", "center");
-      image.setAttribute("src", "../photos/StaffLink.png");
-   }
 }
 function redirect(num) {
     pages.forEach((page) => {
