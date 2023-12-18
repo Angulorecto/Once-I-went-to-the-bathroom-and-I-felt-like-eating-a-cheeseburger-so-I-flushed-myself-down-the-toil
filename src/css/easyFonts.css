@@ -34,23 +34,11 @@ body {
   }
 }
 @keyframes down {
-  70% {
-    bottom: 50%;
-  }
-  80% {
-    bottom: 55%;
-  }
   100% {
     bottom: 50%;
   }
 }
 @keyframes up {
-  70% {
-    top: 50%;
-  }
-  80% {
-    top: 55%;
-  }
   100% {
     top: 50%;
   }
