@@ -7,5 +7,5 @@ function blue() {
   document.getElementById("box1").style.animation = "down 3.9s";
   document.getElementById("box2").style.animation = "up 3.9s";
   document.getElementById("blueBadge").style.animation = "fade 3.9s";
-  setTimeout(blueDone, 3900)
+  setTimeout(blueDone, 3850)
 }
