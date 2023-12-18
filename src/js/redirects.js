@@ -94,21 +94,43 @@ function blue() {
   // Note: this line's timing has to be 0.15 less then the 3 above.
   setTimeout(blueDone, 2850)
 }
+function setupBoxes() {
+   let box1 = document.createElement("div");
+   box1.setAttribute("class", "grayBox1");
+   box1.setAttribute("id", "Box1");
+   let box2 = document.createElement("div");
+   box2.setAttribute("class", "grayBox2");
+   box2.setAttribute("id", "Box2");
+}
 function setupTransition(rank) {
    if (rank == "public") {
-      let box1 = document.createElement("div");
-      box1.setAttribute("class", "grayBox1");
-      box1.setAttribute("id", "Box1");
-      let box2 = document.createElement("div");
-      box2.setAttribute("class", "grayBox2");
-      box2.setAttribute("id", "Box2");
+      setupBoxes();
       let image = document.createElement("img");
+      image.setAttribute("id", "blueBadge");
+      image.setAttribute("class", "blueLink");
+      image.setAttribute("align", "center");
+      image.setAttribute("src", "../photos/BlueInLinkBadge.png");
    } else if (rank == "premium") {
-      
+      setupBoxes();
+      let image = document.createElement("img");
+      image.setAttribute("id", "greenBadge");
+      image.setAttribute("class", "greenLink");
+      image.setAttribute("align", "center");
+      image.setAttribute("src", "../photos/GreenWeb.png");
    } else if (rank == "member") {
-      
+      setupBoxes();
+      let image = document.createElement("img");
+      image.setAttribute("id", "redBadge");
+      image.setAttribute("class", "redLink");
+      image.setAttribute("align", "center");
+      image.setAttribute("src", "../photos/RedBadge.png");
    } else {
-      
+      setupBoxes();
+      let image = document.createElement("img");
+      image.setAttribute("id", "yellowBadge");
+      image.setAttribute("class", "yellowLink");
+      image.setAttribute("align", "center");
+      image.setAttribute("src", "../photos/StaffLink.png");
    }
 }
 function redirect(num) {
@@ -120,27 +142,25 @@ function redirect(num) {
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
-               let box1 = document.createElement("div");
-               let box2 = document.createElement("div");
-               let image = document.createElement("img");
-               localStorage.setItem("hash",service.hash);
+               setupTransition("public");
+               localStorage.setItem("hash", service.hash);
                blue();
                setTimeout(send, 3100);
             };
             if (service.rank == "premium") {
-               localStorage.setItem("hash",service.hash);
+               localStorage.setItem("hash", service.hash);
                window.location.href = "load.html";
             };
             if (service.rank == "member") {
-               localStorage.setItem("hash",service.hash);
+               localStorage.setItem("hash", service.hash);
                window.location.href = "load.html";
             };
             if (service.rank == "staff") {
-               localStorage.setItem("hash",service.hash);
+               localStorage.setItem("hash", service.hash);
                window.location.href = "load.html";
             };
             if (service.rank == "roblox") {
-               localStorage.setItem("hash",service.hash);
+               localStorage.setItem("hash", service.hash);
                window.location.href = "load.html";
             };
         };
