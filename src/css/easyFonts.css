@@ -16,6 +16,28 @@ body {
   left: 0px;
   top: 100%;
 }
+@keyframes down {
+  80% {
+    bottom: 50%;
+  }
+  90% {
+    bottom: 45%;
+  }
+  100% {
+    bottom: 50%;
+  }
+}
+@keyframes up {
+  80% {
+    top: 50%;
+  }
+  90% {
+    top: 45%;
+  }
+  100% {
+    top: 50%;
+  }
+}
 .blueLink {
   width: 30%;
   align: center;
