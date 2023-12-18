@@ -17,6 +17,9 @@ body {
   bottom: 100%;
 }
 @keyframes fade {
+  50% {
+    opacity: 0%;
+  }
   100% {
     opacity: 100%;
   }
