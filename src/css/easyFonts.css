@@ -8,6 +8,7 @@ body {
   background-color: rgb(41,42,44);
   left: 0px;
   bottom: 100%;
+  position: absolute;
 }
 .grayBox2 {
   width: 100%;
@@ -15,6 +16,7 @@ body {
   background-color: rgb(41,42,44);
   left: 0px;
   top: 100%;
+  position: absolute;
 }
 .blueLink {
   width: 30%;
