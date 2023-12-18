@@ -1,3 +1,3 @@
 function blue() {
-  document.getElementById("blue").style.animation = "down 2s";
+  document.getElementById("box1").style.animation = "down 2s";
 }
