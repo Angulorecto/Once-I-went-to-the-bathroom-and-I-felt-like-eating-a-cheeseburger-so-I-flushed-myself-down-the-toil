@@ -73,7 +73,7 @@ function checkout(rank) {
       window.location.href = "checkout3.html";
    } else {
       localStorage.setItem("checkoutRank", "superMember");
-      window.location.href = "checkout2.html";
+      window.location.href = "checkout4.html";
    }
 }
 function redirect(num) {
