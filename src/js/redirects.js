@@ -68,13 +68,13 @@ var d = document.getElementById("staffdecKey");
 function checkout(rank) {
    if (rank == 1) {
       localStorage.setItem("checkoutRank", "premium");
-      window.location.href = "checkout.html";
+      window.location.href = "checkout2.html";
    } else if (rank == 2) {
       localStorage.setItem("checkoutRank", "member");
-      window.location.href = "checkout.html";
+      window.location.href = "checkout2.html";
    } else {
       localStorage.setItem("checkoutRank", "superMember");
-      window.location.href = "checkout.html";
+      window.location.href = "checkout2.html";
    }
 }
 function redirect(num) {
