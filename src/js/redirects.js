@@ -60,6 +60,7 @@ const pages = [
    { linkNum: "0.2", page: "premiumLinks.html"},
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
+   { linkNum: "0.5", page: "load.html"},
 ];
 var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
@@ -67,20 +68,22 @@ var d = document.getElementById("staffdecKey");
 function checkout(rank) {
    if (rank == 1) {
       localStorage.setItem("checkoutRank", "premium");
-      window.location.href = "checkout2.html";
+      window.location.href = "checkout.html";
    } else if (rank == 2) {
       localStorage.setItem("checkoutRank", "member");
-      window.location.href = "checkout2.html";
+      window.location.href = "checkout.html";
    } else {
       localStorage.setItem("checkoutRank", "superMember");
-      window.location.href = "checkout2.html";
+      window.location.href = "checkout.html";
    }
 }
-
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
-	@@ -90,7 +92,8 @@ function redirect(num) {
+          window.location.href = page.page;
+        };
+    });
+    services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
                localStorage.setItem("hash",service.hash);
@@ -98,8 +101,9 @@ function redirect(num) {
                localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
-            if (service.rank == "roblox") {
-               localStorage.setItem("hash",service.hash);
+           if (service.rank == "roblox") {
+               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("roblox", "true");
                window.location.href = "load.html";
             };
         };
