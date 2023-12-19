@@ -55,18 +55,15 @@ const services = [
        { serviceNum: "50", hash: "aHR0cHM6Ly9wZjY1bWMtODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "100", hash: "aHR0cHM6Ly9yb2Jsb3gtaW50ZXJzdGVsbGFyLnZlcmNlbC5hcHAv", rank : "roblox"},
 ];
-
 const pages = [
    { linkNum: "0.1", page: "publicLinks.html"},
    { linkNum: "0.2", page: "premiumLinks.html"},
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
 ];
-
 var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
 var d = document.getElementById("staffdecKey");
-
 function checkout(rank) {
    if (rank == 1) {
       localStorage.setItem("checkoutRank", "premium");
@@ -79,11 +76,6 @@ function checkout(rank) {
       window.location.href = "checkout.html";
    }
 }
-function blueDone() {
-  document.getElementById("box1").style.bottom = "50%";
-  document.getElementById("box2").style.top = "50%";
-  document.getElementById("blueBadge").style.opacity = "100%";
-}
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
@@ -93,23 +85,23 @@ function redirect(num) {
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
-               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
             if (service.rank == "premium") {
-               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
             if (service.rank == "member") {
-               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
             if (service.rank == "staff") {
-               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
             if (service.rank == "roblox") {
-               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
         };
@@ -120,7 +112,6 @@ tempKeys.forEach((tempKey) =>{
    let month = dateObj.getUTCMonth() + 1; //months from 1-12
    let day = dateObj.getUTCDate();
    let year = dateObj.getUTCFullYear();
-
    let newdate = day + "/" + month + "/" + year;
    if (newdate != tempKey.activeUntill) {
       
