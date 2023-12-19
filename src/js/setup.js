@@ -8,15 +8,17 @@ function setupPublic() {
           x.setAttribute("width", "100");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-
+          
           div.appendChild(x);
-
+          
           var y = document.createElement('p');
           y.innerText = service.serviceNum;
           y.setAttribute("class", "whiteRight");
           y.setAttribute("align", "center");
-
+          
           div.appendChild(y);
           if (service.serviceNum < 50) {
              document.getElementById("row1").appendChild(div);
@@ -37,17 +39,19 @@ function setupPremium() {
           x.setAttribute("width", "100");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-
+          
           div.appendChild(x);
-
+          
           var y = document.createElement('p');
           y.innerText = service.serviceNum;
           y.setAttribute("class", "whiteRight");
           y.setAttribute("align", "center");
-
+          
           div.appendChild(y);
-
+          
           document.getElementById("row1").appendChild(div);
         }
       });
@@ -63,17 +67,19 @@ function setupMember() {
           x.setAttribute("width", "100");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-
+          
           div.appendChild(x);
-
+          
           var y = document.createElement('p');
           y.innerText = service.serviceNum;
           y.setAttribute("class", "whiteRight");
           y.setAttribute("align", "center");
-
+          
           div.appendChild(y);
-
+          
           document.getElementById("row1").appendChild(div);
         }
       });
@@ -89,17 +95,19 @@ function setupStaff() {
           x.setAttribute("width", "100");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-
+          
           div.appendChild(x);
-
+          
           var y = document.createElement('p');
           y.innerText = service.serviceNum;
           y.setAttribute("class", "whiteRight");
           y.setAttribute("align", "center");
-
+          
           div.appendChild(y);
-
+          
           document.getElementById("row1").appendChild(div);
         }
       });
@@ -116,17 +124,19 @@ function setupRoblox() {
           x.setAttribute("width", "100");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
+          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
+          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-
+          
           div.appendChild(x);
-
+          
           var y = document.createElement('p');
           y.innerText = "Roblox";
           y.setAttribute("class", "whiteRight");
           y.setAttribute("align", "center");
-
+          
           div.appendChild(y);
-
+          
           document.getElementById("row1").appendChild(div);
         }
       });
