@@ -55,77 +55,33 @@ const services = [
        { serviceNum: "50", hash: "aHR0cHM6Ly9wZjY1bWMtODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "100", hash: "aHR0cHM6Ly9yb2Jsb3gtaW50ZXJzdGVsbGFyLnZlcmNlbC5hcHAv", rank : "roblox"},
 ];
-
 const pages = [
    { linkNum: "0.1", page: "publicLinks.html"},
    { linkNum: "0.2", page: "premiumLinks.html"},
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
 ];
-
 var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
 var d = document.getElementById("staffdecKey");
-
 function checkout(rank) {
    if (rank == 1) {
       localStorage.setItem("checkoutRank", "premium");
-      window.location.href = "checkout2.html";
+      window.location.href = "checkout.html";
    } else if (rank == 2) {
       localStorage.setItem("checkoutRank", "member");
-      window.location.href = "checkout3.html";
+      window.location.href = "checkout.html";
    } else {
       localStorage.setItem("checkoutRank", "superMember");
-      window.location.href = "checkout4.html";
-   }
-}
-function send() {
-   window.location.href = "load.html";
-}
-function blueDone() {
-  document.getElementById("box1").style.bottom = "50%";
-  document.getElementById("box2").style.top = "50%";
-  document.getElementById("blueBadge").style.opacity = "100%";
-}
-function blue() {
-  document.getElementById("box1").style.animation = "down 3s";
-  document.getElementById("box2").style.animation = "up 3s";
-  document.getElementById("blueBadge").style.animation = "fade 3s";
-  // Note: this line's timing has to be 0.15 less then the 3 above.
-  setTimeout(blueDone, 2850)
-}
-function setupTransition(rank) {
-   if (rank == "public") {
-      let box1 = document.createElement("div");
-      box1.setAttribute("class", "grayBox1");
-      box1.setAttribute("id", "Box1");
-      let box2 = document.createElement("div");
-      box2.setAttribute("class", "grayBox2");
-      box2.setAttribute("id", "Box2");
-      let image = document.createElement("img");
-   } else if (rank == "premium") {
-      
-   } else if (rank == "member") {
-      
-   } else {
-      
+      window.location.href = "checkout.html";
    }
 }
 function redirect(num) {
-    pages.forEach((page) => {
-       if (num == page.linkNum) {
-          window.location.href = page.page;
-        };
-    });
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
-               let box1 = document.createElement("div");
-               let box2 = document.createElement("div");
-               let image = document.createElement("img");
                localStorage.setItem("hash",service.hash);
-               blue();
-               setTimeout(send, 3100);
+               window.location.href = "load.html";
             };
             if (service.rank == "premium") {
                localStorage.setItem("hash",service.hash);
@@ -151,7 +107,6 @@ tempKeys.forEach((tempKey) =>{
    let month = dateObj.getUTCMonth() + 1; //months from 1-12
    let day = dateObj.getUTCDate();
    let year = dateObj.getUTCFullYear();
-
    let newdate = day + "/" + month + "/" + year;
    if (newdate != tempKey.activeUntill) {
       
