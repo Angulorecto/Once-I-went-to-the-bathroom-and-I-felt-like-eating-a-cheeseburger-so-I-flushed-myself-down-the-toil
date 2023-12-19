@@ -60,144 +60,10 @@ const pages = [
    { linkNum: "0.2", page: "premiumLinks.html"},
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
-   { linkNum: "0.5", page: "load.html"},
 ];
 var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
 var d = document.getElementById("staffdecKey");
-function setupPublic() {
-   services.forEach((service) => {
-        if (service.rank == "public") {
-          var div = document.createElement('div');
-          div.setAttribute("class", "link");
-          var x = document.createElement('img');
-          x.setAttribute("src", "../photos/BlueInLinkBadge.png");
-          x.setAttribute("width", "100");
-          x.setAttribute("alt", "InthashBadge");
-          x.setAttribute("class", "border");
-          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-          
-          div.appendChild(x);
-          
-          var y = document.createElement('p');
-          y.innerText = service.serviceNum;
-          y.setAttribute("class", "whiteRight");
-          y.setAttribute("align", "center");
-          
-          div.appendChild(y);
-          if (service.serviceNum < 50) {
-             document.getElementById("row1").appendChild(div);
-          } else {
-             document.getElementById("row2").appendChild(div);
-          }
-        }
-      });
-};
-
-function setupPremium() {
-   services.forEach((service) => {
-        if (service.rank == "premium") {
-          var div = document.createElement('div');
-          div.setAttribute("class", "link");
-          var x = document.createElement('img');
-          x.setAttribute("src", "../photos/GreenWeb.png");
-          x.setAttribute("width", "100");
-          x.setAttribute("alt", "InthashBadge");
-          x.setAttribute("class", "border");
-          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-          
-          div.appendChild(x);
-          
-          var y = document.createElement('p');
-          y.innerText = service.serviceNum;
-          y.setAttribute("class", "whiteRight");
-          y.setAttribute("align", "center");
-          
-          div.appendChild(y);
-          
-          document.getElementById("row1").appendChild(div);
-        }
-      });
-};
-
-function setupMember() {
-   services.forEach((service) => {
-        if (service.rank == "member") {
-          var div = document.createElement('div');
-          div.setAttribute("class", "link");
-          var x = document.createElement('img');
-          x.setAttribute("src", "../photos/RedBadge.png");
-          x.setAttribute("width", "100");
-          x.setAttribute("alt", "InthashBadge");
-          x.setAttribute("class", "border");
-          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-          
-          div.appendChild(x);
-          
-          var y = document.createElement('p');
-          y.innerText = service.serviceNum;
-          y.setAttribute("class", "whiteRight");
-          y.setAttribute("align", "center");
-          
-          div.appendChild(y);
-          
-          document.getElementById("row1").appendChild(div);
-        }
-      });
-};
-
-function setupStaff() {
-   services.forEach((service) => {
-        if (service.rank == "staff") {
-          var div = document.createElement('div');
-          div.setAttribute("class", "link");
-          var x = document.createElement('img');
-          x.setAttribute("src", "../photos/StaffLink.png");
-          x.setAttribute("width", "100");
-          x.setAttribute("alt", "InthashBadge");
-          x.setAttribute("class", "border");
-          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-          
-          div.appendChild(x);
-          
-          var y = document.createElement('p');
-          y.innerText = service.serviceNum;
-          y.setAttribute("class", "whiteRight");
-          y.setAttribute("align", "center");
-          
-          div.appendChild(y);
-          
-          document.getElementById("row1").appendChild(div);
-        }
-      });
-};
-
-function setupRoblox() {
-   services.forEach((service) => {
-        if (service.rank == "roblox") {
-          var div = document.createElement('div');
-          div.setAttribute("id", "link5");
-           div.setAttribute("style", "display:inline-block;");
-          var x = document.createElement('img');
-          x.setAttribute("src", "../photos/Robloxlogo2019.png");
-          x.setAttribute("width", "100");
-          x.setAttribute("alt", "InthashBadge");
-          x.setAttribute("class", "border");
-          x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
-          
-          div.appendChild(x);
-          
-          var y = document.createElement('p');
-          y.innerText = "Roblox";
-          y.setAttribute("class", "whiteRight");
-          y.setAttribute("align", "center");
-          
-          div.appendChild(y);
-          
-          document.getElementById("row1").appendChild(div);
-        }
-      });
-};
 function checkout(rank) {
    if (rank == 1) {
       localStorage.setItem("checkoutRank", "premium");
@@ -210,13 +76,11 @@ function checkout(rank) {
       window.location.href = "checkout.html";
    }
 }
+
 function redirect(num) {
     pages.forEach((page) => {
        if (num == page.linkNum) {
-          window.location.href = page.page;
-        };
-    });
-    services.forEach((service) => {
+	@@ -90,7 +92,8 @@ function redirect(num) {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
                localStorage.setItem("hash",service.hash);
@@ -234,9 +98,8 @@ function redirect(num) {
                localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
-           if (service.rank == "roblox") {
-               localStorage.setItem("hash", service.hash);
-               localStorage.setItem("roblox", "true");
+            if (service.rank == "roblox") {
+               localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
         };
