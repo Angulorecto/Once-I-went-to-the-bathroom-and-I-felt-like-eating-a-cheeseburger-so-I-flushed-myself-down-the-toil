@@ -77,6 +77,11 @@ function checkout(rank) {
    }
 }
 function redirect(num) {
+   pages.forEach((page) => {
+      if (num == page.linkNum) {
+         window.location.href = page.page;
+      }
+   });
     services.forEach((service) => {
         if (num == service.serviceNum) {
             if (service.rank == "public") {
