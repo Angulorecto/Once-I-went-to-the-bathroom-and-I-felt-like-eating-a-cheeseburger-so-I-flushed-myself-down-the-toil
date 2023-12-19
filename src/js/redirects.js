@@ -60,6 +60,7 @@ const pages = [
    { linkNum: "0.2", page: "premiumLinks.html"},
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
+   { linkNum: "0.5", page: "load.html"},
 ];
 var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
@@ -100,8 +101,9 @@ function redirect(num) {
                localStorage.setItem("hash",service.hash);
                window.location.href = "load.html";
             };
-            if (service.rank == "roblox") {
-               localStorage.setItem("hash",service.hash);
+           if (service.rank == "roblox") {
+               localStorage.setItem("hash", service.hash);
+               localStorage.setItem("roblox", "true");
                window.location.href = "load.html";
             };
         };
