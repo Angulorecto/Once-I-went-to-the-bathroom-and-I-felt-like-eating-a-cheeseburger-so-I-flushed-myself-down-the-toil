@@ -60,7 +60,6 @@ const pages = [
    { linkNum: "0.2", page: "premiumLinks.html"},
    { linkNum: "0.3", page: "memberLinks.html"},
    { linkNum: "0.4", page: "staffLinks.html"},
-   { linkNum: "0.5", page: "load.html"},
 ];
 var b = document.getElementById("premiumdecKey");
 var c = document.getElementById("memberdecKey");
@@ -71,7 +70,7 @@ function checkout(rank) {
       window.location.href = "checkout2.html";
    } else if (rank == 2) {
       localStorage.setItem("checkoutRank", "member");
-      window.location.href = "checkout3.html";
+      window.location.href = "checkout2.html";
    } else {
       localStorage.setItem("checkoutRank", "superMember");
       window.location.href = "checkout2.html";
@@ -103,7 +102,6 @@ function redirect(num) {
             };
            if (service.rank == "roblox") {
                localStorage.setItem("hash", service.hash);
-               localStorage.setItem("roblox", "true");
                window.location.href = "load.html";
             };
         };
