@@ -95,7 +95,7 @@ p{
 .button{
     background: linear-gradient(
 135deg
-, #000000 0%, #003dbf 100%);
+, #000000 100%, #003dbf 0%);
     padding: 15px;
     border: none;
     border-radius: 50px;
