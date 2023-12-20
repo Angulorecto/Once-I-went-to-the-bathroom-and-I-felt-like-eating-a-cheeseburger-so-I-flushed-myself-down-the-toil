@@ -5,6 +5,7 @@ body {
 .border {
   border: 1px solid transparent;
   transition: border-width 0.1s, border-color 0.1s;
+  width: 100px;
 }
 .border:hover {
   border-width: 5px;
