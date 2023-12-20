@@ -11,5 +11,5 @@ function blue() {
   document.getElementById("blueBadge").style.animation = "fade 1s";
   document.getElementById("blueBadge").style.display = "block";
   // Note: this line's timing has to be 0.15 less then the 3 above.
-  setTimeout(blueDone, 2850)
+  setTimeout(blueDone, 0850)
 }
