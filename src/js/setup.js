@@ -121,11 +121,8 @@ function setupRoblox() {
           div.setAttribute("style", "display:inline-block;");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/Robloxlogo2019.png");
-          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
-          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
-          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
           div.appendChild(x);
