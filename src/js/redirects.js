@@ -95,7 +95,7 @@ function setupPublic() {
           y.setAttribute("align", "center");
           
           div.appendChild(y);
-          if (service.serviceNum > 50) {
+          if (service.serviceNum >= 50) {
              document.getElementById("row2").appendChild(div);
           } else {
              document.getElementById("row1").appendChild(div);
