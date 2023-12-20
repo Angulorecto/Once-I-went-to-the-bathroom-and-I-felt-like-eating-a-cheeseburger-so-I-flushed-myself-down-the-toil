@@ -7,8 +7,6 @@ function setupPublic() {
           x.setAttribute("src", "../photos/BlueInLinkBadge.png");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
-          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
-          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
           div.appendChild(x);
@@ -37,8 +35,6 @@ function setupPremium() {
           x.setAttribute("src", "../photos/GreenWeb.png");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
-          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
-          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
           div.appendChild(x);
@@ -64,8 +60,6 @@ function setupMember() {
           x.setAttribute("src", "../photos/RedBadge.png");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
-          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
-          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
           div.appendChild(x);
@@ -91,8 +85,6 @@ function setupStaff() {
           x.setAttribute("src", "../photos/StaffLink.png");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
-          x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
-          x.setAttribute("onmouseover", "this.style.transition='width 0.5s'; this.style.width='120px';");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
           div.appendChild(x);
