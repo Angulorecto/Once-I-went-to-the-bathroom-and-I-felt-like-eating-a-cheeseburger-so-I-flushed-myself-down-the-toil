@@ -85,6 +85,7 @@ function setupPublic() {
           x.setAttribute("src", "../photos/BlueInLinkBadge.png");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
+          x.setAttribute("style", "width:100px;");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
           div.appendChild(x);
@@ -112,6 +113,7 @@ function setupPremium() {
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/GreenWeb.png");
           x.setAttribute("alt", "InthashBadge");
+          x.setAttribute("style", "width:100px;");
           x.setAttribute("class", "border");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
@@ -137,6 +139,7 @@ function setupMember() {
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/RedBadge.png");
           x.setAttribute("alt", "InthashBadge");
+          x.setAttribute("style", "width:100px;");
           x.setAttribute("class", "border");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
@@ -162,6 +165,7 @@ function setupStaff() {
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/StaffLink.png");
           x.setAttribute("alt", "InthashBadge");
+          x.setAttribute("style", "width:100px;");
           x.setAttribute("class", "border");
           x.setAttribute("onclick", "redirect(" + service.serviceNum + ")");
           
