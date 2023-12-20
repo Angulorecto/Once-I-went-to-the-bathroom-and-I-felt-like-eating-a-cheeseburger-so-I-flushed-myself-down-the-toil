@@ -5,7 +5,7 @@ function setupPublic() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/BlueInLinkBadge.png");
-          x.style.width = "100";
+          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
@@ -36,7 +36,7 @@ function setupPremium() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/GreenWeb.png");
-          x.style.width = "100";
+          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
@@ -64,7 +64,7 @@ function setupMember() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/RedBadge.png");
-          x.style.width = "100";
+          xx.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
@@ -92,7 +92,7 @@ function setupStaff() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/StaffLink.png");
-          x.style.width = "100";
+          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
@@ -121,7 +121,7 @@ function setupRoblox() {
           div.setAttribute("style", "display:inline-block;");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/Robloxlogo2019.png");
-          x.style.width = "100";
+          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
