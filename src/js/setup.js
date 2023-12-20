@@ -5,7 +5,6 @@ function setupPublic() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/BlueInLinkBadge.png");
-          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
@@ -36,7 +35,6 @@ function setupPremium() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/GreenWeb.png");
-          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
@@ -64,7 +62,6 @@ function setupMember() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/RedBadge.png");
-          xx.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
@@ -92,7 +89,6 @@ function setupStaff() {
           div.setAttribute("class", "link");
           var x = document.createElement('img');
           x.setAttribute("src", "../photos/StaffLink.png");
-          x.setAttribute("style", "width:100;");
           x.setAttribute("alt", "InthashBadge");
           x.setAttribute("class", "border");
           x.setAttribute("onmouseout", "this.style.transition='width 0.5s'; this.style.width='100px';");
