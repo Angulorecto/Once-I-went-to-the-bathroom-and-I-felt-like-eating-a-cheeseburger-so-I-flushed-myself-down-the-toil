@@ -105,6 +105,10 @@
   color: rgb(0,0,0);
 }
 .supmember {
+  background-image: rgb(255,255,255);
+}
+.supmember:hover {
+  color: rgb(0,0,0);
   background-image: linear-gradient(45deg,
     hsl(0, 100%, 50%),
     hsl(30, 100%, 50%),
@@ -120,11 +124,6 @@
     hsl(330, 100%, 50%),
     hsl(360, 100%, 50%)
   );
-  opacity: 0;
-}
-.supmember:hover {
-  color: rgb(0,0,0);
-  opacity: 1;
 }
 
 .home-pricing-card1 {
