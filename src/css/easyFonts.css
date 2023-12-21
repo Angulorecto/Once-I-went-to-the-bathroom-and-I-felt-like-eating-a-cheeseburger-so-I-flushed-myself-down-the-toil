@@ -131,6 +131,22 @@ body {
   border-radius: var(--dl-radius-radius-radius8);
   background-color: rgb(59,137,14);
 }
+.whiteRight-hover-admin {
+  color: white;
+  align-self: flex-start;
+  transition: 0.3s;
+  position: absolute; 
+  font-family: "righty";
+  right: 0px;
+  bottom: 0px;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.whiteRight-hover-admin:hover .admin-icon{
+  transform: rotateY(360deg);
+}
 .whiteRight-hover-pricing {
   color: white;
   align-self: flex-start;
