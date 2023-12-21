@@ -106,10 +106,13 @@
 }
 .supmember {
   background-image: rgb(255,255,255);
+  transition: fadeIn 0.25s;
 }
-.supmember:hover {
-  color: rgb(0,0,0);
-  background-image: linear-gradient(45deg,
+@keyframes fadeIn {
+  from {
+    background-image: rgb(255,255,255);
+  } to {
+    background-image: linear-gradient(45deg,
     hsl(0, 100%, 50%),
     hsl(30, 100%, 50%),
     hsl(60, 100%, 50%),
@@ -124,6 +127,10 @@
     hsl(330, 100%, 50%),
     hsl(360, 100%, 50%)
   );
+  }
+}
+.supmember:hover {
+  color: rgb(0,0,0);
 }
 
 .home-pricing-card1 {
