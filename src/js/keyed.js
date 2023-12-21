@@ -26,6 +26,8 @@
             document.getElementById("link4").style.display = "inline-block";
             document.getElementById("staffArea").style.display = "block";
             document.getElementById("keyInfo").style.display = "none";
+            document.getElementById("adminArea").style.display = "block";
+            document.getElementById("adminIcon").style.display = "block";
           };
 
           if (key.rank == "Owner") {
@@ -37,6 +39,8 @@
             document.getElementById("keyMgr").style.display = "block";
             document.getElementById("cookieBan").style.display = "block";
             document.getElementById("to404").style.display = "block";
+            document.getElementById("adminArea").style.display = "block";
+            document.getElementById("adminIcon").style.display = "block";
           };
           
           if (key.rank == "Co-owner") {
@@ -47,6 +51,8 @@
             document.getElementById("keyInfo").style.display = "none";
             document.getElementById("cookieBan").style.display = "block";
             document.getElementById("to404").style.display = "block";
+            document.getElementById("adminArea").style.display = "block";
+            document.getElementById("adminIcon").style.display = "block";
           };
         };
       });
