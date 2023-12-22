@@ -147,6 +147,11 @@ body {
 .whiteRight-hover-admin:hover .admin-icon{
   transform: rotateY(360deg);
 }
+.whiteRight-hover-admin:hover {
+  color: white;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(59,137,14);
+}
 .whiteRight-hover-pricing {
   color: white;
   align-self: flex-start;
