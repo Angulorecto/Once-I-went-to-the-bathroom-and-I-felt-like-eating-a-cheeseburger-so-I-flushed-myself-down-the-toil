@@ -144,7 +144,7 @@ body {
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.whiteRight-hover-admin:hover .admin-icon{
+.whiteRight-hover-admin:hover #adminIcon{
   transform: rotateY(360deg);
 }
 .whiteRight-hover-admin:hover {
