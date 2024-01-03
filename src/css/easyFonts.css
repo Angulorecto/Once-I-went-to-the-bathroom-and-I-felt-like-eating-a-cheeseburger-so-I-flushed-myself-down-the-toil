@@ -1,6 +1,8 @@
 body {
-  background-image: url('../photos/christmas.jpg');
-  background-size: cover;
+  background-color: rgb(0,0,0);
+}
+.home-pricing {
+  background-color: rgb(0,0,0);
 }
 .border {
   border: 1px solid transparent;
@@ -60,10 +62,6 @@ body {
   100% {
     top: 50%;
   }
-}
-.home-pricing {
-  background-image: url('../photos/christmas.jpg');
-  background-size: cover;
 }
 .hidden {
   display: none;
