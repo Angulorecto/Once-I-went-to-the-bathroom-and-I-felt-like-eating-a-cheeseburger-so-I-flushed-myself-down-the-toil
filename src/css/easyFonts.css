@@ -4,6 +4,9 @@ body {
 .home-pricing {
   background-color: var(--background-color);
 }
+#staffArea {
+  border-color: var(--Staffborder);
+}
 .border:hover {
   border-width: 5px;
   border-color: var(--border);
