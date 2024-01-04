@@ -1,6 +1,7 @@
 function colorTitle2(color1, color2) {
   const s1 = document.createElement("span");
-  s1.style.font-family = "righty";
+  s1.setAttribute("style.font-family","righty");
+  s1.setAttribute("", color1);
   const s2 = document.createElement("span");
 }
 function colorTitle3(color1, color2, color3) {
