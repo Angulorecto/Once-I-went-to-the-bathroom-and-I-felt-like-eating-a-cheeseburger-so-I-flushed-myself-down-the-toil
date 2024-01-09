@@ -16,6 +16,9 @@
         localStorage.setItem("key", "");
         location.reload();
       }
+      function showKey() {
+        keyarea.innerHTML = key;
+      }
 
       function advanced() {
         var area = document.getElementById("advancedArea");
