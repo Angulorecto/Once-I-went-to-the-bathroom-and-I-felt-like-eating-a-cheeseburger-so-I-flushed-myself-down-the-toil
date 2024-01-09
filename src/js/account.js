@@ -18,6 +18,14 @@
       }
       function showKey() {
         keyarea.innerHTML = key;
+        document.getElementById("show").innerHTML = "Hide key";
+        document.getElementById("show").setAttribute("onclick","hideKey()");
+      }
+
+      function hideKey() {
+        keyarea.innerHTML = hideChar.repeat(keyLength);
+        document.getElementById("show").innerHTML = "Show key";
+        document.getElementById("show").setAttribute("onclick","showKey()");
       }
 
       function advanced() {
