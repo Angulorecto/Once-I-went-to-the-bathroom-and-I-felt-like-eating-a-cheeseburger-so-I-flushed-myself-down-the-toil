@@ -1,12 +1,15 @@
       var key = localStorage.getItem("key") || "No key";
+      let keyLength = key.length;
       var username = localStorage.getItem("username") || "No name";
       var keyarea = document.getElementById("key1");
       var userarea = document.getElementById("username1");
+      let hideChar = "*";
       userarea.innerHTML = username;
-      keyarea.innerHTML = key;
 
       if (key == "No key") {
         document.getElementById("button").style.display = "none";
+      } else {
+        keyarea.innerHTML = hideChar.repeat(keyLength);
       }
 
       function removeKey() {
