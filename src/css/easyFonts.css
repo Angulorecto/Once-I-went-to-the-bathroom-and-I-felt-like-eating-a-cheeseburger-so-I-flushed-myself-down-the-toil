@@ -28,6 +28,19 @@ body {
   transition: border-width 0.2s, border-color 0.2s;
   width: 100px;
 }
+.borderGradient {
+  border: 1px solid transparent;
+  transition: border-width 0.2s, border-image 0.2s;
+  border-image-slice: 1;
+}
+.borderGradient:hover {
+  border-width: 5px;
+  border-image: linear-gradient(90deg, var(--borderGradientColor1), var(--borderGradientColor2));
+}
+.borderGradient:mouseout {
+  border-width: 0px;
+  border-image: solid transparent;
+}
 .border:mouseout {
   border-width: 0px;
   border-color: solid transparent;
