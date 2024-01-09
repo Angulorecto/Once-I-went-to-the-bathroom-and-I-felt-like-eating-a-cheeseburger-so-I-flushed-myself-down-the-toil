@@ -17,9 +17,32 @@
   <script src="https://kit.fontawesome.com/dee092eab8.js" crossorigin="anonymous"></script>
 <style>
   body {
-    background-image: url('https://cdn.dribbble.com/users/2271263/screenshots/6797482/3d-particle-effects.gif');
-    background-size: cover;
-  }
+  margin: 0;
+  font-family: Impact;
+  font-size: 75px;
+  width:100%
+}
+  
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+  
+  .content {
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="Dust Particles pack (online-video-cutter.com).mp4" type=video/mp4>
+  Your browser does not support HTML5 video.
+</video>
   span {
     margin: -4px;
   }
@@ -32,6 +55,9 @@
     margin: 0 auto; /* Horizontal centering using margin */
     width: 50%; /* Adjust the width as needed */
   }
+  <script>
+var video = document.getElementById("myVideo");
+</script>
 </style>
 </head>
 <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
