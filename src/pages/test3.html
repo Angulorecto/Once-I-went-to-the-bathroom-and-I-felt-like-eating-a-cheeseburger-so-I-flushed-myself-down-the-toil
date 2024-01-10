@@ -17,7 +17,7 @@
     }
 
     .image-container:hover img {
-      transform: scale(1.1); /* Example: Enlarge the image on hover */
+      transform: scale(1.1);
     }
 
     .image-border {
@@ -30,12 +30,15 @@
       border: 5px solid transparent;
       border-image: linear-gradient(to right, purple, pink);
       border-image-slice: 1;
+      transform: scale(1);
+      transform-origin: 0 0;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
     .image-container:hover .image-border {
       opacity: 1;
+      transform: scale(1.1);
     }
   </style>
 </head>
@@ -43,7 +46,7 @@
 
 <div class="image-container">
   <div class="image-border"></div>
-  <img src="../photos/BlueInLinkBadge.png" alt="Your Image">
+  <img src="your-image-source.jpg" alt="Your Image">
 </div>
 
 </body>
