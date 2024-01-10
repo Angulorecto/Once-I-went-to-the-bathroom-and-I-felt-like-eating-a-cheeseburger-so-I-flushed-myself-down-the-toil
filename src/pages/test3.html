@@ -4,56 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .hover-container {
-      position: relative;
-      overflow: hidden;
-      border-radius: 20%;
-      width: 100px;
-      transition: border-radius 0.3s ease;
-      box-sizing: border-box; /* Include padding and border in element's total width and height */
-      padding: 16px; /* Adjusted padding to account for the border width */
-    }
-
-    .hover-container:hover {
-      border-radius: 20%;
-    }
-
-    .hover-border {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      border: 5px solid transparent; /* Adjusted border width to 5px */
-      border-image: linear-gradient(45deg, red, yellow);
-      border-image-slice: 1;
-      border-radius: 20px;
-      opacity: 0;
-      transition: border-radius 0.3s ease, opacity 0.3s ease;
-      box-sizing: border-box; /* Include padding and border in element's total width and height */
-    }
-
-    .hover-container:hover .hover-border {
-      border-radius: 50%;
-      opacity: 1;
-    }
-
-    .hover-image {
-      display: block;
-      width: 100%;
-      height: auto;
-      position: relative;
-      z-index: 2;
-      border-radius: 20%;
-    }
+  .box {
+    width: 400px;
+    height: 200px;
+    max-width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  .with-linear-gradient {
+    border-style: solid;
+    border-width: 10px;
+    border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1;
+  }
   </style>
 </head>
 <body>
 
-<div class="hover-container">
-  <div class="hover-border"></div>
-  <img class="hover-image" src="../photos/BlueInLinkBadge.png" alt="Your Image">
+<div class="box with-linear-gradient">
+  Example box with a border image.
 </div>
 
 </body>
