@@ -22,7 +22,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 2;
+      z-index: 1;
       border: 16px solid transparent;
       border-image: linear-gradient(45deg, red, yellow);
       border-image-slice: 1;
@@ -38,7 +38,8 @@
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 10px; /* Match the border-radius of the container */
+      position: relative;
+      z-index: 2; /* Ensure the image is in front of the border */
     }
   </style>
 </head>
