@@ -14,22 +14,26 @@
       display: block;
       max-width: 100%;
       height: auto;
+      transition: transform 0.3s ease;
     }
 
-    .image-container::before {
-      content: "";
+    .image-container:hover img {
+      transform: scale(1.1); /* Example: Enlarge the image on hover */
+    }
+
+    .image-border {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: 1;
-      background: linear-gradient(to right, transparent 0%, #000 50%, transparent 100%);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Customize the box shadow for the border */
       opacity: 0;
       transition: opacity 0.3s ease;
     }
 
-    .image-container:hover::before {
+    .image-container:hover .image-border {
       opacity: 1;
     }
   </style>
@@ -37,7 +41,8 @@
 <body>
 
 <div class="image-container">
-  <img src="../photos/BlueInLinkBadge.png" alt="Your Image">
+  <div class="image-border"></div>
+  <img src="your-image-source.jpg" alt="Your Image">
 </div>
 
 </body>
