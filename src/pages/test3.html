@@ -9,6 +9,7 @@
       overflow: hidden;
       border-radius: 10px;
       transition: border-radius 0.3s ease;
+      width: 100px; /* Set the width of the container */
     }
 
     .hover-container:hover {
@@ -35,19 +36,18 @@
 
     .hover-image {
       display: block;
-      max-width: 100px; /* Set maximum width to 100 pixels */
+      width: 100%;
       height: auto;
+      border-radius: 10px; /* Match the border-radius of the container */
     }
   </style>
 </head>
 <body>
 
 <div class="hover-container">
-  <div class="hover-border">
-    <img class="hover-image" src="../photos/BlueInLinkBadge.png" alt="Your Image">
-  </div>
-  <!-- Your additional content goes here -->
+  <div class="hover-border"></div>
+  <img class="hover-image" src="../photos/BlueInLinkBadge.png" alt="Your Image">
 </div>
-<script src="../js/reloadKey.js"></script>
+
 </body>
 </html>
