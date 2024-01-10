@@ -9,6 +9,7 @@
       display: inline-block;
       overflow: hidden;
       border-radius: 20%;
+      cursor: pointer;
     }
 
     .image-container img {
@@ -48,10 +49,12 @@
 </head>
 <body>
 
-<div class="image-container">
+<div class="image-container" onclick="reloadPage()">
   <div class="image-border"></div>
   <img src="../photos/BlueInLinkBadge.png" alt="Your Image">
 </div>
+
+<script src="../js/reloadKey.js"></script>
 
 </body>
 </html>
