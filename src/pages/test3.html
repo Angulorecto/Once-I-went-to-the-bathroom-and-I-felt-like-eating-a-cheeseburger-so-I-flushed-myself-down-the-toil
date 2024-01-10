@@ -7,9 +7,9 @@
     .hover-container {
       position: relative;
       overflow: hidden;
-      border-radius: 10px;
-      transition: border-radius 0.3s ease;
+      border-radius: 20px; /* Adjusted border-radius to 20% */
       width: 100px; /* Set the width of the container */
+      transition: border-radius 0.3s ease;
     }
 
     .hover-container:hover {
@@ -26,12 +26,14 @@
       border: 16px solid transparent;
       border-image: linear-gradient(45deg, red, yellow);
       border-image-slice: 1;
-      border-radius: 10px;
-      transition: border-radius 0.3s ease;
+      border-radius: 20px; /* Adjusted border-radius to 20% */
+      opacity: 0;
+      transition: border-radius 0.3s ease, opacity 0.3s ease;
     }
 
     .hover-container:hover .hover-border {
       border-radius: 50%;
+      opacity: 1;
     }
 
     .hover-image {
