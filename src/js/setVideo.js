@@ -10,6 +10,6 @@ video.loop = true;
 video.playsinline = true;
 video.setAttribute("class", "toPlayVideo");
 
-const box = document.getElementById('container');
+const box = document.getElementById("container");
 
 box.appendChild(video);
