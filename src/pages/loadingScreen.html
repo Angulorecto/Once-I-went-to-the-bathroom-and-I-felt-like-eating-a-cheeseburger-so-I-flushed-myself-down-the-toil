@@ -41,6 +41,11 @@
 </head>
 <link rel="icon" type="image/x-icon" href="../photos/InLinkBadge.png">
   <body style="background-color:black;">
+    <div style="z-index:-1;" id="container" class="video-wrapper">
+      <video class="toPlayVideo" playsinline autoplay muted loop>
+        <source id="LoadingScreenVidSrc" src="" type="video/mp4">
+      </video>
+    </div>
     <div id="loader"></div>
     <div id="pPos">
       <p align="center" style="font-size:35px;" class="whiteRight">Our servers are retreving the:</p>
