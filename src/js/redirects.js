@@ -12,7 +12,7 @@ const tempKeys = [
 ];
 const services = [
        { serviceNum: "1", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LWplMjQudmVyY2VsLmFwcC8=", rank: "staff"},
-       { serviceNum: "2", hash: "aHR0cHM6Ly93Nmo0a2otODA4MC5jc2IuYXBwLw==", rank : "public"},
+       { serviceNum: "2", hash: "aHR0cHM6Ly94cWs4ZnYtODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "3", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LXRzcXQudmVyY2VsLmFwcC8=", rank : "premium"},
        { serviceNum: "4", hash: "aHR0cHM6Ly92ZXJjZWwyLXpldGEtbmluZS52ZXJjZWwuYXBwLw==", rank : "member"},
        { serviceNum: "5", hash: "aHR0cHM6Ly92ZXJjZWwyLXpldGEtbmluZS52ZXJjZWwuYXBwLw==", rank : "staff"},
