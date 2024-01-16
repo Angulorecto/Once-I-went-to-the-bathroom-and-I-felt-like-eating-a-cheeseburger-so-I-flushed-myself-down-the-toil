@@ -9,7 +9,9 @@ body {
 .widget {
   border: 5px solid var(--border);
   border-radius: 20%;
-  width: calc(calc(100% - 15%) / 2);;
+  width: calc(calc(100% - 15%) / 2);
+  position: absoute;
+  left: 5%;
 }
 .keyBanner {
   border-radius: 20%;
