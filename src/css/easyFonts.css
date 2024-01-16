@@ -6,6 +6,11 @@ body {
   background-color: var(--background-color);
   background-image: var(--background-image);
 }
+.widget {
+  border: 5px solid var(--border);
+  border-radius: 20%;
+  width: calc(calc(100% - 15%) / 2);;
+}
 .keyBanner {
   border-radius: 20%;
   width: calc(calc(100% - 15%) / 2);
