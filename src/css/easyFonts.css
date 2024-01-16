@@ -10,6 +10,7 @@ body {
   border: 5px solid var(--border);
   border-radius: 20%;
   width: calc(calc(100% - 15%) / 2);
+  height: 45%;
   position: absoute;
   left: 5%;
 }
