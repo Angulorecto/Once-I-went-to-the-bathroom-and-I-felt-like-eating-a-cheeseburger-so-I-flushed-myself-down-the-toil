@@ -11,8 +11,7 @@ body {
   border-radius: 4%;
   width: calc(calc(100% - 15%) / 2);
   height: 45%;
-  position: absoute;
-  left: 5%;
+  margin-left: 5%;
 }
 .keyBanner {
   border-radius: 20%;
