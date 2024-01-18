@@ -40,9 +40,9 @@
           let dateOfUnban = document.getElementById("date").value;
           var output = document.getElementById("output");
           if (perma = true) {
-            output.innerHTML = "https://iwillchange.vercel.app/src/pages/home.html?perma=true&till=" + dateOfUnban;
+            output.innerHTML = "https://iwillchange.vercel.app?perma=true&till=" + dateOfUnban;
           } else {
-            output.innerHTML = "https://iwillchange.vercel.app/src/pages/home.html?perma=false&till=" + dateOfUnban;
+            output.innerHTML = "https://iwillchange.vercel.app?perma=false&till=" + dateOfUnban;
           }
         }
         document.getElementById("form").addEventListener('submit', generateBanLink);
