@@ -34,6 +34,7 @@
       </form>
       <p id="output" class="whiteRight"></p>
       <script>
+        document.getElementById("form").addEventListener('submit', generateBanLink());
         function generateBanLink() {
           let perma = document.getElementById("perma").checked;
           let dataOfUnban = document.getElementById("date").value;
