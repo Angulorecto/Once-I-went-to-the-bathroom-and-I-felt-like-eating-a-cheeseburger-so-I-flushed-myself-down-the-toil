@@ -14,7 +14,7 @@ body {
   margin-left: 5%;
 }
 .keyBanner {
-  border-radius: 20%;
+  border-radius: 10%;
   width: calc(calc(100% - 15%) / 2);
 }
 .red {
