@@ -30,7 +30,37 @@
       </div>
     </div>
     <div id="cookieBan" class="widget">
-      
+      <form id="form" align="center" onsubmit="generateBanLink()">
+        <label style="font-size:30px;" class="whiteRight">Permanent?</label>
+          <label class="switch">
+            <input id="perma" type="checkbox">
+            <span class="slider round"></span>
+          </label><br>
+          <label style="font-size:30px;" class=whiteRight>Date of Unban</label>
+          <input class="whiteRight" id="date" type="date" style="line-height:2.0; border-radius:15px; background-color:rgb(23,28,35);"><br>
+          <input style="font-size:15px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit">
+        </form>
+        <p id="output" class="whiteRight"></p>
+        <script>
+          function generateBanLink() {
+            let perma = document.getElementById("perma").checked;
+            let dataOfUnban = document.getElementById("date").value;
+            var output = document.getElementById("output");
+            if (perma = true) {
+              output.innerHTML = "https://angulorecto.github.io/iwillchange/src/pages/home.html?perma=true&till=" + dateOfUnban;
+            } else {
+              output.innerHTML = "https://angulorecto.github.io/iwillchange/src/pages/home.html?perma=false&till=" + dateOfUnban;
+            }
+          }
+        </script>
+        <style>
+        #form {
+          left: 50%;
+          top: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+        }
+      </style>
     </div>
   </body>
 </html>
