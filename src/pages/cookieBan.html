@@ -22,7 +22,7 @@
       </video>
     </div>
       <a href="home.html" class="whiteRight-hover-back" style="text-decoration:none; font-size:15px;">< Back</a>
-      <form id="form" align="center" onsubmit="return false">
+      <form id="form" align="center">
         <label style="font-size:30px;" class="whiteRight">Permanent?</label>
         <label class="switch">
           <input id="perma" type="checkbox">
@@ -34,8 +34,8 @@
       </form>
       <p align="center" id="output" class="whiteRight">test</p>
       <script>
-        document.getElementById("form").addEventListener('submit', generateBanLink);
-        function generateBanLink() {
+        function generateBanLink(event) {
+          event.preventDefault();
           let perma = document.getElementById("perma").checked;
           let dataOfUnban = document.getElementById("date").value;
           var output = document.getElementById("output");
@@ -45,6 +45,7 @@
             output.innerHTML = "https://iwillchange.vercel.app/src/pages/home.html?perma=false&till=" + dateOfUnban;
           }
         }
+        document.getElementById("form").addEventListener('submit', generateBanLink);
       </script>
       <style>
       #form {
