@@ -18,3 +18,9 @@ if (perma == "false") {
 } else {
   localStorage.setItem("banned", "true");
 }
+
+if (localStorage.getItem("banned") == "true") {
+  window.location.href = "banned.html";
+} if else (localStorage.getItem("banned") != "") {
+  window.location.href 
+}
