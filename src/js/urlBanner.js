@@ -13,7 +13,7 @@ if (perma == "false") {
   const expirationDate = new Date();
   expirationDate.setDate(expirationDate.getDate() + daysBanned); // Cookie expires in x days
 
-  localStorage.setItem("banned", expirationDate);
+  localStorage.setItem("bannedTill", expirationDate);
 
 } else {
   localStorage.setItem("banned", "true");
@@ -21,6 +21,6 @@ if (perma == "false") {
 
 if (localStorage.getItem("banned") == "true") {
   window.location.href = "banned.html";
-} if else (localStorage.getItem("banned") != "") {
-  window.location.href 
+} if else (localStorage.getItem("bannedTill") != "") {
+  window.location.href = "banned.html";
 }
