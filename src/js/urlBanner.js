@@ -13,7 +13,7 @@ if (perma == "false") {
   const expirationDate = new Date();
   expirationDate.setDate(expirationDate.getDate() + daysBanned); // Cookie expires in x days
 
-  document.cookie = "banned=true; expires=${expirationDate.toUTCString()}";
+  localStorage.setItem("banned", expirationDate);
 
 } else {
   localStorage.setItem("banned", "true");
