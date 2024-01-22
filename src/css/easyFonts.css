@@ -8,10 +8,18 @@ body {
 }
 .widget {
   border: 5px solid var(--border);
-  border-radius: 4%;
+  border-radius: 40px;
   width: calc(calc(100% - 15%) / 2);
   height: 45%;
-  margin-left: 5%;
+  left: 5%;
+  display: inline-block;
+}
+.widget1 {
+  border: 5px solid var(--border);
+  border-radius: 40px;
+  width: calc(calc(100% - 15%) / 2);
+  height: 45%;
+  right: 5%;
   display: inline-block;
 }
 .keyBanner {
