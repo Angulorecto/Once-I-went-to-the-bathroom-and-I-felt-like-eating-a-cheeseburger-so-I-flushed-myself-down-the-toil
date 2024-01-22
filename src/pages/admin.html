@@ -21,45 +21,11 @@
     </div>
     <a href="home.html" class="whiteRight-hover-back" style="position:absolute; top:0px; left:0px; text-decoration:none; font-size:15px;">< Back</a>
     <h1 align="center" class="whiteRight">Admin Dashboard</h1>
-    <div id="keyManager" class="widget">
-      <div id="activeKeys" class="keyBanner green">
-        
-      </div>
-      <div id="inactiveKeys" class="keyBanner red">
-        
-      </div>
+    <div class="widget">
+      
     </div>
     <div class="widget">
-      <form id="form" align="center" onsubmit="generateBanLink()">
-        <label style="font-size:30px;" class="whiteRight">Permanent?</label>
-          <label class="switch">
-            <input id="perma" type="checkbox">
-            <span class="slider round"></span>
-          </label><br>
-          <label style="font-size:30px;" class=whiteRight>Date of Unban</label>
-          <input class="whiteRight" id="date" type="date" style="line-height:2.0; border-radius:15px; background-color:rgb(23,28,35);"><br>
-          <input style="font-size:15px; background-color:rgb(23,28,35); border-radius:15px;" class="whiteRight" type="submit">
-        </form>
-        <p id="output" class="whiteRight">e</p>
-        <script>
-          function generateBanLink() {
-            let perma = document.getElementById("perma").checked;
-            let dateOfUnban = document.getElementById("date").value;
-            var output = document.getElementById("output");
-            if (perma = true) {
-              output.innerHTML = "https://angulorecto.github.io/iwillchange/src/pages/home.html?perma=true&till=" + dateOfUnban;
-            } else {
-              output.innerHTML = "https://angulorecto.github.io/iwillchange/src/pages/home.html?perma=false&till=" + dateOfUnban;
-            }
-          }
-        </script>
-        <style>
-        #form {
-          display: inline-block;
-          margin-left: 50%;
-          margin-right: 50%;
-        }
-      </style>
+      
     </div>
   </body>
 </html>
