@@ -17,9 +17,9 @@ body {
 .widget1 {
   border: 5px solid var(--border);
   border-radius: 40px;
-  margin-width: calc(calc(100% - 15%) / 2);
+  width: calc(calc(100% - 15%) / 2);
   height: 45%;
-  right: 5%;
+  margin-right: 5%;
   display: inline-block;
 }
 .keyBanner {
