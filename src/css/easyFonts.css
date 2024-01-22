@@ -19,6 +19,7 @@ body {
   border-radius: 40px;
   width: calc(calc(100% - 15%) / 2);
   height: 45%;
+  right: 0px;
   margin-right: 5%;
   display: inline-block;
 }
