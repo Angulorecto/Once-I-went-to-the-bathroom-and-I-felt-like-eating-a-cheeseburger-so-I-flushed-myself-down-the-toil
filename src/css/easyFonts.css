@@ -12,6 +12,7 @@ body {
   width: calc(calc(100% - 15%) / 2);
   height: 45%;
   margin-left: 5%;
+  display: inline-block;
 }
 .keyBanner {
   border-radius: 10%;
