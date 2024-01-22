@@ -11,16 +11,7 @@ body {
   border-radius: 40px;
   width: calc(calc(100% - 15%) / 2);
   height: 45%;
-  margin-left: 5%;
-  display: inline-block;
-}
-.widget1 {
-  border: 5px solid var(--border);
-  border-radius: 40px;
-  width: calc(calc(100% - 15%) / 2);
-  height: 45%;
-  right: 0px;
-  margin-right: 5%;
+  margin-left: 4.9%;
   display: inline-block;
 }
 .keyBanner {
