@@ -56,7 +56,7 @@ const services = [
        { serviceNum: "51", hash: "aHR0cHM6Ly9wZjY1bWMtODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "52", hash: "aHR0cHM6Ly9wZjY1bWMtODA4MC5jc2IuYXBwLw==", rank : "public"},
        { serviceNum: "53", hash: "aHR0cHM6Ly9wZjY1bWMtODA4MC5jc2IuYXBwLw==", rank : "public"},
-       { serviceNum: "69", hash: "aHR0cHM6Ly85LWZsYW1lLnZlcmNlbC5hcHAv", rank : "public"},
+       { serviceNum: "69", hash: "aHR0cHM6Ly9pbnRlcnN0ZWxsYXI3LW5lOGIudmVyY2VsLmFwcC8=", rank : "public"},
        { serviceNum: "100", hash: "aHR0cHM6Ly9yb2Jsb3gtaW50ZXJzdGVsbGFyLnZlcmNlbC5hcHAv", rank : "roblox"},
 ];
 const pages = [
