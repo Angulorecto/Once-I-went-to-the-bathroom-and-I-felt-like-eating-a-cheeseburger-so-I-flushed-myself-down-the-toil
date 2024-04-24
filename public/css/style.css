@@ -1,0 +1,37 @@
+@import "fonts/righty.css";
+body {
+    background-image: radial-gradient(circle at center, #101010, #050505);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding to the left and right */
+    height: 13%;
+    width: 90%;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background-color: rgba(65, 65, 65, 0.1);
+}
+.navItem {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 10%;
+    font-size: 25px;
+    font-family: 'righty';
+    display: flex; /* Use flexbox for aligning */
+    align-items: center; /* Center vertically */
+}
+
+.linkIcon {
+    height: 30px; /* Adjust height as needed */
+    width: 30px;  /* Adjust width as needed */
+    margin-right: 10px; /* Add margin between icon and text */
+}
