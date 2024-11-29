@@ -44,6 +44,26 @@ public class ShopScript implements CommandExecutor, Listener {
         loadShopData();
     }
 
+    // Function to apply enchantments to an item using a for loop
+    public static void applyEnchantments(ItemStack item, List<Map<String, Object>> enchantmentList) {
+        if (item == null || enchantmentList == null) return;
+
+        ItemMeta meta = item.getItemMeta();
+        if (meta != null) {
+            // Iterate over the list of enchantments
+            for (Map<String, Object> enchantmentData : enchantmentList) {
+                String enchantmentName = (String) enchantmentData.get("name"); // Get the enchantment name
+                int level = (int) enchantmentData.get("level"); // Get the enchantment level
+
+                Enchantment enchantment = Enchantment.getByName(enchantmentName); // Find the enchantment by name
+                if (enchantment != null && level > 0) {
+                    meta.addEnchant(enchantment, level, true); // Apply the enchantment
+                }
+            }
+            item.setItemMeta(meta); // Update the item meta with the enchantments
+        }
+    }
+
     public static ItemStack setDurability(ItemStack item, int durability) {
         if (item == null || !item.getType().isItem()) return null;
 
@@ -297,15 +317,34 @@ public class ShopScript implements CommandExecutor, Listener {
         }
 
         player.getInventory().removeItem(new ItemStack(costMaterial, cost));
+        ItemStack customItem = new ItemStack(Material.valueOf(itemType), itemAmount);
+
+        // Check if "uses" is present and set durability
         if (itemData.has("uses")) {
             int uses = itemData.optInt("uses");
-
-            ItemStack customItem = new ItemStack(Material.valueOf(itemType), itemAmount);
             customItem = setCustomMaxDurability(customItem, uses, uses);
-            player.getInventory().addItem(customItem);
-        } else {
-            player.getInventory().addItem(new ItemStack(Material.valueOf(itemType), itemAmount));
         }
+
+        // Check if "enchants" is present and apply enchantments
+        if (itemData.has("enchants")) {
+            List<Map<String, Object>> enchants = new ArrayList<>();
+            JSONArray enchantArray = itemData.optJSONArray("enchants");
+
+            for (int i = 0; i < enchantArray.length(); i++) {
+                JSONObject enchantmentObject = enchantArray.optJSONObject(i);
+                if (enchantmentObject != null) {
+                    Map<String, Object> enchantData = new HashMap<>();
+                    enchantData.put("name", enchantmentObject.optString("name"));
+                    enchantData.put("level", enchantmentObject.optInt("level"));
+                    enchants.add(enchantData);
+                }
+            }
+
+            applyEnchantments(customItem, enchants);
+        }
+
+        // Add the custom item to the player's inventory
+        player.getInventory().addItem(customItem);
         player.sendMessage("§aPurchased!");
     }
 
