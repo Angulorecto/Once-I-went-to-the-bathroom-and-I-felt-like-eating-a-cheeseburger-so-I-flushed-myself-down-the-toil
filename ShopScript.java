@@ -44,6 +44,66 @@ public class ShopScript implements CommandExecutor, Listener {
         loadShopData();
     }
 
+    public static ItemStack setDurability(ItemStack item, int durability) {
+        if (item == null || !item.getType().isItem()) return null;
+
+        ItemMeta meta = item.getItemMeta();
+        if (meta instanceof Damageable damageable) {
+            int maxDurability = item.getType().getMaxDurability();
+
+            // Ensure durability is within bounds
+            durability = Math.max(0, Math.min(maxDurability, durability));
+
+            // Set the damage value (inverse of durability)
+            damageable.setDamage(maxDurability - durability);
+            item.setItemMeta((ItemMeta) damageable);
+        }
+        return item;
+    }
+
+    // Simulate a custom max durability
+    public static ItemStack setCustomMaxDurability(ItemStack item, int customMaxDurability, int currentDurability) {
+        if (item == null || !item.getType().isItem()) return null;
+
+        // Store custom max durability and current durability as metadata or persistent data
+        ItemMeta meta = item.getItemMeta();
+        if (meta != null) {
+            meta.getPersistentDataContainer().set(
+                new NamespacedKey("yourplugin", "maxDurability"),
+                PersistentDataType.INTEGER,
+                customMaxDurability
+            );
+            meta.getPersistentDataContainer().set(
+                new NamespacedKey("yourplugin", "currentDurability"),
+                PersistentDataType.INTEGER,
+                currentDurability
+            );
+            item.setItemMeta(meta);
+        }
+        return item;
+    }
+
+    // Get custom durability
+    public static int getCustomDurability(ItemStack item) {
+        ItemMeta meta = item.getItemMeta();
+        if (meta != null) {
+            Integer maxDurability = meta.getPersistentDataContainer().get(
+                new NamespacedKey("yourplugin", "maxDurability"),
+                PersistentDataType.INTEGER
+            );
+            Integer currentDurability = meta.getPersistentDataContainer().get(
+                new NamespacedKey("yourplugin", "currentDurability"),
+                PersistentDataType.INTEGER
+            );
+
+            // Return current durability if metadata exists
+            if (maxDurability != null && currentDurability != null) {
+                return currentDurability;
+            }
+        }
+        return -1; // Indicate no custom durability is set
+    }
+
     private void loadShopData() {
         File shopFile = new File(plugin.getDataFolder(), "shops.json");
 
@@ -239,7 +299,10 @@ public class ShopScript implements CommandExecutor, Listener {
         player.getInventory().removeItem(new ItemStack(costMaterial, cost));
         if (itemData.has("uses")) {
             int uses = itemData.optInt("uses");
-            player.getInventory().addItem(new ItemStack(Material.valueOf(itemType), itemAmount));
+
+            ItemStack customItem = new ItemStack(Material.valueOf(itemType), itemAmount);
+            customItem = setCustomMaxDurability(customItem, uses, uses);
+            player.getInventory().addItem(customItem);
         } else {
             player.getInventory().addItem(new ItemStack(Material.valueOf(itemType), itemAmount));
         }
