@@ -1,5 +1,7 @@
 package com.yourname.bedwarsstuff.resourceManagement;
 
+import com.yourname.bedwarsstuff.resourceManagement.GeneratorsScript;
+
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.bukkit.Material;
