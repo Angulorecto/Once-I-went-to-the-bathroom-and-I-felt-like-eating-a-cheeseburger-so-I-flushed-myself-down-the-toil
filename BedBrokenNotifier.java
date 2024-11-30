@@ -107,7 +107,7 @@ public class BedBrokenNotifier extends ScoreboardThing implements CommandExecuto
         // Update the team symbol to a warning (bed broken)
         Team scoreboardTeam = getScoreboard().getTeam(team);
         if (scoreboardTeam != null) {
-            scoreboardTeam.setSuffix(ChatColor.YELLOW + "❌");
+            scoreboardTeam.setSuffix(ChatColor.YELLOW + "⚠️");
         }
     }
 
@@ -115,7 +115,7 @@ public class BedBrokenNotifier extends ScoreboardThing implements CommandExecuto
         // Update the team symbol to a red X when all players are dead
         Team scoreboardTeam = getScoreboard().getTeam(team);
         if (scoreboardTeam != null) {
-            scoreboardTeam.setSuffix(ChatColor.RED + "⚠️");
+            scoreboardTeam.setSuffix(ChatColor.RED + "❌");
         }
         Bukkit.broadcastMessage(ChatColor.RED + "All players of the " + getColorForTeam(team) +
                 capitalizeFirstLetter(team) + ChatColor.RED + " team have been eliminated!");
@@ -225,7 +225,7 @@ public class BedBrokenNotifier extends ScoreboardThing implements CommandExecuto
         getScoreboard().getEntries().forEach(entry -> getScoreboard().resetScores(entry));
         for (int i = 0; i < availableTeams.size(); i++) {
             String team = availableTeams.get(i);
-            String status = bedStatus.get(team) ? ChatColor.GREEN + "✔" : ChatColor.RED + "X";
+            String status = bedStatus.get(team) ? ChatColor.GREEN + "✔" : ChatColor.YELLOW + "⚠️";
             String displayText = getColorForTeam(team) + capitalizeFirstLetter(team) + " " + status;
             objective.getScore(displayText).setScore(availableTeams.size() - i); // Maintain consistent ordering
         }
